@@ -1,0 +1,11 @@
+{
+  "dataset_version": "1.0.0",
+  "rdkit": "2026.09.1",
+  "files": {
+    "aqsoldb_clean.csv": "5ad364af2fc5cec4b5b57c767407f666e90ac569405782fb17fc09139ab5dc84",
+    "esol_clean.csv": "f66bd40d7f37672ae01637498d825c8c8cd58ed87cc065ed16e73613ab0fd7a7",
+    "esol_aqsoldb_overlap.csv": "f1156e378520549494eecb3d64e614bbadfa1d7c7ce441afa7413c40dabd6b96",
+    "aqsoldb_removed.csv": "7b920f5afd9d3ec8b829160a75aa26cd6324633c518d5060d43ae65e84629b12",
+    "esol_removed.csv": "6e3318349330f4c6a32345aea2f73677bb2f80673b550d5a9d39d0c609f9e059"
+  }
+}

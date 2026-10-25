@@ -1,0 +1,51 @@
+{
+  "split_type": "external",
+  "split_name": "esol_to_aqsoldb",
+  "seed": 0,
+  "train_dataset": "esol",
+  "test_dataset": "aqsoldb",
+  "n_train_fit": 904,
+  "n_cal_random": 100,
+  "n_val": 111,
+  "n_test": 8074,
+  "members": [
+    {
+      "member": 0,
+      "model_seed": 0,
+      "best_iteration": 359,
+      "fit_seconds": 15.8
+    },
+    {
+      "member": 1,
+      "model_seed": 1,
+      "best_iteration": 533,
+      "fit_seconds": 17.7
+    },
+    {
+      "member": 2,
+      "model_seed": 2,
+      "best_iteration": 375,
+      "fit_seconds": 6.2
+    },
+    {
+      "member": 3,
+      "model_seed": 3,
+      "best_iteration": 362,
+      "fit_seconds": 7.3
+    },
+    {
+      "member": 4,
+      "model_seed": 4,
+      "best_iteration": 635,
+      "fit_seconds": 10.0
+    }
+  ],
+  "descriptor_ad": {
+    "n_descriptors_used": 198,
+    "n_components": 20,
+    "explained_variance": 0.7127721505409772,
+    "h_star": 0.06969026548672566,
+    "train_frac_above_h_star": 0.0420353982300885
+  },
+  "has_rf": false
+}

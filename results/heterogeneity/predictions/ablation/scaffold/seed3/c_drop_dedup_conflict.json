@@ -1,0 +1,13 @@
+{
+  "split_type": "scaffold",
+  "seed": 3,
+  "variant": "c_drop_dedup_conflict",
+  "n_train": 7315,
+  "n_dropped": 21,
+  "s0": 0.4778737331051844,
+  "best_iteration": 829,
+  "val_MAE": 0.8280263749656787,
+  "test_MAE": 0.6782432014030674,
+  "fit_seconds": 100.8,
+  "weights_min_max": null
+}

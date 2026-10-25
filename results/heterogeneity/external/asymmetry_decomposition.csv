@@ -1,0 +1,9 @@
+scenario,n_test,MAE,ci_low,ci_high,note
+"AqSolDB -> ESOL, full training set (n_train=7267)",1115,0.4377489568289751,0.41614616537524124,0.46093829312083867,
+"AqSolDB -> ESOL, training set size-matched to ESOL (n_train=1004, 5 draws)",1115,0.5844416462241417,0.5598148182893902,0.6098699783255814,
+"ESOL -> AqSolDB, all test compounds (n_train=1004)",8074,0.962911750700369,0.9438106708880725,0.9811986257620043,
+"ESOL -> AqSolDB, inside descriptor domain",6667,0.8319572451070203,0.8127015744062688,0.8488189003696904,"single-component, uncharged, no new element, MW <= train max"
+"ESOL -> AqSolDB, consistent-label test compounds (G3+G5)",1120,0.7561133878539364,0.710596261748667,0.8008700746827263,
+"ESOL -> AqSolDB, inside domain AND consistent labels",959,0.6512932152736157,0.6124825381205574,0.6916569435338898,
+"ESOL -> AqSolDB, all test compounds, similarity-standardised",8074,0.8942585570120732,,,bin-MAEs re-weighted to the NN-similarity distribution of the size-matched AqSolDB -> ESOL test set
+"ESOL -> AqSolDB, inside domain AND consistent labels, similarity-standardised",959,0.663076751095994,,,bin-MAEs re-weighted to the NN-similarity distribution of the size-matched AqSolDB -> ESOL test set

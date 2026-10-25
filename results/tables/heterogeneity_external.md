@@ -1,0 +1,14 @@
+| direction                   | model                                          |   n_train |   n_test |   n_seeds |   MAE |   RMSE |    R2 |   Pearson |   Spearman |   bias |   MAE_sd |   RMSE_sd |   R2_sd |
+|:----------------------------|:-----------------------------------------------|----------:|---------:|----------:|------:|-------:|------:|----------:|-----------:|-------:|---------:|----------:|--------:|
+| aqsoldb_to_esol             | LightGBM (rdkit2d+Morgan)                      |      7267 |     1115 |         5 | 0.438 |  0.591 | 0.92  |     0.96  |      0.96  |  0.012 |    0.003 |     0.003 |   0.001 |
+| aqsoldb_to_esol             | RF (rdkit2d)                                   |      7267 |     1115 |         5 | 0.466 |  0.627 | 0.91  |     0.955 |      0.955 |  0.069 |    0.001 |     0.001 |   0     |
+| aqsoldb_to_esol             | ESOL-linear refit (esol4)                      |      7267 |     1115 |         1 | 1.047 |  1.338 | 0.592 |     0.816 |      0.783 |  0.099 |    0     |     0     |   0     |
+| aqsoldb_to_esol             | Delaney published equation (Crippen cLogP)     |         0 |     1115 |         1 | 0.845 |  1.101 | 0.724 |     0.866 |      0.854 |  0.276 |    0     |     0     |   0     |
+| aqsoldb_to_esol             | Delaney published ESOL predictions (in-sample) |       nan |     1115 |         1 | 0.699 |  0.912 | 0.81  |     0.907 |      0.904 |  0.06  |    0     |     0     |   0     |
+| esol_to_aqsoldb             | LightGBM (rdkit2d+Morgan)                      |      1004 |     8074 |         5 | 0.963 |  1.328 | 0.688 |     0.837 |      0.819 | -0.254 |    0.007 |     0.01  |   0.005 |
+| esol_to_aqsoldb             | RF (rdkit2d)                                   |      1004 |     8074 |         5 | 0.994 |  1.338 | 0.682 |     0.84  |      0.821 | -0.305 |    0.003 |     0.005 |   0.002 |
+| esol_to_aqsoldb             | ESOL-linear refit (esol4)                      |      1004 |     8074 |         1 | 1.24  |  2.311 | 0.053 |     0.687 |      0.81  | -0.412 |    0     |     0     |   0     |
+| esol_to_aqsoldb             | Delaney published equation (Crippen cLogP)     |         0 |     8074 |         1 | 1.144 |  1.889 | 0.368 |     0.708 |      0.811 |  0.027 |    0     |     0     |   0     |
+| aqsoldb_to_esol_sizematched | LightGBM (rdkit2d+Morgan)                      |      1004 |     1115 |         5 | 0.584 |  0.775 | 0.863 |     0.933 |      0.933 |  0.132 |    0.034 |     0.043 |   0.016 |
+| aqsoldb_to_esol_sizematched | RF (rdkit2d)                                   |      1004 |     1115 |         5 | 0.592 |  0.781 | 0.861 |     0.932 |      0.933 |  0.175 |    0.018 |     0.019 |   0.007 |
+| aqsoldb_to_esol_sizematched | ESOL-linear refit (esol4)                      |      1004 |     1115 |         5 | 1.03  |  1.318 | 0.604 |     0.82  |      0.789 |  0.155 |    0.026 |     0.034 |   0.02  |

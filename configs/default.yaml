@@ -1,0 +1,67 @@
+# Central configuration for the solubility benchmark.
+# Every script reads this file (override with --config). Paths are relative to the project root.
+
+project:
+  name: solpred
+  global_seed: 42
+  n_jobs: 4            # default CPU threads per model fit (keep modest: several experiments may run concurrently)
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  splits: data/splits
+  features: data/features
+  models: models
+  results: results
+  figures: results/figures
+  tables: results/tables
+
+data:
+  aqsoldb:
+    url: "https://dataverse.harvard.edu/api/access/datafile/3407241?format=original"
+    doi: "10.7910/DVN/OVHAW8"
+    filename: aqsoldb_curated-solubility-dataset.csv
+    license: CC0-1.0
+  esol:
+    url: "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/delaney-processed.csv"
+    filename: delaney-processed.csv
+
+curation:
+  # Elements allowed anywhere in a molecule (organic chemistry set).
+  organic_elements: [H, B, C, N, O, F, Si, P, S, Cl, Se, Br, I]
+  # Elements allowed ONLY as isolated monoatomic counter-ions (e.g. sodium / potassium salts).
+  counterion_elements: [Li, Na, K, Mg, Ca]
+  remove_no_carbon: true          # drop purely inorganic compounds
+  dedup_key: smiles_2d            # non-isomeric canonical SMILES of the standardized structure
+  aggregate: median               # label of merged duplicates
+  conflict_sd_threshold: 0.5      # merged groups with SD above this are flagged (kept, flagged)
+
+splits:
+  seeds: [0, 1, 2, 3, 4]
+  fractions: [0.8, 0.1, 0.1]      # train / val / test
+  types: [random, scaffold, cluster]
+  cluster:
+    fp_radius: 2
+    fp_nbits: 2048
+    butina_distance_cutoff: 0.6   # Tanimoto distance; members have sim >= 0.4 to their centroid
+  loso_min_compounds: 200         # leave-one-source-out only for AqSolDB sources with >= this many compounds
+
+features:
+  morgan:
+    radius: 2
+    nbits: 2048
+  kinds: [rdkit2d, morgan_counts, rdkit2d+morgan_counts, maccs, esol4]
+
+evaluation:
+  primary_metric: MAE
+  bootstrap: 1000
+  # AqSolDB solubility classes (log mol/L)
+  solubility_classes:
+    highly_soluble: 0.0     # logS >= 0
+    soluble: -2.0           # -2 <= logS < 0
+    slightly_soluble: -4.0  # -4 <= logS < -2
+    # logS < -4 -> insoluble
+
+applicability_domain:
+  knn_k: 5
+  similarity_in_domain: 0.35      # max Tanimoto (ECFP4) to training set below which a compound is flagged out-of-domain

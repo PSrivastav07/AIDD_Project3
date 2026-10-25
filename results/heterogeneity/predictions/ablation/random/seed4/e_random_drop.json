@@ -1,0 +1,13 @@
+{
+  "split_type": "random",
+  "seed": 4,
+  "variant": "e_random_drop",
+  "n_train": 7048,
+  "n_dropped": 289,
+  "s0": 0.4778737331051844,
+  "best_iteration": 1087,
+  "val_MAE": 0.6091193940987768,
+  "test_MAE": 0.5822864328661804,
+  "fit_seconds": 72.2,
+  "weights_min_max": null
+}

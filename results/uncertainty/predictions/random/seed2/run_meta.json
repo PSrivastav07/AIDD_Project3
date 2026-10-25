@@ -1,0 +1,51 @@
+{
+  "split_type": "random",
+  "split_name": "seed2",
+  "seed": 2,
+  "train_dataset": "aqsoldb",
+  "test_dataset": "aqsoldb",
+  "n_train_fit": 6603,
+  "n_cal_random": 734,
+  "n_val": 917,
+  "n_test": 917,
+  "members": [
+    {
+      "member": 0,
+      "model_seed": 200,
+      "best_iteration": 607,
+      "fit_seconds": 66.9
+    },
+    {
+      "member": 1,
+      "model_seed": 201,
+      "best_iteration": 660,
+      "fit_seconds": 68.0
+    },
+    {
+      "member": 2,
+      "model_seed": 202,
+      "best_iteration": 780,
+      "fit_seconds": 76.8
+    },
+    {
+      "member": 3,
+      "model_seed": 203,
+      "best_iteration": 1059,
+      "fit_seconds": 100.8
+    },
+    {
+      "member": 4,
+      "model_seed": 204,
+      "best_iteration": 1123,
+      "fit_seconds": 105.9
+    }
+  ],
+  "descriptor_ad": {
+    "n_descriptors_used": 214,
+    "n_components": 20,
+    "explained_variance": 0.6303670265541853,
+    "h_star": 0.009541117673784643,
+    "train_frac_above_h_star": 0.03422686657579888
+  },
+  "has_rf": true
+}

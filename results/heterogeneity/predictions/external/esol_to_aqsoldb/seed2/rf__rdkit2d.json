@@ -1,0 +1,19 @@
+{
+  "train_dataset": "esol",
+  "test_dataset": "aqsoldb",
+  "split_type": "external",
+  "seed": 2,
+  "split_name": "esol_to_aqsoldb",
+  "featurizer": "rdkit2d",
+  "model": "rf",
+  "n_train": 1004,
+  "n_val": 111,
+  "n_test": 8074,
+  "MAE": 0.9927217981428164,
+  "RMSE": 1.336808322008394,
+  "R2": 0.6832223158568388,
+  "Pearson": 0.8401560137769503,
+  "Spearman": 0.8219936725637941,
+  "val_MAE": 0.5033786666666672,
+  "fit_seconds": 17.68
+}

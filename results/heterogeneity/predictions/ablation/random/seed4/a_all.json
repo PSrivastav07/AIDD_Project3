@@ -1,0 +1,10 @@
+{
+  "split_type": "random",
+  "seed": 4,
+  "variant": "a_all",
+  "n_train": 7337,
+  "n_dropped": 0,
+  "source": "E:\\CourseWorks\\sem7\\AI_in_Drug_Discovery\\AIDD_Project3\\results\\baseline\\predictions\\random\\seed4\\lgbm__rdkit2d+morgan_counts.csv",
+  "val_MAE": 0.6040823044148091,
+  "test_MAE": 0.5808016950179548
+}

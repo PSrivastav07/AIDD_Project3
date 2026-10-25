@@ -1,0 +1,217 @@
+{
+  "pytest": {
+    "n_tests": 163,
+    "wall_time_s": 113.676,
+    "total": {
+      "passed": 157,
+      "xfailed": 6
+    },
+    "qa_owned_files": {
+      "passed": 135,
+      "xfailed": 6
+    },
+    "by_file": {
+      "test_api": {
+        "passed": 13
+      },
+      "test_curation": {
+        "passed": 35,
+        "xfailed": 3
+      },
+      "test_experiment": {
+        "passed": 9
+      },
+      "test_features": {
+        "passed": 29,
+        "xfailed": 1
+      },
+      "test_metrics": {
+        "passed": 12,
+        "xfailed": 2
+      },
+      "test_predict": {
+        "passed": 9
+      },
+      "test_splits": {
+        "passed": 50
+      }
+    }
+  },
+  "leakage_test_vs_train": {
+    "random": {
+      "pct_same_smiles_2d": 0.0,
+      "pct_same_inchikey_connectivity": 0.414,
+      "pct_same_neutral_parent": 3.882,
+      "lgbm_test_mae_all": 0.574,
+      "lgbm_test_mae_without_parent_matches": 0.567,
+      "lgbm_mae_on_parent_matches": 0.746
+    },
+    "scaffold": {
+      "pct_same_smiles_2d": 0.0,
+      "pct_same_inchikey_connectivity": 0.044,
+      "pct_same_neutral_parent": 0.131,
+      "lgbm_test_mae_all": 0.717,
+      "lgbm_test_mae_without_parent_matches": 0.716,
+      "lgbm_mae_on_parent_matches": 0.982
+    },
+    "cluster": {
+      "pct_same_smiles_2d": 0.0,
+      "pct_same_inchikey_connectivity": 0.218,
+      "pct_same_neutral_parent": 2.266,
+      "lgbm_test_mae_all": 0.67,
+      "lgbm_test_mae_without_parent_matches": 0.665,
+      "lgbm_mae_on_parent_matches": 0.842
+    },
+    "loso": {
+      "pct_same_smiles_2d": 0.0,
+      "pct_same_inchikey_connectivity": 0.557,
+      "pct_same_neutral_parent": 2.118
+    },
+    "external": {
+      "pct_same_smiles_2d": 0.0,
+      "pct_same_inchikey_connectivity": 0.912,
+      "pct_same_neutral_parent": 2.131
+    }
+  },
+  "matched_pairs": {
+    "ik14_pairs_pooled": 89,
+    "ik14_abs_dlogS_median": 0.01570000000000027,
+    "ik14_frac_abs_dlogS_lt_0.3": 0.7303370786516854,
+    "parent_only_pairs_pooled": 432,
+    "parent_only_abs_dlogS_median": 0.7213869971000002,
+    "parent_only_abs_dlogS_mean": 1.2708676367266878,
+    "parent_only_frac_abs_dlogS_gt_1": 0.41203703703703703
+  },
+  "within_aqsoldb_surviving_duplicates": {
+    "ik14": {
+      "n_compounds_in_groups": 36,
+      "n_groups": 18,
+      "n_groups_range_gt_1": 3
+    },
+    "parent_ik14": {
+      "n_compounds_in_groups": 444,
+      "n_groups": 185,
+      "n_groups_range_gt_1": 87
+    }
+  },
+  "split_shift": {
+    "random": {
+      "test_frac_generic_scaffold_in_train": 0.922,
+      "test_frac_acyclic": 0.263,
+      "train_logS_mean": -2.887,
+      "test_logS_mean": -2.914,
+      "train_mean_predictor_test_MAE": 1.871,
+      "test_maxsim_median": 0.611,
+      "test_frac_maxsim_eq_1": 0.0482
+    },
+    "scaffold": {
+      "test_frac_generic_scaffold_in_train": 0.758,
+      "test_frac_acyclic": 0.0,
+      "train_logS_mean": -2.722,
+      "test_logS_mean": -3.576,
+      "train_mean_predictor_test_MAE": 2.07,
+      "test_maxsim_median": 0.458,
+      "test_frac_maxsim_eq_1": 0.0094
+    },
+    "cluster": {
+      "test_frac_generic_scaffold_in_train": 0.887,
+      "test_frac_acyclic": 0.285,
+      "train_logS_mean": -2.889,
+      "test_logS_mean": -3.096,
+      "train_mean_predictor_test_MAE": 1.971,
+      "test_maxsim_median": 0.483,
+      "test_frac_maxsim_eq_1": 0.0
+    }
+  },
+  "butina": {
+    "toy_ok": true,
+    "rdkit_reference_identical_partition": true,
+    "full_recompute_identical_to_stored": true,
+    "n_clusters": 2569,
+    "n_singletons": 1446,
+    "largest_cluster": 263
+  },
+  "removed": {
+    "n": 521,
+    "by_reason": {
+      "no_carbon": 325,
+      "disallowed_element": 194,
+      "parse_error": 2
+    },
+    "annotation_by_reason": {
+      "disallowed_element": {
+        "ionic salt of disallowed ion": 153,
+        "organometallic (metal-C bond)": 32,
+        "metal complex / covalent metal-heteroatom": 9
+      },
+      "no_carbon": {
+        "inorganic (no C)": 325
+      },
+      "parse_error": {
+        "ionic salt of disallowed ion": 2
+      }
+    }
+  },
+  "kept_inorganic_carbon_n": 48,
+  "labels": {
+    "logS_gt_1.5": 13,
+    "logS_lt_-10": 19,
+    "above_physical_bound_rho2.0": 27,
+    "abs_delaney_residual_gt_3_single_component": 276,
+    "aqsol_sd_gt_1": 124,
+    "dedup_merged_range_gt_1": 20,
+    "frac_dataset_flagged_any": 0.05015810707665467
+  },
+  "dedup_groups": {
+    "n_groups": 257,
+    "kind_counts": {
+      "defined + undefined stereo record": 233,
+      "distinct defined stereoisomers": 24
+    },
+    "conflict_kind_counts": {
+      "defined + undefined stereo record": 24,
+      "distinct defined stereoisomers": 5
+    },
+    "median_range_by_kind": {
+      "defined + undefined stereo record": 0.014,
+      "distinct defined stereoisomers": 0.215
+    }
+  },
+  "inchikey_inconsistent": {
+    "n": 17,
+    "category_counts": {
+      "standardiser changed structure (raw SMILES matched source InChIKey)": 17
+    }
+  },
+  "charges": {
+    "carbanion": 6,
+    "alkoxide_created": 2,
+    "bare_proton": 43,
+    "charged_single_species": 83,
+    "zwitterion_single": 42,
+    "unbalanced_salt": 15
+  },
+  "descriptor_nans": {
+    "n_rows_with_nan": 399,
+    "frac_rows_with_nan": 0.04350670592083742,
+    "frac_nan_rows_metal_salts": 1.0,
+    "logS_mean_nan_rows": -1.0997142988550126,
+    "logS_mean_other_rows": -2.9712610746812134,
+    "constant_columns": [
+      "SMR_VSA8",
+      "SlogP_VSA9"
+    ]
+  },
+  "loso_test_frac_label_from_multiple_measurements": {
+    "A": 0.2822144447979637,
+    "B": 0.15770925110132158,
+    "C": 0.19477434679334918,
+    "E": 0.6521739130434783,
+    "F": 0.09290322580645162
+  },
+  "sources": {
+    "audit": "results/qa/audit_numbers.json",
+    "pytest": "results/qa/pytest_results.xml",
+    "review": "results/qa/foundation_review.md"
+  }
+}

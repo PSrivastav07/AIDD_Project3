@@ -1,0 +1,11 @@
+{
+  "source": "E",
+  "kind": "control_fold1",
+  "n_train": 8068,
+  "n_val": 910,
+  "n_test": 69,
+  "best_iteration": 799,
+  "val_MAE": 0.5357505028785867,
+  "test_MAE": 0.35499945906236186,
+  "fit_seconds": 72.6
+}

@@ -1,0 +1,180 @@
+{
+  "source_files": [
+    "results/benchmark/metrics_runs.csv",
+    "results/gnn/metrics_runs.csv"
+  ],
+  "n_configs": 19,
+  "best_per_split": {
+    "random": {
+      "config": "lgbm__rdkit2d+morgan_counts",
+      "n_seeds": 5,
+      "MAE": {
+        "mean": 0.5738,
+        "std": 0.0188
+      },
+      "RMSE": {
+        "mean": 0.8401,
+        "std": 0.0302
+      },
+      "R2": {
+        "mean": 0.8734,
+        "std": 0.0117
+      },
+      "Pearson": {
+        "mean": 0.9351,
+        "std": 0.0061
+      },
+      "Spearman": {
+        "mean": 0.9296,
+        "std": 0.0058
+      },
+      "top5": [
+        "lgbm__rdkit2d+morgan_counts",
+        "dmpnn_desc__graph+rdkit2d",
+        "lgbm__rdkit2d",
+        "mlp__rdkit2d",
+        "rf__rdkit2d"
+      ]
+    },
+    "scaffold": {
+      "config": "lgbm__rdkit2d+morgan_counts",
+      "n_seeds": 5,
+      "MAE": {
+        "mean": 0.7165,
+        "std": 0.0269
+      },
+      "RMSE": {
+        "mean": 0.9872,
+        "std": 0.0444
+      },
+      "R2": {
+        "mean": 0.8356,
+        "std": 0.0258
+      },
+      "Pearson": {
+        "mean": 0.9161,
+        "std": 0.0136
+      },
+      "Spearman": {
+        "mean": 0.9102,
+        "std": 0.0143
+      },
+      "top5": [
+        "lgbm__rdkit2d+morgan_counts",
+        "lgbm__rdkit2d",
+        "rf__rdkit2d",
+        "rf__rdkit2d+morgan_counts",
+        "dmpnn_desc__graph+rdkit2d"
+      ]
+    },
+    "cluster": {
+      "config": "lgbm__rdkit2d+morgan_counts",
+      "n_seeds": 5,
+      "MAE": {
+        "mean": 0.67,
+        "std": 0.0366
+      },
+      "RMSE": {
+        "mean": 0.9586,
+        "std": 0.0654
+      },
+      "R2": {
+        "mean": 0.8414,
+        "std": 0.0259
+      },
+      "Pearson": {
+        "mean": 0.9178,
+        "std": 0.0141
+      },
+      "Spearman": {
+        "mean": 0.9172,
+        "std": 0.0121
+      },
+      "top5": [
+        "lgbm__rdkit2d+morgan_counts",
+        "lgbm__rdkit2d",
+        "dmpnn_desc__graph+rdkit2d",
+        "dmpnn__graph",
+        "rf__rdkit2d"
+      ]
+    }
+  },
+  "mae_gaps": {
+    "dmpnn__graph": {
+      "scaffold_minus_random": 0.1578,
+      "cluster_minus_random": 0.0648
+    },
+    "dmpnn_desc__graph+rdkit2d": {
+      "scaffold_minus_random": 0.2274,
+      "cluster_minus_random": 0.1298
+    },
+    "esol_linear__esol4": {
+      "scaffold_minus_random": 0.0638,
+      "cluster_minus_random": 0.0394
+    },
+    "knn__morgan_bits": {
+      "scaffold_minus_random": 0.4833,
+      "cluster_minus_random": 0.223
+    },
+    "lgbm__maccs": {
+      "scaffold_minus_random": 0.1836,
+      "cluster_minus_random": 0.1486
+    },
+    "lgbm__morgan_counts": {
+      "scaffold_minus_random": 0.1764,
+      "cluster_minus_random": 0.1144
+    },
+    "lgbm__rdkit2d": {
+      "scaffold_minus_random": 0.1419,
+      "cluster_minus_random": 0.0973
+    },
+    "lgbm__rdkit2d+morgan_counts": {
+      "scaffold_minus_random": 0.1427,
+      "cluster_minus_random": 0.0962
+    },
+    "mean__esol4": {
+      "scaffold_minus_random": 0.1997,
+      "cluster_minus_random": 0.1003
+    },
+    "mlp__maccs": {
+      "scaffold_minus_random": 0.1885,
+      "cluster_minus_random": 0.1342
+    },
+    "mlp__rdkit2d": {
+      "scaffold_minus_random": 0.2002,
+      "cluster_minus_random": 0.1209
+    },
+    "rf__maccs": {
+      "scaffold_minus_random": 0.2087,
+      "cluster_minus_random": 0.1425
+    },
+    "rf__morgan_counts": {
+      "scaffold_minus_random": 0.189,
+      "cluster_minus_random": 0.1559
+    },
+    "rf__rdkit2d": {
+      "scaffold_minus_random": 0.1266,
+      "cluster_minus_random": 0.0914
+    },
+    "rf__rdkit2d+morgan_counts": {
+      "scaffold_minus_random": 0.1346,
+      "cluster_minus_random": 0.0974
+    },
+    "ridge__maccs": {
+      "scaffold_minus_random": 0.1072,
+      "cluster_minus_random": 0.0663
+    },
+    "ridge__morgan_counts": {
+      "scaffold_minus_random": 0.2217,
+      "cluster_minus_random": 0.1086
+    },
+    "ridge__rdkit2d": {
+      "scaffold_minus_random": 0.0651,
+      "cluster_minus_random": 0.0578
+    },
+    "ridge__rdkit2d+morgan_counts": {
+      "scaffold_minus_random": 0.1887,
+      "cluster_minus_random": 0.1053
+    }
+  }
+}

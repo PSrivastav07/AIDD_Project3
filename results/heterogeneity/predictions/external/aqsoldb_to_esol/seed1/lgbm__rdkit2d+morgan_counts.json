@@ -1,0 +1,19 @@
+{
+  "train_dataset": "aqsoldb",
+  "test_dataset": "esol",
+  "split_type": "external",
+  "seed": 1,
+  "split_name": "aqsoldb_to_esol",
+  "featurizer": "rdkit2d+morgan_counts",
+  "model": "lgbm",
+  "n_train": 7267,
+  "n_val": 807,
+  "n_test": 1115,
+  "MAE": 0.4371505707636458,
+  "RMSE": 0.5884144217228378,
+  "R2": 0.9210318740988603,
+  "Pearson": 0.9600823995713772,
+  "Spearman": 0.959976405867757,
+  "val_MAE": 0.5890814389290321,
+  "fit_seconds": 67.8
+}

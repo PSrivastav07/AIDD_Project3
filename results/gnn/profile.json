@@ -1,0 +1,142 @@
+{
+  "runs": [
+    {
+      "model": "dmpnn",
+      "hidden": 300,
+      "depth": 3,
+      "batch_size": 64,
+      "threads": 3,
+      "epochs_profiled": 2,
+      "epoch_seconds": 43.72075390815735,
+      "train_seconds_per_epoch": 42.95878624916077,
+      "val_eval_seconds_per_epoch": 0.761967658996582,
+      "final_inference_seconds_val_test_mc": 2.4159719944000244,
+      "n_parameters": 306001,
+      "val_MAE_last_epoch": 1.0431649828079919,
+      "timestamp": "2026-10-14 00:26",
+      "note": "3 threads; CPU at ~100% load from ~5 concurrent agents"
+    },
+    {
+      "model": "dmpnn",
+      "hidden": 200,
+      "depth": 3,
+      "batch_size": 64,
+      "threads": 3,
+      "epochs_profiled": 2,
+      "epoch_seconds": 18.38659107685089,
+      "train_seconds_per_epoch": 17.882722854614258,
+      "val_eval_seconds_per_epoch": 0.5038682222366333,
+      "final_inference_seconds_val_test_mc": 1.4775986671447754,
+      "n_parameters": 144001,
+      "val_MAE_last_epoch": 1.089972818903624,
+      "timestamp": "2026-10-14 00:26",
+      "note": "3 threads; CPU at ~100% load from ~5 concurrent agents"
+    },
+    {
+      "model": "dmpnn",
+      "hidden": 200,
+      "depth": 3,
+      "batch_size": 64,
+      "threads": 1,
+      "epochs_profiled": 2,
+      "epoch_seconds": 22.773815631866455,
+      "train_seconds_per_epoch": 21.92911207675934,
+      "val_eval_seconds_per_epoch": 0.8447035551071167,
+      "final_inference_seconds_val_test_mc": 2.876957893371582,
+      "n_parameters": 144001,
+      "val_MAE_last_epoch": 1.1074646079588448,
+      "timestamp": "2026-10-14 00:29",
+      "note": "1 thread; CPU at ~100% load from ~5 concurrent agents"
+    },
+    {
+      "model": "dmpnn",
+      "hidden": 300,
+      "depth": 3,
+      "batch_size": 64,
+      "threads": 1,
+      "epochs_profiled": 2,
+      "epoch_seconds": 42.23624002933502,
+      "train_seconds_per_epoch": 40.62468934059143,
+      "val_eval_seconds_per_epoch": 1.6115506887435913,
+      "final_inference_seconds_val_test_mc": 4.053427696228027,
+      "n_parameters": 306001,
+      "val_MAE_last_epoch": 1.0437387415089059,
+      "timestamp": "2026-10-14 00:29",
+      "note": "1 thread; CPU at ~100% load from ~5 concurrent agents"
+    }
+  ],
+  "graph_store_load_seconds": 0.9081933498382568,
+  "previous_implementation": {
+    "source": "results/gnn/profile_t3.log (transcribed, then deleted), measured 2026-10-13 21:49-21:52",
+    "model": "dmpnn",
+    "hidden": 200,
+    "depth": 3,
+    "threads": 3,
+    "epoch_seconds": 46.13381338119507,
+    "mc_dropout_seconds_val_test": 70.54730939865112,
+    "featurisation_seconds": 23.8,
+    "implementation": "per-batch Python collation of per-molecule graphs, index_add_/index_select scatter-gathers, deterministic-mode scatter, encoder dropout 0.1 so 20 full MC passes",
+    "note": "under heavy CPU contention (several concurrent agents)"
+  },
+  "plan_estimate": {
+    "n_jobs": 24,
+    "total_threads": 6,
+    "expected_epochs": 45,
+    "worst_case_epochs": 50,
+    "per_run_overhead_seconds": 10.0,
+    "layouts": [
+      {
+        "hidden": 200,
+        "depth": 3,
+        "threads_per_worker": 1,
+        "workers": 6,
+        "jobs_per_worker": 4,
+        "epoch_seconds_measured": 22.773815631866455,
+        "run_minutes_expected": 17.294977688789366,
+        "wall_hours_expected": 1.1529985125859579,
+        "wall_hours_worst": 1.2795197105407714,
+        "measured_at": "2026-10-14 00:29",
+        "load_note": "1 thread; CPU at ~100% load from ~5 concurrent agents"
+      },
+      {
+        "hidden": 200,
+        "depth": 3,
+        "threads_per_worker": 3,
+        "workers": 2,
+        "jobs_per_worker": 12,
+        "epoch_seconds_measured": 18.38659107685089,
+        "run_minutes_expected": 13.981236618757247,
+        "wall_hours_expected": 2.79624732375145,
+        "wall_hours_worst": 3.1026905083656313,
+        "measured_at": "2026-10-14 00:26",
+        "load_note": "3 threads; CPU at ~100% load from ~5 concurrent agents"
+      },
+      {
+        "hidden": 300,
+        "depth": 3,
+        "threads_per_worker": 1,
+        "workers": 6,
+        "jobs_per_worker": 4,
+        "epoch_seconds_measured": 42.23624002933502,
+        "run_minutes_expected": 31.9114038169384,
+        "wall_hours_expected": 2.1274269211292265,
+        "wall_hours_worst": 2.362072699069977,
+        "measured_at": "2026-10-14 00:29",
+        "load_note": "1 thread; CPU at ~100% load from ~5 concurrent agents"
+      },
+      {
+        "hidden": 300,
+        "depth": 3,
+        "threads_per_worker": 3,
+        "workers": 2,
+        "jobs_per_worker": 12,
+        "epoch_seconds_measured": 43.72075390815735,
+        "run_minutes_expected": 32.997498297691344,
+        "wall_hours_expected": 6.599499659538269,
+        "wall_hours_worst": 7.328178891340891,
+        "measured_at": "2026-10-14 00:26",
+        "load_note": "3 threads; CPU at ~100% load from ~5 concurrent agents"
+      }
+    ]
+  }
+}

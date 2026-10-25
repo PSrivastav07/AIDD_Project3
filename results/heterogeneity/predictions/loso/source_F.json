@@ -1,0 +1,11 @@
+{
+  "source": "F",
+  "kind": "loso",
+  "n_train": 7556,
+  "n_val": 840,
+  "n_test": 775,
+  "best_iteration": 1073,
+  "val_MAE": 0.5561280147749667,
+  "test_MAE": 0.8080916436463412,
+  "fit_seconds": 91.0
+}

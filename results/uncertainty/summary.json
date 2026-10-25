@@ -1,0 +1,2504 @@
+{
+  "description": "LightGBM 5-member ensemble (rdkit2d+morgan_counts) uncertainty, split-conformal intervals and applicability domain on AqSolDB random/scaffold/cluster splits (seeds 0-4) and the two external transfers. All metrics are on test subsets; the sigma scale, conformal quantiles and the AD threshold were fitted on val (or on the random calibration hold-out).",
+  "design": {
+    "ensemble": "lgbm_ens5",
+    "featurizer": "rdkit2d+morgan_counts",
+    "n_members": 5,
+    "lgbm_param_overrides": {
+      "subsample": 0.8,
+      "colsample_bytree": 0.5
+    },
+    "cal_fraction_of_train_pool": 0.1,
+    "knn_k": 5,
+    "knn_beta": 0.1,
+    "alphas": [
+      0.2,
+      0.1,
+      0.05
+    ],
+    "n_runs": {
+      "random": 5,
+      "scaffold": 5,
+      "cluster": 5,
+      "aqsoldb_to_esol": 1,
+      "esol_to_aqsoldb": 1
+    }
+  },
+  "accuracy_test": {
+    "random": {
+      "ens_MAE": {
+        "mean": 0.5745,
+        "sd": 0.0207,
+        "n_runs": 5
+      },
+      "lgbm1_MAE": {
+        "mean": 0.5738,
+        "sd": 0.0188,
+        "n_runs": 5
+      },
+      "rf_MAE": {
+        "mean": 0.6447,
+        "sd": 0.0147,
+        "n_runs": 5
+      },
+      "ens_R2": {
+        "mean": 0.8715,
+        "sd": 0.0129,
+        "n_runs": 5
+      }
+    },
+    "scaffold": {
+      "ens_MAE": {
+        "mean": 0.7105,
+        "sd": 0.029,
+        "n_runs": 5
+      },
+      "lgbm1_MAE": {
+        "mean": 0.7165,
+        "sd": 0.0269,
+        "n_runs": 5
+      },
+      "rf_MAE": {
+        "mean": 0.7757,
+        "sd": 0.0435,
+        "n_runs": 5
+      },
+      "ens_R2": {
+        "mean": 0.8378,
+        "sd": 0.0256,
+        "n_runs": 5
+      }
+    },
+    "cluster": {
+      "ens_MAE": {
+        "mean": 0.6737,
+        "sd": 0.0414,
+        "n_runs": 5
+      },
+      "lgbm1_MAE": {
+        "mean": 0.67,
+        "sd": 0.0366,
+        "n_runs": 5
+      },
+      "rf_MAE": {
+        "mean": 0.7353,
+        "sd": 0.0404,
+        "n_runs": 5
+      },
+      "ens_R2": {
+        "mean": 0.8378,
+        "sd": 0.0284,
+        "n_runs": 5
+      }
+    },
+    "aqsoldb_to_esol": {
+      "ens_MAE": {
+        "mean": 0.4366,
+        "sd": null,
+        "n_runs": 1
+      },
+      "lgbm1_MAE": {
+        "mean": null,
+        "sd": null,
+        "n_runs": 0
+      },
+      "rf_MAE": {
+        "mean": null,
+        "sd": null,
+        "n_runs": 0
+      },
+      "ens_R2": {
+        "mean": 0.9199,
+        "sd": null,
+        "n_runs": 1
+      }
+    },
+    "esol_to_aqsoldb": {
+      "ens_MAE": {
+        "mean": 0.9153,
+        "sd": null,
+        "n_runs": 1
+      },
+      "lgbm1_MAE": {
+        "mean": null,
+        "sd": null,
+        "n_runs": 0
+      },
+      "rf_MAE": {
+        "mean": null,
+        "sd": null,
+        "n_runs": 0
+      },
+      "ens_R2": {
+        "mean": 0.7116,
+        "sd": null,
+        "n_runs": 1
+      }
+    }
+  },
+  "uncertainty_quality_test": {
+    "random": {
+      "ens_std": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.3005,
+          "sd": 0.0212,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.7005,
+          "sd": 0.017,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.223,
+          "sd": 0.0199,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.3721,
+          "sd": 0.0363,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.2974,
+          "sd": 0.0915,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.1289,
+          "sd": 0.0429,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.8281,
+          "sd": 0.0475,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9533,
+          "sd": 0.0192,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 11.5933,
+          "sd": 2.2236,
+          "n_runs": 5
+        }
+      },
+      "knn_dist": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.1674,
+          "sd": 0.0162,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.5912,
+          "sd": 0.0091,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.2886,
+          "sd": 0.0221,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.1873,
+          "sd": 0.0239,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.4733,
+          "sd": 0.0877,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.1492,
+          "sd": 0.0294,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.846,
+          "sd": 0.0238,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9579,
+          "sd": 0.0101,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 1.831,
+          "sd": 0.2029,
+          "n_runs": 5
+        }
+      },
+      "one_minus_maxsim": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.1348,
+          "sd": 0.0298,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.5728,
+          "sd": 0.0112,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.3058,
+          "sd": 0.0259,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.1391,
+          "sd": 0.0349,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.6705,
+          "sd": 0.093,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.1868,
+          "sd": 0.0274,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.8728,
+          "sd": 0.026,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9629,
+          "sd": 0.0103,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 2.7299,
+          "sd": 0.2857,
+          "n_runs": 5
+        }
+      },
+      "mahalanobis": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.18,
+          "sd": 0.028,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6148,
+          "sd": 0.0179,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.2736,
+          "sd": 0.0245,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.2295,
+          "sd": 0.046,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.292,
+          "sd": 0.0598,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.1047,
+          "sd": 0.0116,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.793,
+          "sd": 0.0118,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9483,
+          "sd": 0.0044,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 0.2539,
+          "sd": 0.0084,
+          "n_runs": 5
+        }
+      },
+      "rf_std": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.4671,
+          "sd": 0.0254,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.7907,
+          "sd": 0.0125,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.1665,
+          "sd": 0.0096,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.5737,
+          "sd": 0.0329,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.151,
+          "sd": 0.0286,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0497,
+          "sd": 0.0197,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.759,
+          "sd": 0.0257,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9573,
+          "sd": 0.0115,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 0.8737,
+          "sd": 0.0597,
+          "n_runs": 5
+        }
+      },
+      "constant": {
+        "spearman_sigma_abs_err": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "auroc_err_gt_thr": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "AUSE": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "sparsification_gain": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "NLL": {
+          "mean": 1.2551,
+          "sd": 0.0394,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.1067,
+          "sd": 0.0169,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.8004,
+          "sd": 0.0192,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9459,
+          "sd": 0.0091,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 0.8843,
+          "sd": 0.0508,
+          "n_runs": 5
+        }
+      }
+    },
+    "scaffold": {
+      "ens_std": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.1816,
+          "sd": 0.0137,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6061,
+          "sd": 0.0159,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.32,
+          "sd": 0.0236,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.2247,
+          "sd": 0.0276,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.4959,
+          "sd": 0.0499,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0875,
+          "sd": 0.0255,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7891,
+          "sd": 0.0352,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.944,
+          "sd": 0.015,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 10.3847,
+          "sd": 0.9258,
+          "n_runs": 5
+        }
+      },
+      "knn_dist": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.0456,
+          "sd": 0.0403,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.5361,
+          "sd": 0.0351,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.386,
+          "sd": 0.0276,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.0636,
+          "sd": 0.055,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.4366,
+          "sd": 0.0369,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0733,
+          "sd": 0.0255,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7771,
+          "sd": 0.0401,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9429,
+          "sd": 0.0232,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 1.4732,
+          "sd": 0.1305,
+          "n_runs": 5
+        }
+      },
+      "one_minus_maxsim": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.0398,
+          "sd": 0.0375,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.5284,
+          "sd": 0.0295,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.3913,
+          "sd": 0.0235,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.0504,
+          "sd": 0.0492,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.5701,
+          "sd": 0.0815,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.1065,
+          "sd": 0.052,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.8107,
+          "sd": 0.0647,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9503,
+          "sd": 0.0263,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 1.9375,
+          "sd": 0.3453,
+          "n_runs": 5
+        }
+      },
+      "mahalanobis": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.113,
+          "sd": 0.0521,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.5718,
+          "sd": 0.0419,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.3488,
+          "sd": 0.0362,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.1556,
+          "sd": 0.0579,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.4496,
+          "sd": 0.0595,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0674,
+          "sd": 0.0124,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7575,
+          "sd": 0.0189,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9394,
+          "sd": 0.0133,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 0.2585,
+          "sd": 0.0151,
+          "n_runs": 5
+        }
+      },
+      "rf_std": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.3275,
+          "sd": 0.044,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6988,
+          "sd": 0.0255,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.2655,
+          "sd": 0.022,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.3998,
+          "sd": 0.0607,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.384,
+          "sd": 0.0438,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0346,
+          "sd": 0.0183,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7277,
+          "sd": 0.0452,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9436,
+          "sd": 0.0168,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 0.8466,
+          "sd": 0.048,
+          "n_runs": 5
+        }
+      },
+      "constant": {
+        "spearman_sigma_abs_err": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "auroc_err_gt_thr": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "AUSE": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "sparsification_gain": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "NLL": {
+          "mean": 1.411,
+          "sd": 0.0355,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0634,
+          "sd": 0.0218,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7632,
+          "sd": 0.038,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9407,
+          "sd": 0.0244,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 0.9925,
+          "sd": 0.0938,
+          "n_runs": 5
+        }
+      }
+    },
+    "cluster": {
+      "ens_std": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.3183,
+          "sd": 0.049,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.7025,
+          "sd": 0.0316,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.2441,
+          "sd": 0.0236,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.4005,
+          "sd": 0.0528,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.3773,
+          "sd": 0.0621,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0923,
+          "sd": 0.0189,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7924,
+          "sd": 0.0319,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9549,
+          "sd": 0.0112,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 10.8976,
+          "sd": 0.4616,
+          "n_runs": 5
+        }
+      },
+      "knn_dist": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.1487,
+          "sd": 0.0718,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.5829,
+          "sd": 0.0449,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.3422,
+          "sd": 0.054,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.1629,
+          "sd": 0.0929,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.4345,
+          "sd": 0.1429,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0779,
+          "sd": 0.0356,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7593,
+          "sd": 0.0584,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9298,
+          "sd": 0.0407,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 1.379,
+          "sd": 0.1393,
+          "n_runs": 5
+        }
+      },
+      "one_minus_maxsim": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.1382,
+          "sd": 0.0744,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.5775,
+          "sd": 0.0491,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.3486,
+          "sd": 0.0527,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.146,
+          "sd": 0.0997,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.5302,
+          "sd": 0.236,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0925,
+          "sd": 0.0366,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7765,
+          "sd": 0.0628,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9355,
+          "sd": 0.0417,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 1.6693,
+          "sd": 0.1825,
+          "n_runs": 5
+        }
+      },
+      "mahalanobis": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.2493,
+          "sd": 0.0321,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.64,
+          "sd": 0.0321,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.2796,
+          "sd": 0.011,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.3123,
+          "sd": 0.0456,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.3752,
+          "sd": 0.0593,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0779,
+          "sd": 0.0221,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7732,
+          "sd": 0.0261,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9373,
+          "sd": 0.0125,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 0.2696,
+          "sd": 0.0118,
+          "n_runs": 5
+        }
+      },
+      "rf_std": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.4444,
+          "sd": 0.0486,
+          "n_runs": 5
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.7562,
+          "sd": 0.0356,
+          "n_runs": 5
+        },
+        "AUSE": {
+          "mean": 0.2005,
+          "sd": 0.0194,
+          "n_runs": 5
+        },
+        "sparsification_gain": {
+          "mean": 0.544,
+          "sd": 0.0477,
+          "n_runs": 5
+        },
+        "NLL": {
+          "mean": 1.3035,
+          "sd": 0.0593,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.026,
+          "sd": 0.007,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7054,
+          "sd": 0.0405,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9325,
+          "sd": 0.0113,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 0.8228,
+          "sd": 0.04,
+          "n_runs": 5
+        }
+      },
+      "constant": {
+        "spearman_sigma_abs_err": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "auroc_err_gt_thr": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "AUSE": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "sparsification_gain": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "NLL": {
+          "mean": 1.3979,
+          "sd": 0.0779,
+          "n_runs": 5
+        },
+        "miscalibration_area": {
+          "mean": 0.0747,
+          "sd": 0.0296,
+          "n_runs": 5
+        },
+        "coverage_68": {
+          "mean": 0.7593,
+          "sd": 0.0398,
+          "n_runs": 5
+        },
+        "coverage_95": {
+          "mean": 0.9266,
+          "sd": 0.0296,
+          "n_runs": 5
+        },
+        "scale_factor": {
+          "mean": 0.9286,
+          "sd": 0.0641,
+          "n_runs": 5
+        }
+      }
+    },
+    "aqsoldb_to_esol": {
+      "ens_std": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.254,
+          "sd": null,
+          "n_runs": 1
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6888,
+          "sd": null,
+          "n_runs": 1
+        },
+        "AUSE": {
+          "mean": 0.1746,
+          "sd": null,
+          "n_runs": 1
+        },
+        "sparsification_gain": {
+          "mean": 0.2975,
+          "sd": null,
+          "n_runs": 1
+        },
+        "NLL": {
+          "mean": 1.0554,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.1581,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.8798,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.9731,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 11.1319,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "knn_dist": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.1328,
+          "sd": null,
+          "n_runs": 1
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6338,
+          "sd": null,
+          "n_runs": 1
+        },
+        "AUSE": {
+          "mean": 0.2062,
+          "sd": null,
+          "n_runs": 1
+        },
+        "sparsification_gain": {
+          "mean": 0.1704,
+          "sd": null,
+          "n_runs": 1
+        },
+        "NLL": {
+          "mean": 1.3274,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.2044,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.9256,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.9892,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 1.7479,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "one_minus_maxsim": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.1099,
+          "sd": null,
+          "n_runs": 1
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6079,
+          "sd": null,
+          "n_runs": 1
+        },
+        "AUSE": {
+          "mean": 0.2162,
+          "sd": null,
+          "n_runs": 1
+        },
+        "sparsification_gain": {
+          "mean": 0.13,
+          "sd": null,
+          "n_runs": 1
+        },
+        "NLL": {
+          "mean": 1.3852,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.2388,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.9372,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.9857,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 2.4502,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "mahalanobis": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.2163,
+          "sd": null,
+          "n_runs": 1
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6333,
+          "sd": null,
+          "n_runs": 1
+        },
+        "AUSE": {
+          "mean": 0.185,
+          "sd": null,
+          "n_runs": 1
+        },
+        "sparsification_gain": {
+          "mean": 0.2555,
+          "sd": null,
+          "n_runs": 1
+        },
+        "NLL": {
+          "mean": 0.9989,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.1498,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.8682,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.9821,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 0.2545,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "constant": {
+        "spearman_sigma_abs_err": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "auroc_err_gt_thr": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "AUSE": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "sparsification_gain": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "NLL": {
+          "mean": 1.012,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.1572,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.878,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.9821,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 0.8705,
+          "sd": null,
+          "n_runs": 1
+        }
+      }
+    },
+    "esol_to_aqsoldb": {
+      "ens_std": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.2179,
+          "sd": null,
+          "n_runs": 1
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6234,
+          "sd": null,
+          "n_runs": 1
+        },
+        "AUSE": {
+          "mean": 0.396,
+          "sd": null,
+          "n_runs": 1
+        },
+        "sparsification_gain": {
+          "mean": 0.2722,
+          "sd": null,
+          "n_runs": 1
+        },
+        "NLL": {
+          "mean": 2.3762,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.0805,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.5627,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.8166,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 8.7343,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "knn_dist": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.2314,
+          "sd": null,
+          "n_runs": 1
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6308,
+          "sd": null,
+          "n_runs": 1
+        },
+        "AUSE": {
+          "mean": 0.3965,
+          "sd": null,
+          "n_runs": 1
+        },
+        "sparsification_gain": {
+          "mean": 0.2714,
+          "sd": null,
+          "n_runs": 1
+        },
+        "NLL": {
+          "mean": 1.7171,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.0456,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.7319,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.9236,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 1.5154,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "one_minus_maxsim": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.2428,
+          "sd": null,
+          "n_runs": 1
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6378,
+          "sd": null,
+          "n_runs": 1
+        },
+        "AUSE": {
+          "mean": 0.3872,
+          "sd": null,
+          "n_runs": 1
+        },
+        "sparsification_gain": {
+          "mean": 0.2884,
+          "sd": null,
+          "n_runs": 1
+        },
+        "NLL": {
+          "mean": 1.7686,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.0517,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.7444,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.9306,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 1.7253,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "mahalanobis": {
+        "spearman_sigma_abs_err": {
+          "mean": 0.2679,
+          "sd": null,
+          "n_runs": 1
+        },
+        "auroc_err_gt_thr": {
+          "mean": 0.6537,
+          "sd": null,
+          "n_runs": 1
+        },
+        "AUSE": {
+          "mean": 0.3484,
+          "sd": null,
+          "n_runs": 1
+        },
+        "sparsification_gain": {
+          "mean": 0.3596,
+          "sd": null,
+          "n_runs": 1
+        },
+        "NLL": {
+          "mean": 2.3048,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.1284,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.4995,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.7606,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 0.146,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "constant": {
+        "spearman_sigma_abs_err": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "auroc_err_gt_thr": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "AUSE": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "sparsification_gain": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "NLL": {
+          "mean": 2.3017,
+          "sd": null,
+          "n_runs": 1
+        },
+        "miscalibration_area": {
+          "mean": 0.1128,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_68": {
+          "mean": 0.5189,
+          "sd": null,
+          "n_runs": 1
+        },
+        "coverage_95": {
+          "mean": 0.7693,
+          "sd": null,
+          "n_runs": 1
+        },
+        "scale_factor": {
+          "mean": 0.6775,
+          "sd": null,
+          "n_runs": 1
+        }
+      }
+    }
+  },
+  "conformal_alpha_0.1": {
+    "random": {
+      "standard": {
+        "coverage_val": {
+          "mean": 0.904,
+          "sd": 0.0185,
+          "n_runs": 5
+        },
+        "coverage_cal_random": {
+          "mean": 0.9058,
+          "sd": 0.0145,
+          "n_runs": 5
+        },
+        "shift_drop": {
+          "mean": 0.0017,
+          "sd": 0.0244,
+          "n_runs": 5
+        },
+        "mean_width_val": {
+          "mean": 2.7199,
+          "sd": 0.1619,
+          "n_runs": 5
+        },
+        "mean_width_cal_random": {
+          "mean": 2.739,
+          "sd": 0.1859,
+          "n_runs": 5
+        }
+      },
+      "norm_ens_std": {
+        "coverage_val": {
+          "mean": 0.9091,
+          "sd": 0.018,
+          "n_runs": 5
+        },
+        "coverage_cal_random": {
+          "mean": 0.9067,
+          "sd": 0.0145,
+          "n_runs": 5
+        },
+        "shift_drop": {
+          "mean": -0.0024,
+          "sd": 0.0122,
+          "n_runs": 5
+        },
+        "mean_width_val": {
+          "mean": 3.0002,
+          "sd": 0.2154,
+          "n_runs": 5
+        },
+        "mean_width_cal_random": {
+          "mean": 2.941,
+          "sd": 0.1646,
+          "n_runs": 5
+        }
+      },
+      "norm_knn": {
+        "coverage_val": {
+          "mean": 0.9034,
+          "sd": 0.0156,
+          "n_runs": 5
+        },
+        "coverage_cal_random": {
+          "mean": 0.9091,
+          "sd": 0.0122,
+          "n_runs": 5
+        },
+        "shift_drop": {
+          "mean": 0.0057,
+          "sd": 0.0085,
+          "n_runs": 5
+        },
+        "mean_width_val": {
+          "mean": 2.8068,
+          "sd": 0.1759,
+          "n_runs": 5
+        },
+        "mean_width_cal_random": {
+          "mean": 2.8945,
+          "sd": 0.0759,
+          "n_runs": 5
+        }
+      }
+    },
+    "scaffold": {
+      "standard": {
+        "coverage_val": {
+          "mean": 0.9059,
+          "sd": 0.0288,
+          "n_runs": 5
+        },
+        "coverage_cal_random": {
+          "mean": 0.8447,
+          "sd": 0.024,
+          "n_runs": 5
+        },
+        "shift_drop": {
+          "mean": -0.0612,
+          "sd": 0.0181,
+          "n_runs": 5
+        },
+        "mean_width_val": {
+          "mean": 3.2027,
+          "sd": 0.2933,
+          "n_runs": 5
+        },
+        "mean_width_cal_random": {
+          "mean": 2.5335,
+          "sd": 0.164,
+          "n_runs": 5
+        }
+      },
+      "norm_ens_std": {
+        "coverage_val": {
+          "mean": 0.9007,
+          "sd": 0.0157,
+          "n_runs": 5
+        },
+        "coverage_cal_random": {
+          "mean": 0.8867,
+          "sd": 0.0257,
+          "n_runs": 5
+        },
+        "shift_drop": {
+          "mean": -0.0139,
+          "sd": 0.0207,
+          "n_runs": 5
+        },
+        "mean_width_val": {
+          "mean": 3.5952,
+          "sd": 0.1734,
+          "n_runs": 5
+        },
+        "mean_width_cal_random": {
+          "mean": 3.3843,
+          "sd": 0.2782,
+          "n_runs": 5
+        }
+      },
+      "norm_knn": {
+        "coverage_val": {
+          "mean": 0.9094,
+          "sd": 0.0304,
+          "n_runs": 5
+        },
+        "coverage_cal_random": {
+          "mean": 0.9096,
+          "sd": 0.0218,
+          "n_runs": 5
+        },
+        "shift_drop": {
+          "mean": 0.0002,
+          "sd": 0.0332,
+          "n_runs": 5
+        },
+        "mean_width_val": {
+          "mean": 3.3304,
+          "sd": 0.3386,
+          "n_runs": 5
+        },
+        "mean_width_cal_random": {
+          "mean": 3.3404,
+          "sd": 0.3051,
+          "n_runs": 5
+        }
+      }
+    },
+    "cluster": {
+      "standard": {
+        "coverage_val": {
+          "mean": 0.8911,
+          "sd": 0.0383,
+          "n_runs": 5
+        },
+        "coverage_cal_random": {
+          "mean": 0.8621,
+          "sd": 0.0179,
+          "n_runs": 5
+        },
+        "shift_drop": {
+          "mean": -0.029,
+          "sd": 0.0233,
+          "n_runs": 5
+        },
+        "mean_width_val": {
+          "mean": 3.0038,
+          "sd": 0.2477,
+          "n_runs": 5
+        },
+        "mean_width_cal_random": {
+          "mean": 2.67,
+          "sd": 0.1469,
+          "n_runs": 5
+        }
+      },
+      "norm_ens_std": {
+        "coverage_val": {
+          "mean": 0.8943,
+          "sd": 0.0282,
+          "n_runs": 5
+        },
+        "coverage_cal_random": {
+          "mean": 0.8919,
+          "sd": 0.027,
+          "n_runs": 5
+        },
+        "shift_drop": {
+          "mean": -0.0024,
+          "sd": 0.0139,
+          "n_runs": 5
+        },
+        "mean_width_val": {
+          "mean": 3.2933,
+          "sd": 0.1816,
+          "n_runs": 5
+        },
+        "mean_width_cal_random": {
+          "mean": 3.2648,
+          "sd": 0.2603,
+          "n_runs": 5
+        }
+      },
+      "norm_knn": {
+        "coverage_val": {
+          "mean": 0.8889,
+          "sd": 0.0445,
+          "n_runs": 5
+        },
+        "coverage_cal_random": {
+          "mean": 0.9048,
+          "sd": 0.0344,
+          "n_runs": 5
+        },
+        "shift_drop": {
+          "mean": 0.0159,
+          "sd": 0.0237,
+          "n_runs": 5
+        },
+        "mean_width_val": {
+          "mean": 2.9562,
+          "sd": 0.337,
+          "n_runs": 5
+        },
+        "mean_width_cal_random": {
+          "mean": 3.2298,
+          "sd": 0.3665,
+          "n_runs": 5
+        }
+      }
+    },
+    "aqsoldb_to_esol": {
+      "standard": {
+        "coverage_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "coverage_cal_random": {
+          "mean": 0.9776,
+          "sd": null,
+          "n_runs": 1
+        },
+        "shift_drop": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_cal_random": {
+          "mean": 2.9312,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "norm_ens_std": {
+        "coverage_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "coverage_cal_random": {
+          "mean": 0.9516,
+          "sd": null,
+          "n_runs": 1
+        },
+        "shift_drop": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_cal_random": {
+          "mean": 2.8597,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "norm_knn": {
+        "coverage_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "coverage_cal_random": {
+          "mean": 0.9713,
+          "sd": null,
+          "n_runs": 1
+        },
+        "shift_drop": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_cal_random": {
+          "mean": 3.0988,
+          "sd": null,
+          "n_runs": 1
+        }
+      }
+    },
+    "esol_to_aqsoldb": {
+      "standard": {
+        "coverage_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "coverage_cal_random": {
+          "mean": 0.5559,
+          "sd": null,
+          "n_runs": 1
+        },
+        "shift_drop": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_cal_random": {
+          "mean": 1.4819,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "norm_ens_std": {
+        "coverage_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "coverage_cal_random": {
+          "mean": 0.7924,
+          "sd": null,
+          "n_runs": 1
+        },
+        "shift_drop": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_cal_random": {
+          "mean": 3.0836,
+          "sd": null,
+          "n_runs": 1
+        }
+      },
+      "norm_knn": {
+        "coverage_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "coverage_cal_random": {
+          "mean": 0.686,
+          "sd": null,
+          "n_runs": 1
+        },
+        "shift_drop": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_val": {
+          "mean": null,
+          "sd": null,
+          "n_runs": 0
+        },
+        "mean_width_cal_random": {
+          "mean": 2.0725,
+          "sd": null,
+          "n_runs": 1
+        }
+      }
+    }
+  },
+  "applicability_domain": {
+    "threshold_config": 0.35,
+    "threshold_selected": 0.5,
+    "selection_rule": "max Youden J of 'maxsim < t' for flagging |error| > 1 on the pooled val subsets of the random/scaffold/cluster runs (grid 0.20-0.70, step 0.01)",
+    "val_scan_at_selected": {
+      "threshold": 0.5,
+      "youden_J": 0.1171,
+      "tpr": 0.565,
+      "fpr": 0.4479,
+      "frac_flagged": 0.4726,
+      "MAE_in": 0.593,
+      "MAE_out": 0.7315,
+      "n_val": 13755.0,
+      "n_val_err_gt1": 2901.0
+    },
+    "val_scan_at_config": {
+      "threshold": 0.35,
+      "youden_J": 0.0489,
+      "tpr": 0.1875,
+      "fpr": 0.1387,
+      "frac_flagged": 0.149,
+      "MAE_in": 0.6388,
+      "MAE_out": 0.7709,
+      "n_val": 13755.0,
+      "n_val_err_gt1": 2901.0
+    },
+    "test": {
+      "random": {
+        "maxsim_lt_config": {
+          "frac_flagged": {
+            "mean": 0.0687,
+            "sd": 0.0086,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.5589,
+            "sd": 0.0243,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.7873,
+            "sd": 0.0552,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.1573,
+            "sd": 0.0138,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.2741,
+            "sd": 0.0326,
+            "n_runs": 5
+          }
+        },
+        "maxsim_lt_selected": {
+          "frac_flagged": {
+            "mean": 0.2552,
+            "sd": 0.0109,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.5216,
+            "sd": 0.0248,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.7294,
+            "sd": 0.017,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.1391,
+            "sd": 0.016,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.2418,
+            "sd": 0.0078,
+            "n_runs": 5
+          }
+        },
+        "leverage_gt_hstar": {
+          "frac_flagged": {
+            "mean": 0.0342,
+            "sd": 0.0056,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.5607,
+            "sd": 0.0203,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.9795,
+            "sd": 0.1367,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.1601,
+            "sd": 0.0132,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.315,
+            "sd": 0.0587,
+            "n_runs": 5
+          }
+        },
+        "maxsim_lt_selected_or_leverage": {
+          "frac_flagged": {
+            "mean": 0.2787,
+            "sd": 0.0119,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.5139,
+            "sd": 0.0247,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.7316,
+            "sd": 0.0076,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.137,
+            "sd": 0.0158,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.2385,
+            "sd": 0.0083,
+            "n_runs": 5
+          }
+        }
+      },
+      "scaffold": {
+        "maxsim_lt_config": {
+          "frac_flagged": {
+            "mean": 0.2157,
+            "sd": 0.0314,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.7032,
+            "sd": 0.0263,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.741,
+            "sd": 0.067,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.2279,
+            "sd": 0.0144,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.2523,
+            "sd": 0.0361,
+            "n_runs": 5
+          }
+        },
+        "maxsim_lt_selected": {
+          "frac_flagged": {
+            "mean": 0.6124,
+            "sd": 0.0222,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.6985,
+            "sd": 0.0188,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.7176,
+            "sd": 0.0471,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.2152,
+            "sd": 0.006,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.2432,
+            "sd": 0.026,
+            "n_runs": 5
+          }
+        },
+        "leverage_gt_hstar": {
+          "frac_flagged": {
+            "mean": 0.0405,
+            "sd": 0.0074,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.6937,
+            "sd": 0.0311,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 1.1095,
+            "sd": 0.2129,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.2255,
+            "sd": 0.0152,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.3966,
+            "sd": 0.0451,
+            "n_runs": 5
+          }
+        },
+        "maxsim_lt_selected_or_leverage": {
+          "frac_flagged": {
+            "mean": 0.6329,
+            "sd": 0.0193,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.6885,
+            "sd": 0.0069,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.723,
+            "sd": 0.0436,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.2131,
+            "sd": 0.0076,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.2435,
+            "sd": 0.0247,
+            "n_runs": 5
+          }
+        }
+      },
+      "cluster": {
+        "maxsim_lt_config": {
+          "frac_flagged": {
+            "mean": 0.1582,
+            "sd": 0.0217,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.6419,
+            "sd": 0.0392,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.8367,
+            "sd": 0.1032,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.202,
+            "sd": 0.0224,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.2949,
+            "sd": 0.0476,
+            "n_runs": 5
+          }
+        },
+        "maxsim_lt_selected": {
+          "frac_flagged": {
+            "mean": 0.5357,
+            "sd": 0.0587,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.5958,
+            "sd": 0.0646,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.736,
+            "sd": 0.0455,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.1692,
+            "sd": 0.0359,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.2563,
+            "sd": 0.0242,
+            "n_runs": 5
+          }
+        },
+        "leverage_gt_hstar": {
+          "frac_flagged": {
+            "mean": 0.0427,
+            "sd": 0.0157,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.6545,
+            "sd": 0.0473,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 1.1731,
+            "sd": 0.2862,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.2087,
+            "sd": 0.0181,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.4333,
+            "sd": 0.1061,
+            "n_runs": 5
+          }
+        },
+        "maxsim_lt_selected_or_leverage": {
+          "frac_flagged": {
+            "mean": 0.5523,
+            "sd": 0.0523,
+            "n_runs": 5
+          },
+          "MAE_in": {
+            "mean": 0.5811,
+            "sd": 0.0732,
+            "n_runs": 5
+          },
+          "MAE_out": {
+            "mean": 0.7447,
+            "sd": 0.046,
+            "n_runs": 5
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.1638,
+            "sd": 0.0377,
+            "n_runs": 5
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.2587,
+            "sd": 0.0254,
+            "n_runs": 5
+          }
+        }
+      },
+      "aqsoldb_to_esol": {
+        "maxsim_lt_config": {
+          "frac_flagged": {
+            "mean": 0.0834,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_in": {
+            "mean": 0.4214,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_out": {
+            "mean": 0.603,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.0802,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.1505,
+            "sd": null,
+            "n_runs": 1
+          }
+        },
+        "maxsim_lt_selected": {
+          "frac_flagged": {
+            "mean": 0.3139,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_in": {
+            "mean": 0.4,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_out": {
+            "mean": 0.5164,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.0641,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.1343,
+            "sd": null,
+            "n_runs": 1
+          }
+        },
+        "leverage_gt_hstar": {
+          "frac_flagged": {
+            "mean": 0.0413,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_in": {
+            "mean": 0.4327,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_out": {
+            "mean": 0.5252,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.0861,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.087,
+            "sd": null,
+            "n_runs": 1
+          }
+        },
+        "maxsim_lt_selected_or_leverage": {
+          "frac_flagged": {
+            "mean": 0.3444,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_in": {
+            "mean": 0.3985,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_out": {
+            "mean": 0.5091,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.0657,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.125,
+            "sd": null,
+            "n_runs": 1
+          }
+        }
+      },
+      "esol_to_aqsoldb": {
+        "maxsim_lt_config": {
+          "frac_flagged": {
+            "mean": 0.4492,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_in": {
+            "mean": 0.758,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_out": {
+            "mean": 1.1081,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.2471,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.4276,
+            "sd": null,
+            "n_runs": 1
+          }
+        },
+        "maxsim_lt_selected": {
+          "frac_flagged": {
+            "mean": 0.7622,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_in": {
+            "mean": 0.664,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_out": {
+            "mean": 0.9937,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.1995,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.3684,
+            "sd": null,
+            "n_runs": 1
+          }
+        },
+        "leverage_gt_hstar": {
+          "frac_flagged": {
+            "mean": 0.1297,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_in": {
+            "mean": 0.8255,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_out": {
+            "mean": 1.5175,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.2882,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.5969,
+            "sd": null,
+            "n_runs": 1
+          }
+        },
+        "maxsim_lt_selected_or_leverage": {
+          "frac_flagged": {
+            "mean": 0.78,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_in": {
+            "mean": 0.6281,
+            "sd": null,
+            "n_runs": 1
+          },
+          "MAE_out": {
+            "mean": 0.9962,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_in": {
+            "mean": 0.1813,
+            "sd": null,
+            "n_runs": 1
+          },
+          "frac_err_gt1_out": {
+            "mean": 0.3696,
+            "sd": null,
+            "n_runs": 1
+          }
+        }
+      }
+    },
+    "descriptor_ad": {
+      "explained_variance": {
+        "mean": 0.6327,
+        "sd": 0.0208,
+        "n_runs": 17
+      },
+      "h_star": {
+        "mean": 0.0131,
+        "sd": 0.0146,
+        "n_runs": 17
+      },
+      "train_frac_above_h_star": {
+        "mean": 0.0375,
+        "sd": 0.0027,
+        "n_runs": 17
+      }
+    }
+  },
+  "files": {
+    "figures": [
+      "results/figures/uncertainty/sparsification_curves.png",
+      "results/figures/uncertainty/coverage_curves.png",
+      "results/figures/uncertainty/error_calibration_rmse_vs_rmv.png",
+      "results/figures/uncertainty/uq_ranking_metrics.png",
+      "results/figures/uncertainty/conformal_matched_vs_shift_alpha0.1.png",
+      "results/figures/uncertainty/conformal_conditional_coverage_alpha0.1.png",
+      "results/figures/uncertainty/ad_mae_vs_score_bins.png",
+      "results/figures/uncertainty/ad_threshold_selection.png"
+    ],
+    "tables": [
+      "results/tables/uncertainty_accuracy.csv",
+      "results/tables/uncertainty_quality.csv",
+      "results/tables/uncertainty_conformal.csv",
+      "results/tables/uncertainty_conformal_shift.csv",
+      "results/tables/uncertainty_conditional_coverage.csv",
+      "results/tables/uncertainty_ad_threshold.csv",
+      "results/tables/uncertainty_ad_bins.csv",
+      "results/tables/ad_summary.csv"
+    ],
+    "per_run_analysis": "results/uncertainty/analysis",
+    "merged_predictions": "results/uncertainty/predictions"
+  }
+}

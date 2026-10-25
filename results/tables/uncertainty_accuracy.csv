@@ -1,0 +1,6 @@
+group,ens_MAE_mean,ens_RMSE_mean,ens_R2_mean,lgbm1_MAE_mean,rf_MAE_mean,ens_val_MAE_mean,ens_cal_random_MAE_mean,test_maxsim_median_mean,ens_MAE_sd,ens_RMSE_sd,ens_R2_sd,lgbm1_MAE_sd,rf_MAE_sd,ens_val_MAE_sd,ens_cal_random_MAE_sd,test_maxsim_median_sd,n_runs
+random,0.5745,0.8462,0.8715,0.5738,0.6447,0.5899,0.5938,0.6017,0.0207,0.033,0.0129,0.0188,0.0147,0.0293,0.0213,0.0061,5
+scaffold,0.7105,0.9805,0.8378,0.7165,0.7757,0.734,0.5418,0.4519,0.029,0.0389,0.0256,0.0269,0.0435,0.0656,0.0263,0.0107,5
+cluster,0.6737,0.9686,0.8378,0.67,0.7353,0.6515,0.5795,0.4743,0.0414,0.0673,0.0284,0.0366,0.0404,0.0327,0.0197,0.0291,5
+aqsoldb_to_esol,0.4366,0.5926,0.9199,,,0.5956,0.6359,0.5652,,,,,,,,,1
+esol_to_aqsoldb,0.9153,1.2755,0.7116,,,0.4333,0.3599,0.3667,,,,,,,,,1

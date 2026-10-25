@@ -1,0 +1,1573 @@
+{
+  "model": {
+    "pred_root": "results/baseline",
+    "model_tag": "lgbm__rdkit2d+morgan_counts",
+    "split_types": [
+      "random",
+      "scaffold",
+      "cluster"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "signed_error": "signed error = y_pred - y_true (positive: predicted more soluble than measured)",
+    "ci": "95% percentile cluster bootstrap over unique compounds (1000 resamples), seeds pooled"
+  },
+  "similarity": {
+    "random": {
+      "pooled": {
+        "MAE": 0.5738,
+        "lo": 0.5529,
+        "hi": 0.5942,
+        "n": 4585,
+        "n_compounds": 3776,
+        "mean_signed_error": -0.0018
+      },
+      "per_seed_MAE_mean": 0.5738,
+      "per_seed_MAE_std": 0.0188,
+      "n_seeds": 5,
+      "median_nn_sim": 0.6111,
+      "sim_ge_0.7": {
+        "MAE": 0.5045,
+        "lo": 0.4737,
+        "hi": 0.5379,
+        "n": 1410,
+        "frac": 0.3075
+      },
+      "sim_0.4_0.7": {
+        "MAE": 0.5689,
+        "lo": 0.5449,
+        "hi": 0.5954,
+        "n": 2678,
+        "frac": 0.5841
+      },
+      "sim_lt_0.4": {
+        "MAE": 0.7972,
+        "lo": 0.7195,
+        "hi": 0.8724,
+        "n": 497,
+        "frac": 0.1084
+      },
+      "spearman_nn_sim_vs_abs_error": -0.1462,
+      "spearman_p": 0.0
+    },
+    "scaffold": {
+      "pooled": {
+        "MAE": 0.7165,
+        "lo": 0.6931,
+        "hi": 0.7422,
+        "n": 4590,
+        "n_compounds": 3190,
+        "mean_signed_error": 0.0145
+      },
+      "per_seed_MAE_mean": 0.7165,
+      "per_seed_MAE_std": 0.0269,
+      "n_seeds": 5,
+      "median_nn_sim": 0.4583,
+      "sim_ge_0.7": {
+        "MAE": 0.6409,
+        "lo": 0.5723,
+        "hi": 0.7085,
+        "n": 374,
+        "frac": 0.0815
+      },
+      "sim_0.4_0.7": {
+        "MAE": 0.7111,
+        "lo": 0.6809,
+        "hi": 0.7434,
+        "n": 2701,
+        "frac": 0.5885
+      },
+      "sim_lt_0.4": {
+        "MAE": 0.7449,
+        "lo": 0.7071,
+        "hi": 0.785,
+        "n": 1515,
+        "frac": 0.3301
+      },
+      "spearman_nn_sim_vs_abs_error": -0.0393,
+      "spearman_p": 0.0077
+    },
+    "cluster": {
+      "pooled": {
+        "MAE": 0.67,
+        "lo": 0.6464,
+        "hi": 0.694,
+        "n": 4590,
+        "n_compounds": 3823,
+        "mean_signed_error": -0.0358
+      },
+      "per_seed_MAE_mean": 0.67,
+      "per_seed_MAE_std": 0.0366,
+      "n_seeds": 5,
+      "median_nn_sim": 0.4815,
+      "sim_ge_0.7": {
+        "MAE": 0.6322,
+        "lo": 0.564,
+        "hi": 0.7097,
+        "n": 488,
+        "frac": 0.1063
+      },
+      "sim_0.4_0.7": {
+        "MAE": 0.6234,
+        "lo": 0.5959,
+        "hi": 0.6507,
+        "n": 2759,
+        "frac": 0.6011
+      },
+      "sim_lt_0.4": {
+        "MAE": 0.7796,
+        "lo": 0.7321,
+        "hi": 0.8267,
+        "n": 1343,
+        "frac": 0.2926
+      },
+      "spearman_nn_sim_vs_abs_error": -0.1383,
+      "spearman_p": 0.0
+    },
+    "notes": [
+      "NN similarity = max ECFP4 Tanimoto to the TRAINING compounds of the same split (validation excluded; the model is not fit on validation compounds)",
+      "the top bin (>= 0.9) of the random split is affected by binary-ECFP4 saturation: many neighbours are fingerprint-identical (Tanimoto 1.0) homologues (e.g. cyclosiloxanes, chain-length series) whose solubility differs legitimately, which explains the error uptick in that bin"
+    ]
+  },
+  "label_shift": {
+    "test_logS_mean_sd": {
+      "cluster": {
+        "mean": -3.0959,
+        "std": 2.4442
+      },
+      "random": {
+        "mean": -2.9143,
+        "std": 2.3681
+      },
+      "scaffold": {
+        "mean": -3.5759,
+        "std": 2.5033
+      }
+    },
+    "frac_test_logS_lt_-4": {
+      "cluster": 0.3198,
+      "random": 0.2759,
+      "scaffold": 0.3895
+    },
+    "MAE_by_logS_bin": {
+      "cluster | < -6": {
+        "MAE": 0.9866,
+        "n": 674
+      },
+      "cluster | -6 to -4": {
+        "MAE": 0.6499,
+        "n": 794
+      },
+      "cluster | -4 to -2": {
+        "MAE": 0.5662,
+        "n": 1410
+      },
+      "cluster | -2 to 0": {
+        "MAE": 0.6045,
+        "n": 1285
+      },
+      "cluster | >= 0": {
+        "MAE": 0.7479,
+        "n": 427
+      },
+      "random | < -6": {
+        "MAE": 0.8747,
+        "n": 538
+      },
+      "random | -6 to -4": {
+        "MAE": 0.6303,
+        "n": 727
+      },
+      "random | -4 to -2": {
+        "MAE": 0.4916,
+        "n": 1544
+      },
+      "random | -2 to 0": {
+        "MAE": 0.4967,
+        "n": 1324
+      },
+      "random | >= 0": {
+        "MAE": 0.6318,
+        "n": 452
+      },
+      "scaffold | < -6": {
+        "MAE": 0.9087,
+        "n": 848
+      },
+      "scaffold | -6 to -4": {
+        "MAE": 0.7145,
+        "n": 940
+      },
+      "scaffold | -4 to -2": {
+        "MAE": 0.5852,
+        "n": 1410
+      },
+      "scaffold | -2 to 0": {
+        "MAE": 0.7019,
+        "n": 1131
+      },
+      "scaffold | >= 0": {
+        "MAE": 0.8721,
+        "n": 261
+      }
+    },
+    "standardization": [
+      {
+        "target": "scaffold",
+        "estimate": "observed",
+        "MAE": 0.7165,
+        "lo": 0.6931,
+        "hi": 0.7422,
+        "weight_covered_by_cells": null,
+        "MAE_std_joint_lo": null,
+        "MAE_std_joint_hi": null,
+        "frac_of_penalty_explained": null,
+        "frac_joint_ci_lo": null,
+        "frac_joint_ci_hi": null,
+        "n_strata_with_target_weight": null,
+        "min_source_rows_per_stratum": null,
+        "min_target_rows_per_stratum": null,
+        "frac_target_weight_fallback": null,
+        "frac_target_weight_fallback_boot_mean": null,
+        "n_boot_joint": null,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": ""
+      },
+      {
+        "target": "scaffold",
+        "estimate": "random, raw",
+        "MAE": 0.5738,
+        "lo": 0.5529,
+        "hi": 0.5942,
+        "weight_covered_by_cells": null,
+        "MAE_std_joint_lo": null,
+        "MAE_std_joint_hi": null,
+        "frac_of_penalty_explained": null,
+        "frac_joint_ci_lo": null,
+        "frac_joint_ci_hi": null,
+        "n_strata_with_target_weight": null,
+        "min_source_rows_per_stratum": null,
+        "min_target_rows_per_stratum": null,
+        "frac_target_weight_fallback": null,
+        "frac_target_weight_fallback_boot_mean": null,
+        "n_boot_joint": null,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": ""
+      },
+      {
+        "target": "scaffold",
+        "estimate": "random std. to similarity",
+        "MAE": 0.6634,
+        "lo": 0.6302,
+        "hi": 0.6967,
+        "weight_covered_by_cells": 1.0,
+        "MAE_std_joint_lo": 0.6299,
+        "MAE_std_joint_hi": 0.6971,
+        "frac_of_penalty_explained": 0.6276,
+        "frac_joint_ci_lo": 0.4371,
+        "frac_joint_ci_hi": 0.9018,
+        "n_strata_with_target_weight": 5.0,
+        "min_source_rows_per_stratum": 497.0,
+        "min_target_rows_per_stratum": 374.0,
+        "frac_target_weight_fallback": 0.0,
+        "frac_target_weight_fallback_boot_mean": 0.0,
+        "n_boot_joint": 1000.0,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": "frac CI: joint cluster bootstrap (random AND target compounds resampled, weights recomputed); assumes within-stratum exchangeability of random and target compounds"
+      },
+      {
+        "target": "scaffold",
+        "estimate": "random std. to logS",
+        "MAE": 0.6,
+        "lo": 0.5775,
+        "hi": 0.6232,
+        "weight_covered_by_cells": 1.0,
+        "MAE_std_joint_lo": 0.5761,
+        "MAE_std_joint_hi": 0.6243,
+        "frac_of_penalty_explained": 0.1834,
+        "frac_joint_ci_lo": 0.1136,
+        "frac_joint_ci_hi": 0.2784,
+        "n_strata_with_target_weight": 5.0,
+        "min_source_rows_per_stratum": 452.0,
+        "min_target_rows_per_stratum": 261.0,
+        "frac_target_weight_fallback": 0.0,
+        "frac_target_weight_fallback_boot_mean": 0.0,
+        "n_boot_joint": 1000.0,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": "frac CI: joint cluster bootstrap (random AND target compounds resampled, weights recomputed); assumes within-stratum exchangeability of random and target compounds"
+      },
+      {
+        "target": "scaffold",
+        "estimate": "random std. to similarity x logS",
+        "MAE": 0.7213,
+        "lo": 0.6856,
+        "hi": 0.7614,
+        "weight_covered_by_cells": 1.0,
+        "MAE_std_joint_lo": 0.6786,
+        "MAE_std_joint_hi": 0.7635,
+        "frac_of_penalty_explained": 1.0337,
+        "frac_joint_ci_lo": 0.7444,
+        "frac_joint_ci_hi": 1.4554,
+        "n_strata_with_target_weight": 25.0,
+        "min_source_rows_per_stratum": 34.0,
+        "min_target_rows_per_stratum": 10.0,
+        "frac_target_weight_fallback": 0.0,
+        "frac_target_weight_fallback_boot_mean": 0.0,
+        "n_boot_joint": 1000.0,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": "frac CI: joint cluster bootstrap (random AND target compounds resampled, weights recomputed); assumes within-stratum exchangeability of random and target compounds"
+      },
+      {
+        "target": "cluster",
+        "estimate": "observed",
+        "MAE": 0.67,
+        "lo": 0.6464,
+        "hi": 0.694,
+        "weight_covered_by_cells": null,
+        "MAE_std_joint_lo": null,
+        "MAE_std_joint_hi": null,
+        "frac_of_penalty_explained": null,
+        "frac_joint_ci_lo": null,
+        "frac_joint_ci_hi": null,
+        "n_strata_with_target_weight": null,
+        "min_source_rows_per_stratum": null,
+        "min_target_rows_per_stratum": null,
+        "frac_target_weight_fallback": null,
+        "frac_target_weight_fallback_boot_mean": null,
+        "n_boot_joint": null,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": ""
+      },
+      {
+        "target": "cluster",
+        "estimate": "random, raw",
+        "MAE": 0.5738,
+        "lo": 0.5529,
+        "hi": 0.5942,
+        "weight_covered_by_cells": null,
+        "MAE_std_joint_lo": null,
+        "MAE_std_joint_hi": null,
+        "frac_of_penalty_explained": null,
+        "frac_joint_ci_lo": null,
+        "frac_joint_ci_hi": null,
+        "n_strata_with_target_weight": null,
+        "min_source_rows_per_stratum": null,
+        "min_target_rows_per_stratum": null,
+        "frac_target_weight_fallback": null,
+        "frac_target_weight_fallback_boot_mean": null,
+        "n_boot_joint": null,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": ""
+      },
+      {
+        "target": "cluster",
+        "estimate": "random std. to similarity",
+        "MAE": 0.6448,
+        "lo": 0.6166,
+        "hi": 0.6737,
+        "weight_covered_by_cells": 1.0,
+        "MAE_std_joint_lo": 0.6152,
+        "MAE_std_joint_hi": 0.6749,
+        "frac_of_penalty_explained": 0.7379,
+        "frac_joint_ci_lo": 0.4853,
+        "frac_joint_ci_hi": 1.1696,
+        "n_strata_with_target_weight": 5.0,
+        "min_source_rows_per_stratum": 497.0,
+        "min_target_rows_per_stratum": 488.0,
+        "frac_target_weight_fallback": 0.0,
+        "frac_target_weight_fallback_boot_mean": 0.0,
+        "n_boot_joint": 1000.0,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": "frac CI: joint cluster bootstrap (random AND target compounds resampled, weights recomputed); assumes within-stratum exchangeability of random and target compounds"
+      },
+      {
+        "target": "cluster",
+        "estimate": "random std. to logS",
+        "MAE": 0.5863,
+        "lo": 0.5652,
+        "hi": 0.6077,
+        "weight_covered_by_cells": 1.0,
+        "MAE_std_joint_lo": 0.5649,
+        "MAE_std_joint_hi": 0.6066,
+        "frac_of_penalty_explained": 0.1297,
+        "frac_joint_ci_lo": 0.0611,
+        "frac_joint_ci_hi": 0.2224,
+        "n_strata_with_target_weight": 5.0,
+        "min_source_rows_per_stratum": 452.0,
+        "min_target_rows_per_stratum": 427.0,
+        "frac_target_weight_fallback": 0.0,
+        "frac_target_weight_fallback_boot_mean": 0.0,
+        "n_boot_joint": 1000.0,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": "frac CI: joint cluster bootstrap (random AND target compounds resampled, weights recomputed); assumes within-stratum exchangeability of random and target compounds"
+      },
+      {
+        "target": "cluster",
+        "estimate": "random std. to similarity x logS",
+        "MAE": 0.6706,
+        "lo": 0.641,
+        "hi": 0.6986,
+        "weight_covered_by_cells": 1.0,
+        "MAE_std_joint_lo": 0.6384,
+        "MAE_std_joint_hi": 0.7023,
+        "frac_of_penalty_explained": 1.006,
+        "frac_joint_ci_lo": 0.6905,
+        "frac_joint_ci_hi": 1.5244,
+        "n_strata_with_target_weight": 25.0,
+        "min_source_rows_per_stratum": 34.0,
+        "min_target_rows_per_stratum": 21.0,
+        "frac_target_weight_fallback": 0.0,
+        "frac_target_weight_fallback_boot_mean": 0.0,
+        "n_boot_joint": 1000.0,
+        "ols_raw_penalty": null,
+        "ols_residual_penalty": null,
+        "ols_residual_lo": null,
+        "ols_residual_hi": null,
+        "note": "frac CI: joint cluster bootstrap (random AND target compounds resampled, weights recomputed); assumes within-stratum exchangeability of random and target compounds"
+      },
+      {
+        "target": "scaffold",
+        "estimate": "OLS additive residual (sim + logS)",
+        "MAE": null,
+        "lo": null,
+        "hi": null,
+        "weight_covered_by_cells": null,
+        "MAE_std_joint_lo": null,
+        "MAE_std_joint_hi": null,
+        "frac_of_penalty_explained": 0.6541,
+        "frac_joint_ci_lo": 0.4432,
+        "frac_joint_ci_hi": 0.8649,
+        "n_strata_with_target_weight": null,
+        "min_source_rows_per_stratum": null,
+        "min_target_rows_per_stratum": null,
+        "frac_target_weight_fallback": null,
+        "frac_target_weight_fallback_boot_mean": null,
+        "n_boot_joint": null,
+        "ols_raw_penalty": 0.1427,
+        "ols_residual_penalty": 0.0494,
+        "ols_residual_lo": 0.0193,
+        "ols_residual_hi": 0.0794,
+        "note": "1 - residual/raw OLS split penalty; CI from the residual's clustered CI only (raw penalty fixed)"
+      },
+      {
+        "target": "cluster",
+        "estimate": "OLS additive residual (sim + logS)",
+        "MAE": null,
+        "lo": null,
+        "hi": null,
+        "weight_covered_by_cells": null,
+        "MAE_std_joint_lo": null,
+        "MAE_std_joint_hi": null,
+        "frac_of_penalty_explained": 0.6995,
+        "frac_joint_ci_lo": 0.4118,
+        "frac_joint_ci_hi": 0.9872,
+        "n_strata_with_target_weight": null,
+        "min_source_rows_per_stratum": null,
+        "min_target_rows_per_stratum": null,
+        "frac_target_weight_fallback": null,
+        "frac_target_weight_fallback_boot_mean": null,
+        "n_boot_joint": null,
+        "ols_raw_penalty": 0.0962,
+        "ols_residual_penalty": 0.0289,
+        "ols_residual_lo": 0.0012,
+        "ols_residual_hi": 0.0566,
+        "note": "1 - residual/raw OLS split penalty; CI from the residual's clustered CI only (raw penalty fixed)"
+      }
+    ],
+    "ols_split_penalty": [
+      {
+        "split_type": "cluster",
+        "adjusted_for": "none",
+        "penalty_vs_random": 0.0962,
+        "lo": 0.0702,
+        "hi": 0.1222,
+        "p_value": 0.0,
+        "n": 13765
+      },
+      {
+        "split_type": "scaffold",
+        "adjusted_for": "none",
+        "penalty_vs_random": 0.1427,
+        "lo": 0.1152,
+        "hi": 0.1701,
+        "p_value": 0.0,
+        "n": 13765
+      },
+      {
+        "split_type": "cluster",
+        "adjusted_for": "sim_coarse",
+        "penalty_vs_random": 0.0512,
+        "lo": 0.023,
+        "hi": 0.0794,
+        "p_value": 0.0004,
+        "n": 13765
+      },
+      {
+        "split_type": "scaffold",
+        "adjusted_for": "sim_coarse",
+        "penalty_vs_random": 0.0851,
+        "lo": 0.0552,
+        "hi": 0.115,
+        "p_value": 0.0,
+        "n": 13765
+      },
+      {
+        "split_type": "cluster",
+        "adjusted_for": "logS_bin",
+        "penalty_vs_random": 0.0852,
+        "lo": 0.0598,
+        "hi": 0.1105,
+        "p_value": 0.0,
+        "n": 13765
+      },
+      {
+        "split_type": "scaffold",
+        "adjusted_for": "logS_bin",
+        "penalty_vs_random": 0.1226,
+        "lo": 0.0955,
+        "hi": 0.1498,
+        "p_value": 0.0,
+        "n": 13765
+      },
+      {
+        "split_type": "cluster",
+        "adjusted_for": "sim_coarse+logS_bin",
+        "penalty_vs_random": 0.0289,
+        "lo": 0.0012,
+        "hi": 0.0566,
+        "p_value": 0.0406,
+        "n": 13765
+      },
+      {
+        "split_type": "scaffold",
+        "adjusted_for": "sim_coarse+logS_bin",
+        "penalty_vs_random": 0.0494,
+        "lo": 0.0193,
+        "hi": 0.0794,
+        "p_value": 0.0013,
+        "n": 13765
+      }
+    ],
+    "penalty_decomposition": {
+      "assumption": "direct standardisation assumes that within a (similarity x logS) stratum random- and target-split test compounds are exchangeable (same expected error); the matched-similarity gaps below show this is only approximately true",
+      "nn_similarity_reference": "NN similarity is measured to the TRAINING set only (validation excluded; the model is not fit on validation compounds)",
+      "scaffold": {
+        "observed_MAE": 0.7165,
+        "random_raw_MAE": 0.5738,
+        "standardised_sim_x_logS": {
+          "MAE": 0.7213,
+          "frac_of_penalty": 1.0337,
+          "frac_joint_95ci": [
+            0.7444,
+            1.4554
+          ],
+          "min_source_rows_per_stratum": 34.0,
+          "frac_target_weight_fallback": 0.0,
+          "frac_target_weight_fallback_boot_mean": 0.0
+        },
+        "ols_additive": {
+          "raw_penalty": 0.1427,
+          "residual_penalty": 0.0494,
+          "residual_95ci": [
+            0.0193,
+            0.0794
+          ],
+          "frac_of_penalty": 0.6541
+        },
+        "matched_similarity_gap_ge_0.5": {
+          "0.5-0.6": {
+            "MAE_target": 0.7478,
+            "MAE_random": 0.5613,
+            "n_target": 1045,
+            "n_random": 1025
+          },
+          "0.6-0.7": {
+            "MAE_target": 0.6335,
+            "MAE_random": 0.5049,
+            "n_target": 430,
+            "n_random": 1037
+          },
+          "0.7-0.8": {
+            "MAE_target": 0.7048,
+            "MAE_random": 0.4663,
+            "n_target": 219,
+            "n_random": 746
+          },
+          "0.8-0.9": {
+            "MAE_target": 0.5642,
+            "MAE_random": 0.5024,
+            "n_target": 80,
+            "n_random": 316
+          },
+          "0.9-1.0": {
+            "MAE_target": 0.5359,
+            "MAE_random": 0.5885,
+            "n_target": 75,
+            "n_random": 348
+          }
+        }
+      },
+      "cluster": {
+        "observed_MAE": 0.67,
+        "random_raw_MAE": 0.5738,
+        "standardised_sim_x_logS": {
+          "MAE": 0.6706,
+          "frac_of_penalty": 1.006,
+          "frac_joint_95ci": [
+            0.6905,
+            1.5244
+          ],
+          "min_source_rows_per_stratum": 34.0,
+          "frac_target_weight_fallback": 0.0,
+          "frac_target_weight_fallback_boot_mean": 0.0
+        },
+        "ols_additive": {
+          "raw_penalty": 0.0962,
+          "residual_penalty": 0.0289,
+          "residual_95ci": [
+            0.0012,
+            0.0566
+          ],
+          "frac_of_penalty": 0.6995
+        },
+        "matched_similarity_gap_ge_0.5": {
+          "0.5-0.6": {
+            "MAE_target": 0.5999,
+            "MAE_random": 0.5613,
+            "n_target": 1035,
+            "n_random": 1025
+          },
+          "0.6-0.7": {
+            "MAE_target": 0.5471,
+            "MAE_random": 0.5049,
+            "n_target": 685,
+            "n_random": 1037
+          },
+          "0.7-0.8": {
+            "MAE_target": 0.6561,
+            "MAE_random": 0.4663,
+            "n_target": 342,
+            "n_random": 746
+          },
+          "0.8-0.9": {
+            "MAE_target": 0.5648,
+            "MAE_random": 0.5024,
+            "n_target": 99,
+            "n_random": 316
+          },
+          "0.9-1.0": {
+            "MAE_target": 0.6002,
+            "MAE_random": 0.5885,
+            "n_target": 47,
+            "n_random": 348
+          }
+        }
+      },
+      "conclusion": "similarity and label shift together account for most of the scaffold/cluster penalty - roughly 2/3 (additive OLS) to all (direct standardisation, whose joint CI is wide) depending on the estimator; a residual scaffold-specific penalty remains (OLS residual > 0, and at matched NN similarity >= 0.5 scaffold MAE still exceeds random MAE). Not 'fully explained'."
+    }
+  },
+  "chemistry": {
+    "bias_rule": "n_compounds >= 20, 95% CI of mean signed error excludes 0, |mean signed error| >= 0.2",
+    "hard_class_rule": "lower CI of class MAE above the split's overall MAE (n_compounds >= 20)",
+    "random": {
+      "worst_groups_by_MAE": [
+        {
+          "group": "quaternary ammonium",
+          "MAE": 1.1126,
+          "lo": 0.7204,
+          "hi": 1.5601,
+          "n_compounds": 21,
+          "mean_signed_error": -0.9064
+        },
+        {
+          "group": "long alkyl chain (>=C10)",
+          "MAE": 1.0779,
+          "lo": 0.9298,
+          "hi": 1.2482,
+          "n_compounds": 116,
+          "mean_signed_error": 0.1787
+        },
+        {
+          "group": "PAH / fused aromatic (>=3 rings)",
+          "MAE": 0.867,
+          "lo": 0.7077,
+          "hi": 1.0181,
+          "n_compounds": 81,
+          "mean_signed_error": 0.0012
+        },
+        {
+          "group": "azo",
+          "MAE": 0.815,
+          "lo": 0.6695,
+          "hi": 0.9751,
+          "n_compounds": 79,
+          "mean_signed_error": 0.1084
+        },
+        {
+          "group": "aliphatic amine",
+          "MAE": 0.7936,
+          "lo": 0.7079,
+          "hi": 0.8863,
+          "n_compounds": 344,
+          "mean_signed_error": -0.2402
+        },
+        {
+          "group": "sulfonic acid / sulfonate / sulfate monoester",
+          "MAE": 0.7138,
+          "lo": 0.6138,
+          "hi": 0.8261,
+          "n_compounds": 153,
+          "mean_signed_error": -0.2719
+        }
+      ],
+      "best_groups_by_MAE": [
+        {
+          "group": "hydrocarbon (C/H only)",
+          "MAE": 0.4242,
+          "n_compounds": 120
+        },
+        {
+          "group": "nitro",
+          "MAE": 0.5163,
+          "n_compounds": 232
+        },
+        {
+          "group": "halogenated aromatic",
+          "MAE": 0.521,
+          "n_compounds": 627
+        }
+      ],
+      "biased_groups": [
+        {
+          "group": "aliphatic amine",
+          "mean_signed_error": -0.2402,
+          "lo": -0.3647,
+          "hi": -0.1242,
+          "n_compounds": 344
+        },
+        {
+          "group": "amino acid / peptide",
+          "mean_signed_error": -0.2304,
+          "lo": -0.4092,
+          "hi": -0.0612,
+          "n_compounds": 86
+        },
+        {
+          "group": "quaternary ammonium",
+          "mean_signed_error": -0.9064,
+          "lo": -1.4006,
+          "hi": -0.4137,
+          "n_compounds": 21
+        },
+        {
+          "group": "sulfonic acid / sulfonate / sulfate monoester",
+          "mean_signed_error": -0.2719,
+          "lo": -0.4286,
+          "hi": -0.1243,
+          "n_compounds": 153
+        }
+      ],
+      "hard_groups": [
+        "PAH / fused aromatic (>=3 rings)",
+        "aliphatic amine",
+        "azo",
+        "carboxylic acid / carboxylate",
+        "long alkyl chain (>=C10)",
+        "quaternary ammonium",
+        "sulfonic acid / sulfonate / sulfate monoester"
+      ],
+      "biased_physchem_bins": []
+    },
+    "scaffold": {
+      "worst_groups_by_MAE": [
+        {
+          "group": "long alkyl chain (>=C10)",
+          "MAE": 1.6812,
+          "lo": 1.2509,
+          "hi": 2.1196,
+          "n_compounds": 26,
+          "mean_signed_error": -0.0912
+        },
+        {
+          "group": "PAH / fused aromatic (>=3 rings)",
+          "MAE": 1.007,
+          "lo": 0.8136,
+          "hi": 1.2285,
+          "n_compounds": 100,
+          "mean_signed_error": -0.1628
+        },
+        {
+          "group": "azo",
+          "MAE": 0.9481,
+          "lo": 0.8029,
+          "hi": 1.1068,
+          "n_compounds": 135,
+          "mean_signed_error": 0.2462
+        },
+        {
+          "group": "aliphatic amine",
+          "MAE": 0.8868,
+          "lo": 0.8065,
+          "hi": 0.9796,
+          "n_compounds": 303,
+          "mean_signed_error": -0.1272
+        },
+        {
+          "group": "carboxylic acid / carboxylate",
+          "MAE": 0.8836,
+          "lo": 0.792,
+          "hi": 0.9804,
+          "n_compounds": 317,
+          "mean_signed_error": 0.0949
+        },
+        {
+          "group": "phosphate / phosphonate (incl. thio)",
+          "MAE": 0.8806,
+          "lo": 0.7124,
+          "hi": 1.0631,
+          "n_compounds": 62,
+          "mean_signed_error": 0.0473
+        }
+      ],
+      "best_groups_by_MAE": [
+        {
+          "group": "hydrocarbon (C/H only)",
+          "MAE": 0.468,
+          "n_compounds": 86
+        },
+        {
+          "group": "steroid core",
+          "MAE": 0.6077,
+          "n_compounds": 91
+        },
+        {
+          "group": "polyhalogenated (>=3 halogens)",
+          "MAE": 0.6578,
+          "n_compounds": 419
+        }
+      ],
+      "biased_groups": [
+        {
+          "group": "azo",
+          "mean_signed_error": 0.2462,
+          "lo": 0.0562,
+          "hi": 0.4483,
+          "n_compounds": 135
+        }
+      ],
+      "hard_groups": [
+        "PAH / fused aromatic (>=3 rings)",
+        "aliphatic amine",
+        "azo",
+        "carboxylic acid / carboxylate",
+        "long alkyl chain (>=C10)",
+        "phenol"
+      ],
+      "biased_physchem_bins": [
+        {
+          "property": "MolLogP",
+          "bin": ">= 8",
+          "mean_signed_error": 0.3089,
+          "MAE": 0.9965,
+          "n_compounds": 90
+        },
+        {
+          "property": "MolWt",
+          "bin": "[500, 750)",
+          "mean_signed_error": 0.2777,
+          "MAE": 1.0473,
+          "n_compounds": 150
+        }
+      ]
+    },
+    "cluster": {
+      "worst_groups_by_MAE": [
+        {
+          "group": "organosilicon",
+          "MAE": 1.9719,
+          "lo": 1.3739,
+          "hi": 2.5013,
+          "n_compounds": 27,
+          "mean_signed_error": 0.3722
+        },
+        {
+          "group": "azo",
+          "MAE": 1.2979,
+          "lo": 1.1347,
+          "hi": 1.4853,
+          "n_compounds": 67,
+          "mean_signed_error": 0.781
+        },
+        {
+          "group": "PAH / fused aromatic (>=3 rings)",
+          "MAE": 1.1729,
+          "lo": 0.9156,
+          "hi": 1.4687,
+          "n_compounds": 55,
+          "mean_signed_error": -0.1151
+        },
+        {
+          "group": "long alkyl chain (>=C10)",
+          "MAE": 1.1536,
+          "lo": 1.0203,
+          "hi": 1.2878,
+          "n_compounds": 142,
+          "mean_signed_error": -0.0945
+        },
+        {
+          "group": "quaternary ammonium",
+          "MAE": 1.0412,
+          "lo": 0.7376,
+          "hi": 1.3673,
+          "n_compounds": 21,
+          "mean_signed_error": -0.7205
+        },
+        {
+          "group": "sulfonic acid / sulfonate / sulfate monoester",
+          "MAE": 1.0107,
+          "lo": 0.8641,
+          "hi": 1.1728,
+          "n_compounds": 90,
+          "mean_signed_error": -0.5052
+        }
+      ],
+      "best_groups_by_MAE": [
+        {
+          "group": "hydrocarbon (C/H only)",
+          "MAE": 0.4354,
+          "n_compounds": 100
+        },
+        {
+          "group": "amino acid / peptide",
+          "MAE": 0.5767,
+          "n_compounds": 92
+        },
+        {
+          "group": "halogenated aromatic",
+          "MAE": 0.6086,
+          "n_compounds": 747
+        }
+      ],
+      "biased_groups": [
+        {
+          "group": "aliphatic amine",
+          "mean_signed_error": -0.2527,
+          "lo": -0.3702,
+          "hi": -0.1269,
+          "n_compounds": 349
+        },
+        {
+          "group": "azo",
+          "mean_signed_error": 0.781,
+          "lo": 0.428,
+          "hi": 1.1165,
+          "n_compounds": 67
+        },
+        {
+          "group": "nitro",
+          "mean_signed_error": 0.2475,
+          "lo": 0.1213,
+          "hi": 0.3839,
+          "n_compounds": 227
+        },
+        {
+          "group": "phosphate / phosphonate (incl. thio)",
+          "mean_signed_error": -0.3111,
+          "lo": -0.4771,
+          "hi": -0.1328,
+          "n_compounds": 168
+        },
+        {
+          "group": "quaternary ammonium",
+          "mean_signed_error": -0.7205,
+          "lo": -1.2695,
+          "hi": -0.2001,
+          "n_compounds": 21
+        },
+        {
+          "group": "sulfonic acid / sulfonate / sulfate monoester",
+          "mean_signed_error": -0.5052,
+          "lo": -0.7439,
+          "hi": -0.2741,
+          "n_compounds": 90
+        }
+      ],
+      "hard_groups": [
+        "PAH / fused aromatic (>=3 rings)",
+        "aliphatic amine",
+        "azo",
+        "carboxylic acid / carboxylate",
+        "heteroaromatic N",
+        "long alkyl chain (>=C10)",
+        "organosilicon",
+        "phosphate / phosphonate (incl. thio)",
+        "quaternary ammonium",
+        "sulfonic acid / sulfonate / sulfate monoester"
+      ],
+      "biased_physchem_bins": [
+        {
+          "property": "is_multicomponent",
+          "bin": "salt/multi",
+          "mean_signed_error": -0.4397,
+          "MAE": 1.1228,
+          "n_compounds": 233
+        }
+      ]
+    }
+  },
+  "worst_predictions": {
+    "definition": "pooled seed-0 test sets of the random (n=917) and scaffold (n=918) splits; compounds present in both are counted once at their larger |error|; ranked by |y_pred - y_true|",
+    "n_pool_rows": 1835,
+    "n_pool_compounds": 1735,
+    "n_from_split": {
+      "scaffold": 17,
+      "random": 13
+    },
+    "abs_error_range": [
+      2.684,
+      6.8045
+    ],
+    "n_over_predicted_solubility": 11,
+    "hypothesis_counts": {
+      "chain-length homologue NN": 2,
+      "close-analogue label conflict": 4,
+      "conflicting replicates": 0,
+      "out of domain": 5,
+      "salt": 3,
+      "multi-component (neutral)": 5,
+      "hydrolytically reactive": 2,
+      "ionisable": 19,
+      "long alkyl chain": 2,
+      "extreme label": 4,
+      "Si/B": 0,
+      "large/flexible": 5,
+      "polyaromatic too soluble": 0,
+      "no rule": 4
+    },
+    "hypothesis_base_rate_in_pool": {
+      "chain-length homologue NN": 0.0115,
+      "close-analogue label conflict": 0.0369,
+      "conflicting replicates": 0.0415,
+      "out of domain": 0.1147,
+      "salt": 0.0484,
+      "multi-component (neutral)": 0.0161,
+      "hydrolytically reactive": 0.0138,
+      "ionisable": 0.2334,
+      "long alkyl chain": 0.0179,
+      "extreme label": 0.0628,
+      "Si/B": 0.0046,
+      "large/flexible": 0.0559,
+      "polyaromatic too soluble": 0.0507,
+      "no rule": 0.5199
+    },
+    "binomial_p_all_worst30_G1": 0.0005,
+    "reliability_groups": {
+      "G1": 30
+    },
+    "pool_reliability_groups_frac": {
+      "G1": 0.7758,
+      "G3": 0.1228,
+      "G5": 0.0622,
+      "G2": 0.0225,
+      "G4": 0.0167
+    },
+    "G1_enrichment": {
+      "worst30_frac_G1": 1.0,
+      "top100_frac_G1": 0.91,
+      "pool_frac_G1": 0.7758,
+      "binomial_p_top100_G1": 0.0004,
+      "interpretation": "the largest errors are enriched for single-measurement (G1) compounds - consistent with, but not proof of, label noise; G1 also marks unusual chemotypes"
+    },
+    "median_nn_sim_worst30": 0.5298,
+    "median_nn_sim_pool": 0.5294
+  },
+  "cliffs": {
+    "definition": "AqSolDB pairs with ECFP4 Tanimoto >= 0.9 (2048 bits, full SMILES) and |dlogS| >= 2 ('high-similarity large-dlogS pairs'; NOT all activity cliffs / near-duplicates / label noise)",
+    "interpretation": "most pairs are a binary-ECFP4 bit-vector saturation artefact: fingerprint-identical (Tanimoto 1.0) pairs and homologues differing by >= 2 heavy atoms (e.g. cyclosiloxanes, chain-length series) whose solubility legitimately differs. Only the same-size pairs (|d heavy atoms| <= 1, different parent) are candidates for label noise or true cliffs.",
+    "pair_breakdown": {
+      "total": 372,
+      "fingerprint_identical_tanimoto_1": 265,
+      "homologues_d_heavy_atoms_ge_2": 355,
+      "fingerprint_identical_and_homologue": 257,
+      "salt_vs_parent": 4,
+      "same_size_candidates_label_noise_or_true_cliff": 13,
+      "same_size_both_G1": 4,
+      "median_count_tanimoto_all": 0.5954,
+      "median_count_tanimoto_same_size": 0.9412,
+      "n_count_tanimoto_ge_0.9": 19
+    },
+    "n_pairs_sim_ge_0.9": 1310,
+    "n_compounds_in_sim_ge_0.9_pairs": 752,
+    "n_cliff_pairs": 372,
+    "n_compounds_in_cliff_pairs": 277,
+    "frac_of_sim_ge_0.9_pairs_that_are_cliffs": 0.284,
+    "n_pairs_dlogS_ge_1": 697,
+    "cliff_pair_types": {
+      "homologues (|d heavy atoms| >= 2)": 355,
+      "same-size analogues (|d heavy atoms| <= 1)": 13,
+      "salt vs parent (same parent)": 4
+    },
+    "all_sim_ge_0.9_pair_types": {
+      "homologues (|d heavy atoms| >= 2)": 1024,
+      "same-size analogues (|d heavy atoms| <= 1)": 258,
+      "salt vs parent (same parent)": 28
+    },
+    "median_abs_dlogS_by_pair_type": {
+      "homologues (|d heavy atoms| >= 2)": 1.3905,
+      "salt vs parent (same parent)": 0.5299,
+      "same-size analogues (|d heavy atoms| <= 1)": 0.5513
+    },
+    "mean_abs_dlogS_by_pair_type": {
+      "homologues (|d heavy atoms| >= 2)": 1.7501,
+      "salt vs parent (same parent)": 0.8846,
+      "same-size analogues (|d heavy atoms| <= 1)": 0.6461
+    },
+    "cliff_frac_by_pair_type": {
+      "homologues (|d heavy atoms| >= 2)": 0.3467,
+      "salt vs parent (same parent)": 0.1429,
+      "same-size analogues (|d heavy atoms| <= 1)": 0.0504
+    },
+    "cliff_pairs_same_source": 199,
+    "cliff_pairs_both_single_measurement_G1": 133,
+    "cliff_pairs_fingerprint_identical": 265,
+    "median_d_heavy_atoms_cliff_pairs": 6.0,
+    "same_size_cliff_pairs_both_G1": 4,
+    "median_abs_dlogS_sim_ge_0.9_pairs": 1.1165,
+    "mean_abs_dlogS_sim_ge_0.9_pairs": 1.5142,
+    "nn_label_floor_sim_ge_0.9": {
+      "n_compounds_with_partner": 752,
+      "MAE_nn_label": 1.2358,
+      "median_abs_diff": 0.81,
+      "frac_abs_diff_ge_1": 0.4295,
+      "frac_abs_diff_ge_2": 0.2181
+    },
+    "model_random_split_sim_ge_0.9": {
+      "MAE": 0.5885,
+      "lo": 0.5096,
+      "hi": 0.6802,
+      "n": 348,
+      "MAE_of_nn_label_predictor_same_rows": 1.3111
+    },
+    "n_worst30_compounds_in_cliff_pairs": 2
+  },
+  "umap": {
+    "params": {
+      "metric": "jaccard",
+      "fingerprint": "ECFP4 bits 2048",
+      "n_neighbors": 30,
+      "min_dist": 0.1,
+      "random_state": 0
+    },
+    "n_aqsoldb": 9171,
+    "n_esol_overlap": 1097,
+    "n_esol_only": 18,
+    "n_aqsoldb_ever_in_scaffold_test": 3190,
+    "acyclic_vs_cyclic": {
+      "n_acyclic": 2439,
+      "frac_acyclic": 0.2659,
+      "region_rule": "lower = UMAP-2 below its 40th percentile",
+      "lower": {
+        "n": 3668,
+        "frac_acyclic": 0.6622,
+        "mean_logS": -2.0934,
+        "frac_scaffold_seed0_test": 0.0662,
+        "frac_cluster_seed0_test": 0.0998
+      },
+      "upper": {
+        "n": 5503,
+        "frac_acyclic": 0.0018,
+        "mean_logS": -3.4207,
+        "frac_scaffold_seed0_test": 0.1227,
+        "frac_cluster_seed0_test": 0.1003
+      }
+    },
+    "coordinates_file": "results/error_analysis/umap_coordinates.csv"
+  },
+  "shap": {
+    "rdkit2d_model": {
+      "test_MAE": 0.5828,
+      "val_MAE": 0.5653,
+      "n_trees": 1342,
+      "n_test": 917,
+      "top10": [
+        {
+          "feature": "MolLogP",
+          "mean_abs_shap": 0.6075,
+          "family": "lipophilicity",
+          "spearman_value_vs_shap": -0.9859
+        },
+        {
+          "feature": "Ipc",
+          "mean_abs_shap": 0.2087,
+          "family": "topology / shape",
+          "spearman_value_vs_shap": -0.9548
+        },
+        {
+          "feature": "PEOE_VSA6",
+          "mean_abs_shap": 0.1519,
+          "family": "polarity / H-bonding",
+          "spearman_value_vs_shap": -0.962
+        },
+        {
+          "feature": "MolMR",
+          "mean_abs_shap": 0.1386,
+          "family": "lipophilicity",
+          "spearman_value_vs_shap": -0.9715
+        },
+        {
+          "feature": "SlogP_VSA2",
+          "mean_abs_shap": 0.1023,
+          "family": "lipophilicity",
+          "spearman_value_vs_shap": 0.9603
+        },
+        {
+          "feature": "HallKierAlpha",
+          "mean_abs_shap": 0.0783,
+          "family": "aromaticity / rigidity",
+          "spearman_value_vs_shap": 0.8904
+        },
+        {
+          "feature": "BCUT2D_LOGPHI",
+          "mean_abs_shap": 0.059,
+          "family": "lipophilicity",
+          "spearman_value_vs_shap": -0.4125
+        },
+        {
+          "feature": "SMR_VSA10",
+          "mean_abs_shap": 0.0565,
+          "family": "lipophilicity",
+          "spearman_value_vs_shap": -0.9373
+        },
+        {
+          "feature": "MinPartialCharge",
+          "mean_abs_shap": 0.0555,
+          "family": "charge",
+          "spearman_value_vs_shap": -0.2715
+        },
+        {
+          "feature": "VSA_EState10",
+          "mean_abs_shap": 0.0524,
+          "family": "polarity / H-bonding",
+          "spearman_value_vs_shap": -0.7193
+        }
+      ],
+      "family_fraction": {
+        "lipophilicity": 0.362,
+        "polarity / H-bonding": 0.2477,
+        "topology / shape": 0.1324,
+        "size": 0.1112,
+        "fragment counts": 0.0517,
+        "charge": 0.0494,
+        "aromaticity / rigidity": 0.0456
+      },
+      "MolLogP_shap_slope_0_to_6": -0.4246,
+      "MolLogP_top_interaction": "BertzCT",
+      "lipophilicity_response": {
+        "window": "0 <= cLogP <= 6",
+        "n_in_window": 732,
+        "slope_MolLogP_shap": -0.4246,
+        "slope_lipophilicity_family_shap_sum": -0.5755,
+        "n_lipophilicity_features": 28,
+        "slope_predicted_logS": -0.9726,
+        "slope_measured_logS": -0.9821,
+        "MAE_of_base_plus_shap_sum": 0.5828,
+        "MolLogP_shap_mean_cLogP_gt_7": -1.7191,
+        "n_cLogP_gt_7": 38,
+        "MolLogP_shap_mean_cLogP_lt_0": 0.8411,
+        "n_cLogP_lt_0": 130,
+        "gse_reference": "general solubility equation logS = 0.5 - logP - 0.01 (mp - 25): slope -1"
+      }
+    },
+    "combined_model": {
+      "test_MAE_refit": 0.5794,
+      "test_MAE_baseline_file": 0.5794,
+      "n_trees": 1568,
+      "group_fraction": {
+        "RDKit descriptors": 0.8199,
+        "Morgan count bits": 0.1801
+      },
+      "family_fraction": {
+        "lipophilicity": 0.2712,
+        "polarity / H-bonding": 0.1974,
+        "Morgan count bits": 0.1801,
+        "size": 0.1383,
+        "topology / shape": 0.1098,
+        "charge": 0.0377,
+        "fragment counts": 0.0336,
+        "aromaticity / rigidity": 0.0319
+      },
+      "top10": [
+        {
+          "feature": "MolLogP",
+          "mean_abs_shap": 0.3789
+        },
+        {
+          "feature": "Ipc",
+          "mean_abs_shap": 0.1899
+        },
+        {
+          "feature": "PEOE_VSA6",
+          "mean_abs_shap": 0.1598
+        },
+        {
+          "feature": "SlogP_VSA2",
+          "mean_abs_shap": 0.1343
+        },
+        {
+          "feature": "MolMR",
+          "mean_abs_shap": 0.1327
+        },
+        {
+          "feature": "Chi4v",
+          "mean_abs_shap": 0.1074
+        },
+        {
+          "feature": "Chi1v",
+          "mean_abs_shap": 0.0871
+        },
+        {
+          "feature": "LabuteASA",
+          "mean_abs_shap": 0.0803
+        },
+        {
+          "feature": "BertzCT",
+          "mean_abs_shap": 0.0736
+        },
+        {
+          "feature": "mc1380",
+          "mean_abs_shap": 0.0683
+        }
+      ],
+      "top_bits": [
+        {
+          "bit": "mc1380",
+          "env": "[C] (arom)",
+          "mean_abs_shap": 0.0683
+        },
+        {
+          "bit": "mc486",
+          "env": "O=P",
+          "mean_abs_shap": 0.0161
+        },
+        {
+          "bit": "mc695",
+          "env": "[O]",
+          "mean_abs_shap": 0.0132
+        },
+        {
+          "bit": "mc807",
+          "env": "[C]",
+          "mean_abs_shap": 0.012
+        },
+        {
+          "bit": "mc561",
+          "env": "cCl",
+          "mean_abs_shap": 0.0109
+        },
+        {
+          "bit": "mc725",
+          "env": "[N]",
+          "mean_abs_shap": 0.0103
+        },
+        {
+          "bit": "mc1088",
+          "env": "ccc",
+          "mean_abs_shap": 0.0095
+        },
+        {
+          "bit": "mc389",
+          "env": "CO",
+          "mean_abs_shap": 0.0084
+        },
+        {
+          "bit": "mc80",
+          "env": "[CH2]",
+          "mean_abs_shap": 0.0073
+        },
+        {
+          "bit": "mc1745",
+          "env": "c[nH]c",
+          "mean_abs_shap": 0.0069
+        }
+      ]
+    }
+  },
+  "scaffold_level": {
+    "n_scaffolds_with_ge5_compounds": 106,
+    "n_rows_covered": 2799,
+    "frac_scaffold_test_rows_covered": 0.6098,
+    "median_scaffold_MAE": 0.6232,
+    "worst15": [
+      {
+        "scaffold": "c1ccc2nc3ccccc3cc2c1",
+        "MAE": 2.0999,
+        "n": 15,
+        "n_compounds": 15,
+        "mean_signed_error": -1.9845,
+        "mean_true": -2.1262,
+        "example": "3,6-diaminoacridine"
+      },
+      {
+        "scaffold": "c1ccc2c(c1)Oc1ccccc1O2",
+        "MAE": 2.0788,
+        "n": 30,
+        "n_compounds": 15,
+        "mean_signed_error": 2.0788,
+        "mean_true": -8.4334,
+        "example": "heptachlorodibenzo-p-dioxin"
+      },
+      {
+        "scaffold": "O=C1C=Cc2ccccc2C1=NNc1ccccc1",
+        "MAE": 1.9544,
+        "n": 22,
+        "n_compounds": 11,
+        "mean_signed_error": 1.3677,
+        "mean_true": -5.0047,
+        "example": "disodium 6-hydroxy-5-[(E)-2-(4-sulfonatophenyl)diazen-1-yl]naphthalene-2-sulfonate"
+      },
+      {
+        "scaffold": "O=c1ccn(C2CC2)c2cc(N3CCC3)ccc12",
+        "MAE": 1.8575,
+        "n": 18,
+        "n_compounds": 18,
+        "mean_signed_error": 1.8575,
+        "mean_true": -4.8183,
+        "example": "7-(3-aminoazetidin-1-yl)-1-cyclopropyl-6-fluoro-4-oxoquinoline-3-carboxylic acid"
+      },
+      {
+        "scaffold": "O=C1c2ccccc2C(=O)c2ccccc21",
+        "MAE": 1.7717,
+        "n": 29,
+        "n_compounds": 29,
+        "mean_signed_error": 0.8769,
+        "mean_true": -4.6216,
+        "example": "1-amino-4-(ethylamino)-9,10-dioxo-9,10-dihydroanthracene-2-carbonitrile"
+      },
+      {
+        "scaffold": "O=C1C(N=Nc2ccccc2)C=NN1c1ccccc1",
+        "MAE": 1.4635,
+        "n": 10,
+        "n_compounds": 10,
+        "mean_signed_error": 1.1109,
+        "mean_true": -2.5932,
+        "example": "calcium 4,5-dichloro-2-[(E)-2-[3-methyl-5-oxo-1-(3-sulfonatophenyl)-4,5-dihydro-1H-pyrazol-4-yl]diazen-1-yl]benzene-1-sulfonate"
+      },
+      {
+        "scaffold": "O=C(c1ccccc1)c1ccsc1",
+        "MAE": 1.2228,
+        "n": 18,
+        "n_compounds": 9,
+        "mean_signed_error": -0.7979,
+        "mean_true": -2.506,
+        "example": "2-thiophenesulfonamide, 4-(4-methoxybenzoyl)-"
+      },
+      {
+        "scaffold": "c1cc[nH+]cc1",
+        "MAE": 1.2009,
+        "n": 16,
+        "n_compounds": 8,
+        "mean_signed_error": -1.2009,
+        "mean_true": 0.1332,
+        "example": "1-dodecylpyridin-1-ium chloride"
+      },
+      {
+        "scaffold": "O=c1cc[nH]n1-c1ccccc1",
+        "MAE": 1.1848,
+        "n": 7,
+        "n_compounds": 7,
+        "mean_signed_error": -1.1848,
+        "mean_true": -1.1104,
+        "example": "aminopyrine"
+      },
+      {
+        "scaffold": "c1ccc([C+](c2ccccc2)c2ccccc2)cc1",
+        "MAE": 1.1696,
+        "n": 5,
+        "n_compounds": 5,
+        "mean_signed_error": -1.059,
+        "mean_true": -1.052,
+        "example": "4-{bis[4-(dimethylamino)phenyl]methylidene}-N,N-dimethylcyclohexa-2,5-dien-1-iminium chloride"
+      },
+      {
+        "scaffold": "c1ccc(N=Nc2ccccc2)cc1",
+        "MAE": 1.1388,
+        "n": 62,
+        "n_compounds": 62,
+        "mean_signed_error": 0.2664,
+        "mean_true": -5.1294,
+        "example": "[2-({4-[(E)-2-(2-chloro-4-nitrophenyl)diazen-1-yl]phenyl}(ethyl)amino)ethyl]trimethylazanium chloride"
+      },
+      {
+        "scaffold": "O=P(Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1",
+        "MAE": 1.035,
+        "n": 33,
+        "n_compounds": 11,
+        "mean_signed_error": 0.3119,
+        "mean_true": -5.9723,
+        "example": "diphenyl 4-(propan-2-yl)phenyl phosphate phenyl bis[4-(propan-2-yl)phenyl] phosphate triphenyl phosphate tris[4-(propan-2-yl)phenyl] phosphate"
+      },
+      {
+        "scaffold": "c1cn[nH]c1",
+        "MAE": 1.006,
+        "n": 14,
+        "n_compounds": 7,
+        "mean_signed_error": -0.2546,
+        "mean_true": -0.0975,
+        "example": "2-(4,5-diamino-1H-pyrazol-1-yl)ethan-1-ol"
+      },
+      {
+        "scaffold": "c1ncncn1",
+        "MAE": 0.9701,
+        "n": 46,
+        "n_compounds": 46,
+        "mean_signed_error": 0.9478,
+        "mean_true": -3.2205,
+        "example": "2,4,6-trichloro-1,3,5-triazine"
+      },
+      {
+        "scaffold": "c1ccc(Nc2ccccc2)cc1",
+        "MAE": 0.9641,
+        "n": 58,
+        "n_compounds": 29,
+        "mean_signed_error": 0.5469,
+        "mean_true": -4.4812,
+        "example": "2-{2-[(2,6-dichlorophenyl)amino]phenyl}acetic acid"
+      }
+    ],
+    "worst15_share_of_total_abs_error": 0.1554,
+    "worst15_share_of_rows": 0.0834,
+    "spearman_scaffold_MAE_vs_sd_true": 0.278
+  }
+}

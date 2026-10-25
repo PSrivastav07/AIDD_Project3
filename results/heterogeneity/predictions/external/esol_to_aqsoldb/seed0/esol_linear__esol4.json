@@ -1,0 +1,19 @@
+{
+  "train_dataset": "esol",
+  "test_dataset": "aqsoldb",
+  "split_type": "external",
+  "seed": 0,
+  "split_name": "esol_to_aqsoldb",
+  "featurizer": "esol4",
+  "model": "esol_linear",
+  "n_train": 1004,
+  "n_val": 111,
+  "n_test": 8074,
+  "MAE": 1.2404210119697634,
+  "RMSE": 2.3114003531138554,
+  "R2": 0.05296364940339682,
+  "Pearson": 0.6874692175981342,
+  "Spearman": 0.8103062675328194,
+  "val_MAE": 0.8653121319719262,
+  "fit_seconds": 0.01
+}

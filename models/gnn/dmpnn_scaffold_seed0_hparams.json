@@ -1,0 +1,46 @@
+{
+  "model_class": "solpred.models.gnn.DMPNN",
+  "n_desc": 0,
+  "config": {
+    "hidden": 200,
+    "depth": 3,
+    "ffn_hidden": 200,
+    "ffn_layers": 2,
+    "dropout": 0.1,
+    "encoder_dropout": 0.0,
+    "aggregation": "mean",
+    "batch_size": 64,
+    "eval_batch_size": 1024,
+    "max_epochs": 50,
+    "patience": 10,
+    "warmup_epochs": 2.0,
+    "init_lr": 0.0001,
+    "max_lr": 0.001,
+    "final_lr": 0.0001,
+    "weight_decay": 0.0,
+    "grad_clip": 10.0,
+    "mc_passes": 10,
+    "extra": {}
+  },
+  "atom_fdim": 52,
+  "bond_fdim": 13,
+  "featurizer": "solpred.features.graph",
+  "torch_version": "2.14.1+cpu",
+  "split": "data/splits/aqsoldb/scaffold/seed0.json",
+  "training": {
+    "best_epoch": 50,
+    "best_val_MAE": 0.787676249030973,
+    "epochs_run": 50,
+    "train_seconds": 1195.1243562698364,
+    "n_parameters": 144001,
+    "n_desc": 0,
+    "early_stopped": false,
+    "threads": 1
+  },
+  "test_metrics": {
+    "MAE": 0.7880842160141304,
+    "RMSE": 1.1071438877675974,
+    "R2": 0.8093217035516506
+  },
+  "usage": "solpred.models.gnn.load_checkpoint(dir, tag); featurise with solpred.features.graph (GraphStore / GraphTensors, mean readout)"
+}

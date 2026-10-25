@@ -1,0 +1,6 @@
+{
+  "type": "standardise",
+  "mean": -2.6716764288879293,
+  "std": 2.280456921124181,
+  "note": "logS = model_output * std + mean (training-set statistics)"
+}

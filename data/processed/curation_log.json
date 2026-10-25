@@ -1,0 +1,105 @@
+{
+  "aqsoldb": {
+    "n_raw": 9982,
+    "n_final": 9171,
+    "steps": [
+      {
+        "step": "standardise_and_filter",
+        "n_before": 9982,
+        "n_after": 9461,
+        "removed": 521,
+        "detail": {
+          "no_carbon": 325,
+          "disallowed_element": 194,
+          "parse_error": 2
+        }
+      },
+      {
+        "step": "finite_label",
+        "n_before": 9461,
+        "n_after": 9461,
+        "removed": 0
+      },
+      {
+        "step": "deduplicate_smiles_2d",
+        "n_before": 9461,
+        "n_after": 9171,
+        "removed": 290,
+        "detail": {
+          "groups_merged": 257,
+          "conflicting_groups": 29
+        }
+      }
+    ],
+    "inchikey_inconsistent": 17,
+    "multicomponent": 699,
+    "acyclic (empty scaffold)": 2439,
+    "unique_scaffolds": 1865
+  },
+  "esol": {
+    "n_raw": 1128,
+    "n_final": 1115,
+    "steps": [
+      {
+        "step": "standardise_and_filter",
+        "n_before": 1128,
+        "n_after": 1128,
+        "removed": 0
+      },
+      {
+        "step": "finite_label",
+        "n_before": 1128,
+        "n_after": 1128,
+        "removed": 0
+      },
+      {
+        "step": "deduplicate_smiles_2d",
+        "n_before": 1128,
+        "n_after": 1115,
+        "removed": 13,
+        "detail": {
+          "groups_merged": 13,
+          "conflicting_groups": 1
+        }
+      }
+    ],
+    "unique_scaffolds": 269
+  },
+  "overlap": {
+    "n_compounds": 1097,
+    "mae_between_sources": 0.08852395610414769,
+    "rmse_between_sources": 0.2630215544127308,
+    "median_abs_diff": 0.0032999999999994145,
+    "frac_abs_diff_gt_0.5": 0.053783044667274384,
+    "frac_abs_diff_gt_1.0": 0.014585232452142206,
+    "exact_match_frac(|d|<0.01)": 0.6481312670920693
+  },
+  "config": {
+    "organic_elements": [
+      "H",
+      "B",
+      "C",
+      "N",
+      "O",
+      "F",
+      "Si",
+      "P",
+      "S",
+      "Cl",
+      "Se",
+      "Br",
+      "I"
+    ],
+    "counterion_elements": [
+      "Li",
+      "Na",
+      "K",
+      "Mg",
+      "Ca"
+    ],
+    "remove_no_carbon": true,
+    "dedup_key": "smiles_2d",
+    "aggregate": "median",
+    "conflict_sd_threshold": 0.5
+  }
+}

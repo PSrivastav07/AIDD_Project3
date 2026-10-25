@@ -1,0 +1,16 @@
+{
+  "split_type": "random",
+  "seed": 2,
+  "variant": "f_ivw_permuted",
+  "n_train": 7337,
+  "n_dropped": 0,
+  "s0": 0.4778737331051844,
+  "best_iteration": 935,
+  "val_MAE": 0.5596032782279536,
+  "test_MAE": 0.5566804383793075,
+  "fit_seconds": 88.7,
+  "weights_min_max": [
+    0.02665737460185935,
+    1.7748822402015847
+  ]
+}

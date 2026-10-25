@@ -1,0 +1,16 @@
+{
+  "split_type": "scaffold",
+  "seed": 0,
+  "variant": "f_ivw_permuted",
+  "n_train": 7336,
+  "n_dropped": 0,
+  "s0": 0.4778737331051844,
+  "best_iteration": 348,
+  "val_MAE": 0.696589962590406,
+  "test_MAE": 0.7005064199300174,
+  "fit_seconds": 52.8,
+  "weights_min_max": [
+    0.026482575904335143,
+    1.7632439184058424
+  ]
+}

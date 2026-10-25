@@ -1,0 +1,13 @@
+{
+  "split_type": "random",
+  "seed": 0,
+  "variant": "c_drop_dedup_conflict",
+  "n_train": 7312,
+  "n_dropped": 25,
+  "s0": 0.4778737331051844,
+  "best_iteration": 1069,
+  "val_MAE": 0.5651244325089593,
+  "test_MAE": 0.5790083714589901,
+  "fit_seconds": 70.7,
+  "weights_min_max": null
+}

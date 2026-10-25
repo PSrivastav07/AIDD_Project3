@@ -1,0 +1,13 @@
+{
+  "split_type": "scaffold",
+  "seed": 1,
+  "variant": "b_drop_G2G4",
+  "n_train": 7042,
+  "n_dropped": 294,
+  "s0": 0.4778737331051844,
+  "best_iteration": 758,
+  "val_MAE": 0.7369332384006554,
+  "test_MAE": 0.7044655588117094,
+  "fit_seconds": 75.7,
+  "weights_min_max": null
+}

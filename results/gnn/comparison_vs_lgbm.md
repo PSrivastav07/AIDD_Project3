@@ -1,0 +1,26 @@
+| split_type   |   seed | model      | featurizer    | reference                   |   n_test |   MAE_gnn |   MAE_ref |   mae_diff |   ci_low |   ci_high |   p_a_not_better |
+|:-------------|-------:|:-----------|:--------------|:----------------------------|---------:|----------:|----------:|-----------:|---------:|----------:|-----------------:|
+| cluster      |      0 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.727 |     0.672 |      0.055 |    0.018 |     0.092 |            1     |
+| cluster      |      1 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.668 |     0.627 |      0.042 |    0.009 |     0.072 |            0.994 |
+| cluster      |      2 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.757 |     0.711 |      0.045 |    0.007 |     0.085 |            0.99  |
+| cluster      |      3 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.736 |     0.7   |      0.037 |    0.004 |     0.07  |            0.988 |
+| cluster      |      4 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.701 |     0.64  |      0.06  |    0.03  |     0.094 |            1     |
+| cluster      |      0 | dmpnn_desc | graph+rdkit2d | lgbm__rdkit2d+morgan_counts |      918 |     0.699 |     0.672 |      0.027 |    0     |     0.055 |            0.976 |
+| cluster      |      1 | dmpnn_desc | graph+rdkit2d | lgbm__rdkit2d+morgan_counts |      918 |     0.647 |     0.627 |      0.021 |   -0.005 |     0.048 |            0.938 |
+| cluster      |      2 | dmpnn_desc | graph+rdkit2d | lgbm__rdkit2d+morgan_counts |      918 |     0.775 |     0.711 |      0.063 |    0.034 |     0.093 |            1     |
+| random       |      0 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      917 |     0.643 |     0.579 |      0.064 |    0.033 |     0.095 |            1     |
+| random       |      1 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      917 |     0.651 |     0.567 |      0.084 |    0.052 |     0.115 |            1     |
+| random       |      2 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      917 |     0.638 |     0.546 |      0.093 |    0.064 |     0.123 |            1     |
+| random       |      3 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      917 |     0.669 |     0.596 |      0.073 |    0.04  |     0.107 |            1     |
+| random       |      4 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      917 |     0.663 |     0.581 |      0.082 |    0.049 |     0.115 |            1     |
+| random       |      0 | dmpnn_desc | graph+rdkit2d | lgbm__rdkit2d+morgan_counts |      917 |     0.588 |     0.579 |      0.008 |   -0.017 |     0.033 |            0.745 |
+| random       |      1 | dmpnn_desc | graph+rdkit2d | lgbm__rdkit2d+morgan_counts |      917 |     0.581 |     0.567 |      0.014 |   -0.011 |     0.039 |            0.856 |
+| random       |      2 | dmpnn_desc | graph+rdkit2d | lgbm__rdkit2d+morgan_counts |      917 |     0.563 |     0.546 |      0.018 |   -0.006 |     0.043 |            0.925 |
+| scaffold     |      0 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.788 |     0.71  |      0.078 |    0.045 |     0.112 |            1     |
+| scaffold     |      1 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.808 |     0.71  |      0.098 |    0.059 |     0.136 |            1     |
+| scaffold     |      2 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.784 |     0.724 |      0.06  |    0.025 |     0.097 |            0.999 |
+| scaffold     |      3 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.816 |     0.682 |      0.133 |    0.094 |     0.176 |            1     |
+| scaffold     |      4 | dmpnn      | graph         | lgbm__rdkit2d+morgan_counts |      918 |     0.858 |     0.756 |      0.102 |    0.069 |     0.141 |            1     |
+| scaffold     |      0 | dmpnn_desc | graph+rdkit2d | lgbm__rdkit2d+morgan_counts |      918 |     0.792 |     0.71  |      0.082 |    0.05  |     0.116 |            1     |
+| scaffold     |      1 | dmpnn_desc | graph+rdkit2d | lgbm__rdkit2d+morgan_counts |      918 |     0.79  |     0.71  |      0.08  |    0.051 |     0.11  |            1     |
+| scaffold     |      2 | dmpnn_desc | graph+rdkit2d | lgbm__rdkit2d+morgan_counts |      918 |     0.832 |     0.724 |      0.108 |    0.077 |     0.138 |            1     |

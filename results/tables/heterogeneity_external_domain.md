@@ -1,0 +1,23 @@
+| quantity                             |   aqsoldb_to_esol |   esol_to_aqsoldb |   aqsoldb_to_esol_sizematched |
+|:-------------------------------------|------------------:|------------------:|------------------------------:|
+| n_train                              |          7267     |          1004     |                      1004     |
+| n_test                               |          1115     |          8074     |                      1115     |
+| train_logS_mean                      |            -2.867 |            -3.05  |                        -2.898 |
+| train_logS_sd                        |             2.376 |             2.072 |                         2.414 |
+| train_logS_min                       |           -13.172 |            -9.332 |                       -13.172 |
+| train_logS_max                       |             2.138 |             1.58  |                         1.968 |
+| test_logS_mean                       |            -3.054 |            -2.863 |                        -3.054 |
+| test_logS_sd                         |             2.095 |             2.375 |                         2.095 |
+| test_maxsim_median                   |             0.576 |             0.375 |                         0.425 |
+| frac_test_maxsim_lt_0.4              |             0.132 |             0.56  |                         0.42  |
+| frac_test_maxsim_ge_0.6              |             0.449 |             0.107 |                         0.092 |
+| frac_test_multicomponent             |             0     |             0.087 |                         0     |
+| frac_test_charged                    |             0.056 |             0.141 |                         0.056 |
+| frac_test_new_element                |             0     |             0.062 |                         0     |
+| frac_test_mw_gt_train_max            |             0     |             0.022 |                         0     |
+| frac_test_logS_outside_train_range   |             0     |             0.006 |                         0     |
+| frac_test_in_descriptor_domain       |             0.944 |             0.826 |                         0.944 |
+| lgbm_MAE_all                         |             0.438 |             0.963 |                         0.584 |
+| lgbm_MAE_in_descriptor_domain        |             0.436 |             0.832 |                         0.581 |
+| lgbm_MAE_outside_descriptor_domain   |             0.472 |             1.583 |                         0.645 |
+| lgbm_MAE_in_domain_and_maxsim_ge_0.5 |             0.398 |             0.661 |                         0.53  |

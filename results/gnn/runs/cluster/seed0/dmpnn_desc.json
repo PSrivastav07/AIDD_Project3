@@ -1,0 +1,60 @@
+{
+  "row": {
+    "experiment": "gnn",
+    "train_dataset": "aqsoldb",
+    "test_dataset": "aqsoldb",
+    "split_type": "cluster",
+    "split_name": "seed0",
+    "seed": 0,
+    "featurizer": "graph+rdkit2d",
+    "model": "dmpnn_desc",
+    "n_train": 7336,
+    "n_val": 917,
+    "n_test": 918,
+    "MAE": 0.699341170991063,
+    "RMSE": 0.9864250551792098,
+    "R2": 0.8141073077582429,
+    "Pearson": 0.904720608244608,
+    "Spearman": 0.9009371704981731,
+    "val_MAE": 0.6164237484741187,
+    "fit_seconds": 506.52
+  },
+  "info": {
+    "best_epoch": 13,
+    "best_val_MAE": 0.6164237484741187,
+    "epochs_run": 23,
+    "train_seconds": 506.5188012123108,
+    "n_parameters": 187401,
+    "n_desc": 217,
+    "early_stopped": true,
+    "threads": 1,
+    "inference_seconds": 2.5902509689331055
+  },
+  "mc_dropout": {
+    "passes": 10,
+    "spearman_std_abs_err_val": 0.1124389175873245,
+    "spearman_std_abs_err_test": 0.0640415039888707,
+    "mean_std_test": 0.2862426630303997
+  },
+  "config": {
+    "hidden": 200,
+    "depth": 3,
+    "ffn_hidden": 200,
+    "ffn_layers": 2,
+    "dropout": 0.1,
+    "encoder_dropout": 0.0,
+    "aggregation": "mean",
+    "batch_size": 64,
+    "eval_batch_size": 1024,
+    "max_epochs": 50,
+    "patience": 10,
+    "warmup_epochs": 2.0,
+    "init_lr": 0.0001,
+    "max_lr": 0.001,
+    "final_lr": 0.0001,
+    "weight_decay": 0.0,
+    "grad_clip": 10.0,
+    "mc_passes": 10,
+    "extra": {}
+  }
+}

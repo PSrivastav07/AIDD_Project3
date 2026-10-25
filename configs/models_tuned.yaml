@@ -1,0 +1,103 @@
+# Hyper-parameters chosen by scripts/06_benchmark.py tune (random search, validation data only).
+# Objective: mean val MAE over random/seed0 and scaffold/seed0. Trials: results\benchmark\tuning_trials.csv.
+# Generated 2026-10-14 05:23. ridge (RidgeCV) and mlp use registry defaults.
+objective: mean val MAE over random/seed0 and scaffold/seed0
+models:
+  knn:
+    morgan_bits:
+      params:
+        n_neighbors: 10
+        weights: distance
+      source: tuned
+      trial: 2
+      n_trials: 4
+      objective_val_MAE: 1.1226
+      val_MAE_random: 0.9737
+      val_MAE_scaffold: 1.2714
+      default_objective_val_MAE: null
+  lgbm:
+    morgan_counts:
+      params:
+        n_estimators: 2000
+        learning_rate: 0.03
+        num_leaves: 63
+        min_child_samples: 10
+        subsample: 0.8
+        subsample_freq: 1
+        colsample_bytree: 0.3
+        reg_lambda: 1.0
+      source: tuned
+      trial: 0
+      n_trials: 6
+      objective_val_MAE: 0.7705
+      val_MAE_random: 0.6741
+      val_MAE_scaffold: 0.867
+      default_objective_val_MAE: 0.7705
+    rdkit2d:
+      params: &id001
+        n_estimators: 2000
+        learning_rate: 0.03
+        num_leaves: 63
+        min_child_samples: 10
+        subsample: 0.8
+        subsample_freq: 1
+        colsample_bytree: 0.3
+        reg_lambda: 1.0
+      source: tuned
+      trial: 0
+      n_trials: 6
+      objective_val_MAE: 0.6323
+      val_MAE_random: 0.5653
+      val_MAE_scaffold: 0.6993
+      default_objective_val_MAE: 0.6323
+    rdkit2d+morgan_counts:
+      params:
+        n_estimators: 2000
+        learning_rate: 0.03
+        num_leaves: 63
+        min_child_samples: 10
+        subsample: 0.8
+        subsample_freq: 1
+        colsample_bytree: 0.3
+        reg_lambda: 1.0
+      source: tuned
+      trial: 0
+      n_trials: 6
+      objective_val_MAE: 0.6305
+      val_MAE_random: 0.5601
+      val_MAE_scaffold: 0.701
+      default_objective_val_MAE: 0.6305
+    maccs:
+      params: *id001
+      source: transferred from lgbm/rdkit2d
+  rf:
+    rdkit2d:
+      params: &id002
+        n_estimators: 300
+        max_features: 0.33
+        min_samples_leaf: 2
+      source: tuned
+      trial: 0
+      n_trials: 6
+      objective_val_MAE: 0.704
+      val_MAE_random: 0.6466
+      val_MAE_scaffold: 0.7614
+      default_objective_val_MAE: null
+    rdkit2d+morgan_counts:
+      params: &id003
+        n_estimators: 300
+        max_features: 0.1
+        min_samples_leaf: 2
+      source: tuned
+      trial: 1
+      n_trials: 6
+      objective_val_MAE: 0.7102
+      val_MAE_random: 0.6527
+      val_MAE_scaffold: 0.7677
+      default_objective_val_MAE: null
+    maccs:
+      params: *id002
+      source: transferred from rf/rdkit2d
+    morgan_counts:
+      params: *id003
+      source: transferred from rf/rdkit2d+morgan_counts

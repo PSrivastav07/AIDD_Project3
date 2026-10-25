@@ -1,0 +1,20 @@
+| term                |   coef |   ci_low |   ci_high |     p |    n |    r2 | model                       | split_type   |
+|:--------------------|-------:|---------:|----------:|------:|-----:|------:|:----------------------------|:-------------|
+| rel[T.inconsistent] |  0.199 |    0.087 |     0.311 | 0     | 3776 | 0.074 | lgbm__rdkit2d+morgan_counts | random       |
+| rel[T.single]       |  0.183 |    0.144 |     0.221 | 0     | 3776 | 0.074 | lgbm__rdkit2d+morgan_counts | random       |
+| maxsim              | -0.472 |   -0.594 |    -0.351 | 0     | 3776 | 0.074 | lgbm__rdkit2d+morgan_counts | random       |
+| rel[T.inconsistent] |  0.063 |   -0.052 |     0.179 | 0.284 | 3190 | 0.066 | lgbm__rdkit2d+morgan_counts | scaffold     |
+| rel[T.single]       |  0.172 |    0.115 |     0.229 | 0     | 3190 | 0.066 | lgbm__rdkit2d+morgan_counts | scaffold     |
+| maxsim              | -0.286 |   -0.435 |    -0.136 | 0     | 3190 | 0.066 | lgbm__rdkit2d+morgan_counts | scaffold     |
+| rel[T.inconsistent] |  0.203 |    0.091 |     0.314 | 0     | 3823 | 0.087 | lgbm__rdkit2d+morgan_counts | cluster      |
+| rel[T.single]       |  0.198 |    0.155 |     0.241 | 0     | 3823 | 0.087 | lgbm__rdkit2d+morgan_counts | cluster      |
+| maxsim              | -0.631 |   -0.784 |    -0.478 | 0     | 3823 | 0.087 | lgbm__rdkit2d+morgan_counts | cluster      |
+| rel[T.inconsistent] |  0.171 |    0.057 |     0.285 | 0.003 | 3776 | 0.079 | rf__rdkit2d                 | random       |
+| rel[T.single]       |  0.208 |    0.165 |     0.252 | 0     | 3776 | 0.079 | rf__rdkit2d                 | random       |
+| maxsim              | -0.409 |   -0.537 |    -0.281 | 0     | 3776 | 0.079 | rf__rdkit2d                 | random       |
+| rel[T.inconsistent] |  0.019 |   -0.096 |     0.134 | 0.752 | 3190 | 0.102 | rf__rdkit2d                 | scaffold     |
+| rel[T.single]       |  0.195 |    0.133 |     0.257 | 0     | 3190 | 0.102 | rf__rdkit2d                 | scaffold     |
+| maxsim              | -0.317 |   -0.474 |    -0.16  | 0     | 3190 | 0.102 | rf__rdkit2d                 | scaffold     |
+| rel[T.inconsistent] |  0.191 |    0.07  |     0.311 | 0.002 | 3823 | 0.106 | rf__rdkit2d                 | cluster      |
+| rel[T.single]       |  0.24  |    0.192 |     0.287 | 0     | 3823 | 0.106 | rf__rdkit2d                 | cluster      |
+| maxsim              | -0.639 |   -0.798 |    -0.48  | 0     | 3823 | 0.106 | rf__rdkit2d                 | cluster      |

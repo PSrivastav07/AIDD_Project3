@@ -1,0 +1,258 @@
+compound_id,name,smiles_2d,n_merged,merged_ids,logS_median,range,sd,conflict,kind
+B-962,propoxyphene,CCC(=O)OC(Cc1ccccc1)(c1ccccc1)C(C)CN(C)C,2,B-962;C-846,-3.80985,2.3997,1.6968441428133578,True,defined + undefined stereo record
+B-3125,fenpropimorph,CC(Cc1ccc(C(C)(C)C)cc1)CN1CC(C)OC(C)C1,2,B-3125;B-3121,-3.6654,2.3666,1.6734389083560834,True,defined + undefined stereo record
+B-13,reserpine,COC(=O)C1C2CC3c4[nH]c5cc(OC)ccc5c4CCN3CC2CC(OC(=O)c2cc(OC)c(OC)c(OC)c2)C1OC,2,B-13;C-2581,-4.945399999999999,2.0492,1.4490032160074733,True,defined + undefined stereo record
+F-465,"4-(1-hydroxy-2-methylaminoethyl)benzene-1,2-diol",CNCC(O)c1ccc(O)c(O)c1,2,F-465;B-25,-1.98385,2.0477,1.447942555835693,True,defined + undefined stereo record
+C-1038,rotenone,C=C(C)C1Cc2c(ccc3c2OC2COc4cc(OC)c(OC)cc4C2C3=O)O1,2,C-1038;B-289,-5.38245,1.8249000000000004,1.290399164987331,True,defined + undefined stereo record
+B-3253,simvastatin,CCC(C)(C)C(=O)OC1CC(C)C=C2C=CC(C)C(CCC3CC(O)CC(=O)O3)C21,2,B-3253;C-1232,-6.31235,1.6646999999999998,1.1771206586412457,True,defined + undefined stereo record
+A-2025,"1,4-bis(2-ethylhexyl) (2E)-but-2-enedioate",CCCCC(CC)COC(=O)C=CC(=O)OCC(CC)CCCC,2,A-2025;A-6020,-6.2161974870000005,1.5192444606000004,1.074268060370359,True,distinct defined stereoisomers
+B-1017,citraconic acid,CC(=CC(=O)O)C(=O)O,2,B-1017;D-1660,0.0427499999999999,1.4735,1.0419218420783778,True,distinct defined stereoisomers
+B-940,lithocholic acid,CC(CCC(=O)O)C1CCC2C3CCC4CC(O)CCC4(C)C3CCC12C,2,B-940;C-1738,-6.67,1.34,0.9475230867899735,True,defined + undefined stereo record
+B-212,dionine,CCOc1ccc2c3c1OC1C(O)C=CC4C(C2)N(C)CCC341,2,B-212;F-963,-1.4495,1.2590000000000003,0.8902474375138635,True,defined + undefined stereo record
+C-611,naproxen,COc1ccc2cc(C(C)C(=O)O)ccc2c1,2,C-611;I-56,-3.895,1.21,0.8555992052357225,True,defined + undefined stereo record
+B-205,camphor,CC12CCC(CC1=O)C2(C)C,2,B-205;B-958,-2.58045,1.2041000000000002,0.851427275226722,True,defined + undefined stereo record
+A-4900,"1,4-dibutyl (2Z)-but-2-enedioate",CCCCOC(=O)C=CC(=O)OCCCC,2,A-4900;A-1844,-3.72079284955,1.1855173753000003,0.8382873752891075,True,distinct defined stereoisomers
+B-140,maltose,OCC1OC(OC2C(CO)OC(O)C(O)C2O)C(O)C(O)C1O,2,B-140;B-2198,-0.2294999999999999,1.1744,0.8304262038254813,True,defined + undefined stereo record
+B-1665,"piperidine, 3-ethyl-,",CCC1CCCCN1,2,B-1665;E-1200,-0.92315,1.1537,0.8157890934549199,True,defined + undefined stereo record
+B-4258,fenvalerate,CC(C)C(C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1)c1ccc(Cl)cc1,2,B-4258;B-3109,-7.782500000000001,1.079200000000001,0.7631096382565228,True,defined + undefined stereo record
+B-941,nandrolone,CC12CCC3C4CCC(=O)C=C4CCC3C1CCC2O,2,B-941;C-1665,-2.4842,1.0716,0.7577356267195045,True,defined + undefined stereo record
+B-3178,"cyclopropanecarboxylic acid, 3-(2,2-dichloroethe",CC1(C)C(C=C(Cl)Cl)C1C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1,2,B-3178;B-3122,-7.08905,1.0606999999999998,0.7500281628045707,True,defined + undefined stereo record
+A-3099,(2E)-but-2-enoic acid,CC=CC(=O)O,2,A-3099;B-1027,0.5515875728999999,1.0268248542,0.7260748174957079,True,distinct defined stereoisomers
+A-2377,"4,7,7-trimethylbicyclo[3.1.1]hept-3-ene",CC1=CCC2CC1C2(C)C,2,A-2377;A-135,-4.2725704235,1.0000000000000004,0.7071067811865478,True,defined + undefined stereo record
+E-530,ephedrine,CNC(C)C(O)c1ccccc1,3,E-530;A-3399;B-4494,-0.42,0.9904913165,0.5703366064832397,True,defined + undefined stereo record
+A-5195,"1,3,5-tris(oxiran-2-ylmethyl)-1,3,5-triazinane-2,4,6-trione",O=c1n(CC2CO2)c(=O)n(CC2CO2)c(=O)n1CC1CO1,2,A-5195;A-2283,-1.98212421075,0.9734022315000002,0.6882993187157677,True,defined + undefined stereo record
+B-1994,"tyrosine, 3,5-dichloro-",NC(Cc1cc(Cl)c(O)c(Cl)c1)C(=O)O,2,B-1994;B-2448,-1.2753,0.9586,0.6778325604454245,True,defined + undefined stereo record
+C-382,chenodeoxycholic  acid;  chenodiol,CC(CCC(=O)O)C1CCC2C3C(O)CC4CC(O)CCC4(C)C3CCC12C,3,C-382;B-765;B-969,-4.2929,0.9298000000000002,0.4773764656955767,False,defined + undefined stereo record
+B-1990,d-glycero-l-gulo-heptitol,OCC(O)C(O)C(O)C(O)C(O)CO,2,B-1990;D-1691,-0.0724,0.8892,0.6287593498310781,True,defined + undefined stereo record
+B-2047,"butanedioic acid, chloro-, (r)-",O=C(O)CC(Cl)C(=O)O,2,B-2047;B-2472,-0.3593,0.872,0.6165971131946694,True,defined + undefined stereo record
+A-146,"(1R,2R,4R)-1,7,7-trimethylbicyclo[2.2.1]heptan-2-yl acetate (1S,2S,4S)-1,7,7-trimethylbicyclo[2.2.1]heptan-2-yl acetate",CC(=O)OC1CC2CCC1(C)C2(C)C,3,A-146;A-499;C-1594,-3.4963238418,0.8412218076000002,0.4206785384189435,False,defined + undefined stereo record
+B-671,aldicarb,CNC(=O)ON=CC(C)(C)SC,2,B-671;H-525,-1.10455,0.7891000000000001,0.5579779610343047,True,defined + undefined stereo record
+B-2488,methomyl,CNC(=O)ON=C(C)SC,2,B-2488;C-74,-0.8283,0.7634,0.5398053167578103,True,distinct defined stereoisomers
+B-2706,"1,2-dithiane-3,6-dicarboxylic acid, cis-",O=C(O)C1CCC(C(=O)O)SS1,3,B-2706;B-2761;F-1135,-1.5241,0.7590999999999999,0.3798547661058543,False,defined + undefined stereo record
+D-1998,benzyl morphine,CN1CCC23c4c5ccc(OCc6ccccc6)c4OC2C(O)C=CC3C1C5,2,D-1998;F-961,-2.5965000000000003,0.7530000000000001,0.5324514062334704,True,defined + undefined stereo record
+D-1331,scopolamine,CN1C2CC(OC(=O)C(CO)c3ccccc3)CC1C1OC12,2,D-1331;C-553,-0.872,0.736,0.5204305909532989,True,defined + undefined stereo record
+D-306,permethrin,CC1(C)C(C=C(Cl)Cl)C1C(=O)OCc1cccc(Oc2ccccc2)c1,2,D-306;E-999,-6.640000000000001,0.7000000000000002,0.4949747468305834,False,defined + undefined stereo record
+C-2376,brucine * 4 h2o,COc1cc2c(cc1OC)C13CCN4CC5=CCOC6CC(=O)N2C1C6C5CC43,2,C-2376;B-4497,-2.44045,0.6991,0.4943383507275154,False,defined + undefined stereo record
+C-1855,raffinose,OCC1OC(OCC2OC(OC3(CO)OC(CO)C(O)C3O)C(O)C(O)C2O)C(O)C(O)C1O,2,C-1855;B-1046,-0.0481,0.6961999999999999,0.4922877410620743,False,defined + undefined stereo record
+A-2297,"2-ethyl-2-[2-(6-methoxy-3,4-dihydro-2H-naphthalen-1-ylidene)ethyl]cyclopentane-1,3-dione",CCC1(CC=C2CCCc3cc(OC)ccc32)C(=O)CCC1=O,2,A-2297;A-5063,-4.50566068025,0.666312876500001,0.4711543533650653,False,distinct defined stereoisomers
+B-1857,"3,4-(methylenedioxy)cinnamic acid",O=C(O)C=Cc1ccc2c(c1)OCO2,2,B-1857;F-860,-3.52115,0.6623000000000001,0.4683168211798505,False,defined + undefined stereo record
+B-2176,"3,6-dimethylpiperazine-2,5-dione",CC1NC(=O)C(C)NC1=O,2,B-2176;C-1667,-0.4514,0.5972,0.4222841697246062,False,defined + undefined stereo record
+B-2279,"d-galactose, (aminocarbonyl)hydrazone",NC(=O)NN=CC(O)C(O)C(O)C(O)CO,3,B-2279;B-2639;B-2882,-0.53,0.5784,0.3082736500794924,False,distinct defined stereoisomers
+B-2988,triadimenol,CC(C)(C)C(O)C(Oc1ccc(Cl)cc1)n1cncn1,3,B-2988;B-3271;B-3314,-3.6786,0.5606,0.2803251207675354,False,defined + undefined stereo record
+B-2891,nadolol,CC(C)(C)NCC(O)COc1cccc2c1CC(O)C(O)C2,2,B-2891;C-508,-1.2899500000000002,0.5599000000000001,0.395909086786348,False,defined + undefined stereo record
+B-1699,doxepin,CN(C)CCC=C1c2ccccc2COc2ccccc21,2,B-1699;E-681,-3.67345,0.5468999999999999,0.3867166986309228,False,defined + undefined stereo record
+B-1322,"altraric acid, d-",O=C(O)C(O)C(O)C(O)C(O)C(=O)O,3,B-1322;B-1076;B-3456,0.1999,0.5224,0.3016077806246605,False,distinct defined stereoisomers
+A-142,1-methyl-4-(prop-1-en-2-yl)cyclohex-1-ene,C=C(C)C1CC=C(C)CC1,2,A-142;A-554,-4.09666715725,0.5003412555,0.3537946946714409,False,defined + undefined stereo record
+C-1394,naloxone,C=CCN1CCC23c4c5ccc(O)c4OC2C(=O)CCC3(O)C1C5,2,C-1394;I-55,-3.145,0.4900000000000002,0.3464823227814084,False,defined + undefined stereo record
+A-1877,"6-{[amino(phenyl)acetyl]amino}-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid",CC1(C)SC2C(NC(=O)C(N)c3ccccc3)C(=O)N2C1C(=O)O,2,A-1877;C-2294,-1.7645082211499998,0.4509835577000001,0.3188935318533047,False,defined + undefined stereo record
+A-2086,Estrone,CC12CCC3c4ccc(O)cc4CCC3C1CCC2=O,2,A-2086;F-306,-5.33057406065,0.4411481212999995,0.3119388280789352,False,defined + undefined stereo record
+C-1546,"(e)-1,2-diiodoethene;  1,2-diiodoethylene (trans)",IC=CI,3,C-1546;B-1260;E-139,-3.22,0.4387000000000003,0.253283563093489,False,defined + undefined stereo record
+B-1173,maleanilic acid,O=C(O)C=CC(=O)Nc1ccccc1,2,B-1173;F-566,-2.50075,0.4385000000000003,0.3100663235503013,False,defined + undefined stereo record
+B-419,alpha-terpineol,CC1=CCC(C(C)(C)O)CC1,2,B-419;C-18,-2.1235,0.4270000000000002,0.3019345955666559,False,defined + undefined stereo record
+B-1119,"1,2-ethylene dibromide",BrC=CBr,3,B-1119;B-2665;E-1053,-1.32,0.4220000000000001,0.2434976043687768,False,defined + undefined stereo record
+F-607,"2-(2,4,5-trichlorophenoxy)propanoic acid",CC(Oc1cc(Cl)c(Cl)cc1Cl)C(=O)O,2,F-607;B-2730,-3.33975,0.4204999999999996,0.2973384014889429,False,defined + undefined stereo record
+D-1980,tetramethrin,CC(C)=CC1C(C(=O)OCN2C(=O)C3=C(CCCC3)C2=O)C1(C)C,2,D-1980;C-308,-5.059,0.4019999999999992,0.2842569260369915,False,defined + undefined stereo record
+A-3674,(2S)-2-amino-3-methylpentanoic acid,CCC(C)C(N)C(=O)O,4,A-3674;B-908;B-1965;B-945,-0.5031269284,0.3979999999999999,0.1697946026448585,False,defined + undefined stereo record
+D-1445,piperine,O=C(C=CC=Cc1ccc2c(c1)OCO2)N1CCCCC1,2,D-1445;E-970,-3.6565,0.3930000000000002,0.2778929650063133,False,defined + undefined stereo record
+A-5131,"sodium (2R,3R,4S,5R,6R)-2,3,4,5,6,7-hexahydroxyheptanoate",O=C([O-])C(O)C(O)C(O)C(O)C(O)CO.[Na+],2,A-5131;A-5157,0.51186825915,0.3895961214999999,0.275486059436628,False,distinct defined stereoisomers
+B-1450,glycochenodeoxycholic acid,CC(CCC(=O)NCC(=O)O)C1CCC2C3C(O)CC4CC(O)CCC4(C)C3CCC12C,2,B-1450;B-3096,-5.33855,0.3678999999999996,0.2601445847985306,False,distinct defined stereoisomers
+C-33,l-serine,NC(CO)C(=O)O,2,C-33;B-2272,-0.20305,0.3661,0.258871792592395,False,defined + undefined stereo record
+A-566,"(2E)-3,7-dimethylocta-2,6-dienal",CC(C)=CCCC(C)=CC=O,2,A-566;E-870,-2.23583410275,0.3516682055000002,0.2486669728367544,False,defined + undefined stereo record
+A-808,5-methyl-2-(propan-2-yl)cyclohexan-1-ol,CC1CCC(C(C)C)C(O)C1,4,A-808;A-652;A-4876;A-789,-2.56551396,0.3422517323999998,0.1498724307668619,False,defined + undefined stereo record
+C-559,deoxycorticosterone  acetate,CC(=O)OCC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C,2,C-559;B-4510,-4.80005,0.3399000000000001,0.2403455949253075,False,defined + undefined stereo record
+B-2961,flamprop-methyl,COC(=O)C(C)N(C(=O)c1ccccc1)c1ccc(F)c(Cl)c1,2,B-2961;B-3086,-4.15195,0.3399000000000001,0.2403455949253075,False,defined + undefined stereo record
+C-1630,Beta-d-Fructose,O=C(CO)C(O)C(O)C(O)CO,2,C-1630;B-64,0.47765,0.3152999999999999,0.2229507681081184,False,defined + undefined stereo record
+B-3161,fluazifop - butyl,CCCCOC(=O)C(C)Oc1ccc(Oc2ccc(C(F)(F)F)cn2)cc1,2,B-3161;B-3249,-5.4331,0.3009999999999992,0.2128391411371503,False,defined + undefined stereo record
+A-4356,2-hydroxy-2-phenylacetic acid,O=C(O)C(O)c1ccccc1,3,A-4356;A-4479;B-2505,-0.0321269405,0.3008667621999999,0.1522748498033898,False,defined + undefined stereo record
+C-30,d-glucose;  dextrose,OCC1OC(O)C(O)C(O)C1O,2,C-30;B-1004,0.59165,0.2966999999999999,0.2097985819780486,False,defined + undefined stereo record
+B-3508,pyriminobac-methyl,CON=C(C)c1cccc(Oc2nc(OC)cc(OC)n2)c1C(=O)OC,2,B-3508;C-1503,-3.45685,0.2936999999999998,0.2076772616344889,False,distinct defined stereoisomers
+C-1959,equilin,CC12CCC3C(=CCc4cc(O)ccc43)C1CCC2=O,2,C-1959;B-970,-5.13475,0.2894999999999994,0.2047074131535051,False,defined + undefined stereo record
+B-2779,"l-alanine, n-[(ethylthio)thioxomethyl]-",CCSC(=S)NC(C)C(=O)O,2,B-2779;B-3172,-1.0978,0.2729999999999999,0.1930401512639274,False,defined + undefined stereo record
+B-1961,"dl-valine, n-acetyl-",CC(=O)NC(C(=O)O)C(C)C,2,B-1961;B-401,-0.4962,0.2725999999999999,0.1927573085514528,False,defined + undefined stereo record
+B-1829,"2-cyclohexen-1-one, oxime, (z)-",ON=C1C=CCCC1,2,B-1829;B-1991,-0.8350500000000001,0.2633,0.1861812154864179,False,distinct defined stereoisomers
+C-420,cholic  acid,CC(CCC(=O)O)C1CCC2C3C(O)CC4CC(O)CCC4(C)C3CC(O)C12C,2,C-420;B-273,-3.4991,0.2618,0.1851205553146381,False,defined + undefined stereo record
+D-2087,"d-alaninic acid,",CC(C)OC(=O)C(C)N(C(=O)c1ccccc1)c1ccc(F)c(Cl)c1,3,D-2087;B-2960;B-3087,-4.4817,0.2553999999999998,0.1307216253468924,False,defined + undefined stereo record
+A-3446,"(2R,3R)-2,3-dihydroxybutanedioic acid",O=C(O)C(O)C(O)C(=O)O,2,A-3446;B-842,0.6977239219,0.2517521562,0.1780156568273549,False,defined + undefined stereo record
+D-1335,androsterone,CC12CCC3C(CCC4CC(O)CCC43C)C1CCC2=O,3,D-1335;E-991;B-985,-4.4,0.2442999999999999,0.1404728799448492,False,defined + undefined stereo record
+D-267,phoxim,CCOP(=S)(OCC)ON=C(C#N)c1ccccc1,2,D-267;G-958,-4.746,0.2320000000000002,0.1640487732352791,False,defined + undefined stereo record
+B-4192,dichlorprop,CC(Oc1ccc(Cl)cc1Cl)C(=O)O,2,B-4192;B-2454,-2.7137,0.2268000000000003,0.1603718179731092,False,defined + undefined stereo record
+B-3133,cyhalothrin,CC1(C)C(C=C(Cl)C(F)(F)F)C1C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1,2,B-3133;G-550,-8.06505,0.2218999999999997,0.1569069947452947,False,defined + undefined stereo record
+B-2841,penbutolol,CC(C)(C)NCC(O)COc1ccccc1C1CCCC1,2,B-2841;C-1239,-1.72975,0.2205000000000001,0.1559170452516338,False,defined + undefined stereo record
+I-33,diltiazem,COc1ccc(C2Sc3ccccc3N(CCN(C)C)C(=O)C2OC(C)=O)cc1,2,I-33;C-2521,-3.055,0.2099999999999999,0.1484924240491749,False,defined + undefined stereo record
+B-3402,clodinafop-propargyl,C#CCOC(=O)C(C)Oc1ccc(Oc2ncc(Cl)cc2F)cc1,2,B-3402;C-1456,-5.04585,0.2083000000000003,0.1472903425211581,False,defined + undefined stereo record
+E-1194,diallate,CC(C)N(C(=O)SCC(Cl)=CCl)C(C)C,2,E-1194;B-1843,-4.1828,0.2055999999999995,0.1453811542119538,False,defined + undefined stereo record
+A-4741,2-ethylhex-2-enal,CCCC=C(C=O)CC,2,A-4741;G-212,-2.3579789368000004,0.2040421263999996,0.1442795712251624,False,defined + undefined stereo record
+B-1631,"l-leucine, n-acetyl-",CC(=O)NC(CC(C)C)C(=O)O,3,B-1631;B-2565;F-958,-1.3301,0.2001000000000001,0.1155277888648442,False,defined + undefined stereo record
+E-697,tetracycline,CN(C)C1C(O)=C(C(N)=O)C(=O)C2(O)C(O)=C3C(=O)c4c(O)cccc4C(C)(O)C3CC12,2,E-697;I-85,-3.0250000000000004,0.1899999999999999,0.134350288425444,False,defined + undefined stereo record
+B-3222,enalapril,CCOC(=O)C(CCc1ccccc1)NC(C)C(=O)N1CCCC1C(=O)O,2,B-3222;F-1139,-1.27045,0.1809,0.1279156167166464,False,defined + undefined stereo record
+A-2470,17-hydroxyandrostan-3-one,CC12CCC3C(CCC4CC(=O)CCC43C)C1CCC2O,2,A-2470;C-201,-4.829499425350001,0.1789988507000002,0.1265713011545685,False,defined + undefined stereo record
+H-556,b-Endosulfan,O=S1OCC2C(CO1)C1(Cl)C(Cl)=C(Cl)C2(Cl)C1(Cl)Cl,3,H-556;B-2768;B-4381,-5.9563,0.1780999999999997,0.0912694362861959,False,defined + undefined stereo record
+B-600,"1,4-dichloro-2-butene(trans)",ClCC=CCCl,2,B-600;B-1664,-2.2504,0.1657999999999999,0.1172383043207295,False,distinct defined stereoisomers
+A-1517,(5S)-2-methyl-5-(prop-1-en-2-yl)cyclohex-2-en-1-one,C=C(C)C1CC=C(C)C(=O)C1,3,A-1517;B-2245;B-429,-2.0608,0.1601463403,0.0918886239438509,False,defined + undefined stereo record
+B-2876,methoprene,COC(C)(C)CCCC(C)CC=CC(C)=CC(=O)OC(C)C,2,B-2876;E-993,-5.267950000000001,0.1558999999999999,0.1102379471869827,False,defined + undefined stereo record
+C-999,methotrimeprazine;  levomepromazine,COc1ccc2c(c1)N(CC(C)CN(C)C)c1ccccc1S2,2,C-999;B-100,-4.29275,0.1545000000000005,0.1092479976933219,False,defined + undefined stereo record
+B-4564,hydrocortisone acetate,CC(=O)OCC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3C(O)CC21C,2,B-4564;C-609,-4.53385,0.1523000000000003,0.1076923627747114,False,defined + undefined stereo record
+C-1569,"dl-methylsuccinic  acid;  dl-2-methyl-1,4-butanedioic acid",CC(CC(=O)O)C(=O)O,2,C-1569;B-2013,0.55555,0.1511,0.1068438346372873,False,defined + undefined stereo record
+A-4903,2-amino-3-[(2-amino-2-carboxyethyl)disulfanyl]propanoic acid,NC(CSSCC(N)C(=O)O)C(=O)O,2,A-4903;F-959,-3.2349609934,0.1500780131999999,0.1061211808407241,False,defined + undefined stereo record
+B-2196,"d-xylose, (aminocarbonyl)hydrazone",NC(=O)NN=CC(O)C(O)C(O)CO,2,B-2196;F-174,-0.0544,0.1488,0.1052174890405582,False,defined + undefined stereo record
+E-414,betamethasone,CC1CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)CO,3,E-414;A-461;B-4563,-3.77,0.1265815002999999,0.0728001826474789,False,defined + undefined stereo record
+B-4571,progesterone,CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C,2,B-4571;C-389,-4.4913,0.1226000000000002,0.0866912913734709,False,defined + undefined stereo record
+A-3404,"(E)-1,2-dichloroethene",ClC=CCl,3,A-3404;G-514;E-138,-1.3,0.1128196143000002,0.0651364346859748,False,defined + undefined stereo record
+D-1336,prasterone,CC12CCC3C(CC=C4CC(O)CCC43C)C1CCC2=O,2,D-1336;H-574,-4.066,0.1120000000000001,0.0791959594928933,False,defined + undefined stereo record
+A-1346,"1,3-dichloroprop-1-ene",ClC=CCCl,2,A-1346;B-2346,-1.6523765030000002,0.1087530059999999,0.0768999880170212,False,distinct defined stereoisomers
+B-1854,"n-acetyl-l-phenylalanine, ethyl ester",CCOC(=O)C(Cc1ccccc1)NC(C)=O,2,B-1854;F-426,-1.80785,0.1043,0.0737512372777569,False,defined + undefined stereo record
+B-1038,borneol,CC1(C)C2CCC1(C)C(O)C2,3,B-1038;A-4768;B-957,-2.3202,0.1015583952000001,0.0582914446591705,False,defined + undefined stereo record
+A-5736,Cholesterol,CC(C)CCCC(C)C1CCC2C3CC=C4CC(O)CCC4(C)C3CCC12C,2,A-5736;H-81,-7.05009768195,0.1001953639000001,0.0708488212571439,False,defined + undefined stereo record
+F-159,2-acetamido-3-methylpentanoic acid,CCC(C)C(NC(C)=O)C(=O)O,2,F-159;B-2982,-0.6406,0.0988,0.0698621499812309,False,defined + undefined stereo record
+B-1971,"glycine, n-(n-leucylglycyl)-",CC(C)CC(N)C(=O)NCC(=O)NCC(=O)O,2,B-1971;F-183,0.2612,0.0975999999999999,0.069013621843807,False,defined + undefined stereo record
+G-523,cortisone acetate,CC(=O)OCC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3C(=O)CC21C,2,G-523;B-4565,-4.25685,0.0937000000000001,0.0662559053971795,False,defined + undefined stereo record
+G-1072,t-Crotonaldehyde,CC=CC=O,3,G-1072;A-4246;E-296,0.32,0.0920163186999999,0.0531256463712833,False,defined + undefined stereo record
+A-2394,"(1R,2S,5R)-5-methyl-2-(propan-2-yl)cyclohexyl acetate",CC(=O)OC1CC(C)CCC1C(C)C,2,A-2394;A-2678,-4.0210017465,0.0917703734000001,0.0648914533431616,False,distinct defined stereoisomers
+C-519,atropine;  hyoscyamine,CN1C2CCC1CC(OC(=O)C(CO)c1ccccc1)C2,3,C-519;B-450;I-11,-1.91,0.09,0.0519615242270663,False,defined + undefined stereo record
+H-553,Digoxin,CC1OC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CCC6C5CC(O)C5(C)C(C7=CC(=O)OC7)CCC65O)C4)OC3C)OC2C)CC(O)C1O,2,H-553;B-2593,-4.12055,0.0788999999999999,0.0557907250356185,False,defined + undefined stereo record
+A-1165,"(2E)-3,7-dimethylocta-2,6-dien-1-yl acetate",CC(=O)OCC=C(C)CCC=C(C)C,2,A-1165;A-83,-3.7927266964,0.0755469613999997,0.0534197687039781,False,distinct defined stereoisomers
+C-1745,"prasterone  acetate;  dehydroepiandrosterone  acetate; prasterone acetate; 5,6-dehydroisoandrosterone acetate",CC(=O)OC1CCC2(C)C(=CCC3C4CCC(=O)C4(C)CCC32)C1,2,C-1745;B-1528,-4.4942,0.0716000000000001,0.0506288455329568,False,defined + undefined stereo record
+G-1078,Testosterone,CC12CCC(=O)C=C1CCC1C2CCC2(C)C(O)CCC12,2,G-1078;B-4573,-4.0554,0.0708000000000002,0.0500631601080077,False,defined + undefined stereo record
+A-24,2-(4-chloro-2-methylphenoxy)propanoic acid,Cc1cc(Cl)ccc1OC(C)C(=O)O,2,A-24;B-2482,-2.4316153931500004,0.0688307862999999,0.048670715747132,False,defined + undefined stereo record
+B-2251,norgestrel,C#CC1(O)CCC2C3CCC4=CC(=O)CCC4C3CCC21CC,2,B-2251;C-304,-5.22335,0.0666999999999999,0.0471640223051427,False,defined + undefined stereo record
+E-731,megestrol_acetate,CC(=O)OC1(C(C)=O)CCC2C3C=C(C)C4=CC(=O)CCC4(C)C3CCC21C,2,E-731;D-1776,-5.317,0.0659999999999998,0.046669047558312,False,defined + undefined stereo record
+G-515,"cis-1,2-Dimethylcyclohexane",CC1CCCCC1C,3,G-515;B-1818;B-2270,-4.3,0.0622000000000007,0.0311481941691652,False,defined + undefined stereo record
+C-393,nitrofurazone,NC(=O)NN=Cc1ccc([N+](=O)[O-])o1,2,C-393;F-1147,-2.95,0.06,0.0424264068711928,False,defined + undefined stereo record
+D-2063,sulindac,CC1=C(CC(=O)O)c2cc(F)ccc2C1=Cc1ccc([S+](C)[O-])cc1,2,D-2063;I-83,-4.526,0.0519999999999996,0.0367695526217001,False,distinct defined stereoisomers
+B-1176,dl-tyrosine,NC(Cc1ccc(O)cc1)C(=O)O,2,B-1176;B-1175,-2.6305,0.0511999999999996,0.036203867196751,False,defined + undefined stereo record
+C-542,ethinyl  estradiol,C#CC1(O)CCC2C3CCc4cc(O)ccc4C3CCC21C,2,C-542;B-68,-4.444599999999999,0.0507999999999997,0.0359210244842764,False,defined + undefined stereo record
+C-566,phenazopyridine,Nc1ccc(N=Nc2ccccc2)c(N)n1,2,C-566;I-65,-4.215,0.0499999999999998,0.0353553390593272,False,defined + undefined stereo record
+B-6,estradiol,CC12CCC3c4ccc(O)cc4CCC3C1CCC2O,3,B-6;C-495;B-73,-4.8441,0.0488999999999997,0.0251696245502389,False,defined + undefined stereo record
+B-3745,trans-cinnamic acid,O=C(O)C=Cc1ccccc1,2,B-3745;E-1101,-2.45675,0.0464999999999999,0.0328804653251744,False,defined + undefined stereo record
+A-5226,"(2R)-2,4-dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutanamide",CC(C)(CO)C(O)C(=O)NCCCO,2,A-5226;A-3445,0.4160513034999999,0.0432503011999998,0.0305825812668806,False,defined + undefined stereo record
+C-1551,dl-norvaline;  dl-2-aminopentanoic  acid,CCCC(N)C(=O)O,2,C-1551;B-1016,-0.08935,0.0413,0.0292035100630044,False,defined + undefined stereo record
+B-2734,"thymidine, 3'-azido-3'-deoxy-",Cc1cn(C2CC(N=[N+]=[N-])C(CO)O2)c(=O)[nH]c1=O,2,B-2734;C-624,-1.14105,0.0378999999999998,0.02679934700697,False,defined + undefined stereo record
+A-23,"(2E)-3,7-dimethylocta-2,6-dien-1-ol",CC(C)=CCCC(C)=CCO,2,A-23;A-447,-2.3362553348,0.0313083373999996,0.0221383376832161,False,distinct defined stereoisomers
+C-807,quinine,C=CC1CN2CCC1CC2C(O)c1ccnc2ccc(OC)cc12,4,C-807;A-4788;A-4787;I-74,-2.80107148515,0.0221429703,0.0127842498633628,False,defined + undefined stereo record
+G-732,Hydrocortisone ,CC12CCC(=O)C=C1CCC1C2C(O)CC2(C)C1CCC2(O)C(=O)CO,2,G-732;A-1186,-3.1010546219,0.0221092438000001,0.0156335962178867,False,defined + undefined stereo record
+A-3691,(1R)-1-phenylethan-1-amine,CC(N)c1ccccc1,2,A-3691;A-3661,-0.4707870588,0.0211892989999999,0.0149830970114893,False,defined + undefined stereo record
+H-341,17-Methyl testosterone  ,CC12CCC(=O)C=C1CCC1C2CCC2(C)C1CCC2(C)O,2,H-341;B-4572,-3.96025,0.0195000000000002,0.0137885822331378,False,defined + undefined stereo record
+E-984,Cinchonidine,C=CC1CN2CCC1CC2C(O)c1ccnc2ccccc12,2,E-984;A-4872,-3.0793618068,0.0187236136000001,0.0132395941448767,False,defined + undefined stereo record
+E-689,norethisterone_acetate,C#CC1(OC(C)=O)CCC2C3CCC4=CC(=O)CCC4C3CCC21C,2,E-689;B-29,-4.7970500000000005,0.0141,0.0099702056147303,False,defined + undefined stereo record
+A-1577,ethyl 3-phenylacrylate,CCOC(=O)C=Cc1ccccc1,2,A-1577;E-709,-3.0065233819,0.0130467637999998,0.009225455155519,False,defined + undefined stereo record
+B-4511,triamcinolone,CC12C=CC(=O)C=C1CCC1C3CC(O)C(O)(C(=O)CO)C3(C)CC(O)C12F,2,B-4511;C-586,-3.68645,0.0128999999999996,0.0091216774773062,False,defined + undefined stereo record
+B-2310,"cytidine, 2',3'-dideoxy-",Nc1ccn(C2CCC(CO)O2)c(=O)n1,2,B-2310;F-1026,-0.4357999999999999,0.0116,0.0082024386617639,False,defined + undefined stereo record
+B-4569,prednisolone acetate,CC(=O)OCC(=O)C1(O)CCC2C3CCC4=CC(=O)C=CC4(C)C3C(O)CC21C,2,B-4569;C-631,-4.3746,0.0107999999999996,0.0076367532368145,False,defined + undefined stereo record
+A-476,(2E)-but-2-ene,CC=CC,2,A-476;B-3954,-1.93483253685,0.0092650737000001,0.0065513964414632,False,distinct defined stereoisomers
+A-3673,(2S)-2-amino-4-carbamoylbutanoic acid,NC(=O)CCC(N)C(=O)O,2,A-3673;C-65,-0.5441557097,0.0083114193999999,0.0058770610190253,False,defined + undefined stereo record
+B-121,colchicine,COc1cc2c(c(OC)c1OC)-c1ccc(OC)c(=O)cc1C(NC(C)=O)CC2,2,B-121;C-1009,-0.9441,0.0082,0.0057982756057297,False,defined + undefined stereo record
+B-925,"l-histidine, 3-methyl-",Cn1cncc1CC(N)C(=O)O,2,B-925;F-1133,0.07635,0.0073,0.0051618795026617,False,defined + undefined stereo record
+B-2070,ajmaline,CCC1C2CC3C4N(C)c5ccccc5C45CC(C2C5O)N3C1O,2,B-2070;E-997,-2.8233,0.0066000000000001,0.0046669047558313,False,defined + undefined stereo record
+B-1343,dl-norleucine,CCCCC(N)C(=O)O,2,B-1343;B-914,-1.0419999999999998,0.0065999999999999,0.0046669047558311,False,defined + undefined stereo record
+A-2481,pent-2-ene,CC=CCC,3,A-2481;B-580;E-13,-2.54,0.0065048056999996,0.0033894349615016,False,defined + undefined stereo record
+B-2124,"l-aspartic acid, n-[(ethylthio)thioxomethyl]-",CCSC(=S)NC(CC(=O)O)C(=O)O,2,B-2124;F-976,-1.38315,0.0063000000000001,0.0044547727214753,False,defined + undefined stereo record
+B-992,"pyrrolo[2,1-b]quinazolin-9(1h)-one,2,3-dihydro-3",O=c1c2ccccc2nc2n1CCC2O,2,B-992;C-2013,-2.103,0.0059999999999997,0.0042426406871191,False,defined + undefined stereo record
+C-676,triamcinolone  acetonide,CC1(C)OC2CC3C4CCC5=CC(=O)C=CC5(C)C4(F)C(O)CC3(C)C2(C(=O)CO)O1,2,C-676;B-207,-4.3129,0.0058000000000006,0.0041012193308824,False,defined + undefined stereo record
+A-5138,2-methyloxirane,CC1CO1,3,A-5138;A-3687;A-3752,0.8380333836,0.0054628956999999,0.0031540043029497,False,defined + undefined stereo record
+E-1121,deoxycorticosterone,CC12CCC(=O)C=C1CCC1C2CCC2(C)C(C(=O)CO)CCC12,2,E-1121;B-4575,-3.7473,0.0053999999999998,0.0038183766184072,False,defined + undefined stereo record
+B-4502,eriodictyol,O=C1CC(c2ccc(O)c(O)c2)Oc2cc(O)cc(O)c21,2,B-4502;C-1419,-3.61735,0.0053,0.0037476659402887,False,defined + undefined stereo record
+B-4574,androstenedione,CC12CCC3C(CCC4=CC(=O)CCC43C)C1CCC2=O,2,B-4574;C-302,-3.69745,0.0051000000000001,0.0036062445840514,False,defined + undefined stereo record
+B-942,"azuleno[6,5-b]furan-2,6-(3h,4h)-dione, 3a,7,7a,8",CC1=C2C(O)C3C(CC(C)C2CC1=O)OC(=O)C3C,2,B-942;F-1163,-1.9475,0.0049999999999998,0.0035355339059326,False,defined + undefined stereo record
+B-3516,Kresoxim-methy,CON=C(C(=O)OC)c1ccccc1COc1ccccc1C,2,B-3516;C-1418,-5.192500000000001,0.0049999999999998,0.0035355339059326,False,distinct defined stereoisomers
+B-795,salicin,OCc1ccccc1OC1OC(CO)C(O)C(O)C1O,2,B-795;C-472,-0.8523499999999999,0.0047,0.0033234018715768,False,defined + undefined stereo record
+A-3049,(E)-anethole,CC=Cc1ccc(OC)cc1,2,A-3049;E-863,-3.12776993845,0.0044601230999998,0.0031537832889366,False,defined + undefined stereo record
+B-48,cantharidin,CC12C(=O)OC(=O)C1(C)C1CCC2O1,2,B-48;C-1583,-3.8178,0.0043999999999999,0.0031112698372207,False,defined + undefined stereo record
+E-664,deoxycholic_acid,CC(CCC(=O)O)C1CCC2C3CCC4CC(O)CCC4(C)C3CC(O)C12C,2,E-664;B-286,-3.9522,0.0043999999999999,0.0031112698372207,False,defined + undefined stereo record
+B-2173,triamcinolone hexacetonide,CC(C)(C)CC(=O)OCC(=O)C12OC(C)(C)OC1CC1C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC12C,2,B-2173;C-907,-5.122199999999999,0.0043999999999995,0.0031112698372204,False,defined + undefined stereo record
+B-933,andrenosterone,CC12CC(=O)C3C(CCC4=CC(=O)CCC43C)C1CCC2=O,2,B-933;C-1859,-3.48215,0.0043000000000001,0.0030405591591022,False,defined + undefined stereo record
+C-537,methylprednisolone,CC1CC2C(C(O)CC3(C)C2CCC3(O)C(=O)CO)C2(C)C=CC(=O)C=C12,2,C-537;B-285,-3.4921,0.0041999999999999,0.0029698484809834,False,defined + undefined stereo record
+E-1122,fludrocortisone,CC12CCC(=O)C=C1CCC1C3CCC(O)(C(=O)CO)C3(C)CC(O)C12F,2,E-1122;B-4578,-3.4321,0.0041999999999999,0.0029698484809834,False,defined + undefined stereo record
+B-3312,ferimzone,CC(=NNc1nc(C)cc(C)n1)c1ccccc1C,2,B-3312;C-1344,-3.19795,0.0041000000000002,0.0028991378028649,False,defined + undefined stereo record
+B-3443,"l-proline, n-[(benzoyloxy)acetyl]-, methyl ester",COC(=O)C1CCCN1C(=O)COC(=O)c1ccccc1,2,B-3443;C-2049,-2.08205,0.0040999999999997,0.0028991378028646,False,defined + undefined stereo record
+B-1055,abietic acid,CC(C)C1=CC2=CCC3C(C)(C(=O)O)CCCC3(C)C2CC1,2,B-1055;C-1671,-3.79795,0.0040999999999997,0.0028991378028646,False,defined + undefined stereo record
+C-1971,picein,CC(=O)c1ccc(OC2OC(CO)C(O)C(O)C2O)cc1,2,C-1971;D-1697,-1.1720000000000002,0.0040000000000002,0.0028284271247463,False,defined + undefined stereo record
+B-1274,2-heptene,CC=CCCCC,2,B-1274;E-17,-3.818,0.004,0.0028284271247461,False,defined + undefined stereo record
+B-996,d-quercitol,OC1CC(O)C(O)C(O)C1O,2,B-996;C-1539,-0.17195,0.0038999999999999,0.0027577164466275,False,defined + undefined stereo record
+B-3461,transfluthrin,CC1(C)C(C=C(Cl)Cl)C1C(=O)OCc1c(F)c(F)cc(F)c1F,2,B-3461;C-1322,-6.81185,0.0037000000000002,0.0026162950903904,False,defined + undefined stereo record
+B-1155,hyocholic acid,CC(CCC(=O)O)C1CCC2C3C(O)C(O)C4CC(O)CCC4(C)C3CCC12C,2,B-1155;C-1819,-4.34825,0.0034999999999998,0.0024748737341528,False,defined + undefined stereo record
+B-1045,diosgenin,CC1CCC2(OC1)OC1CC3C4CC=C5CC(O)CCC5(C)C4CCC3(C)C1C2C,2,B-1045;C-1785,-7.318300000000001,0.0034,0.0024041630560343,False,defined + undefined stereo record
+B-2215,nifuroxime,O=[N+]([O-])c1ccc(C=NO)o1,2,B-2215;E-549,-2.1917,0.0034,0.0024041630560343,False,defined + undefined stereo record
+B-2576,cinmetacin,COc1ccc2c(c1)c(CC(=O)O)c(C)n2C(=O)C=Cc1ccccc1,2,B-2576;E-998,-5.541650000000001,0.0033000000000003,0.0023334523779158,False,defined + undefined stereo record
+E-486,cocaine,COC(=O)C1C(OC(=O)c2ccccc2)CC2CCC1N2C,2,E-486;B-4155,-2.22835,0.0032999999999998,0.0023334523779155,False,defined + undefined stereo record
+B-1056,"3,11-dihydroxy-androstan-17-one",CC12CC(O)C3C(CCC4CC(O)CCC43C)C1CCC2=O,2,B-1056;C-1673,-3.5916,0.0032,0.002262741699797,False,defined + undefined stereo record
+B-2394,"l-cysteine, n-acetyl-s-(3,4-dichlorophenyl)-",CC(=O)NC(CSc1ccc(Cl)c(Cl)c1)C(=O)O,2,B-2394;F-588,-2.8884,0.0032,0.002262741699797,False,defined + undefined stereo record
+B-2859,thiofanox,CNC(=O)ON=C(CSC)C(C)(C)C,2,B-2859;E-846,-1.62155,0.0030999999999998,0.0021920310216782,False,defined + undefined stereo record
+B-71,testosterone propionate,CCC(=O)OC1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C,2,B-71;C-437,-5.36845,0.0030999999999998,0.0021920310216782,False,defined + undefined stereo record
+D-1648,cytisine,O=c1cccc2n1CC1CNCC2C1,2,D-1648;E-886,0.3615,0.003,0.0021213203435596,False,defined + undefined stereo record
+B-4448,cycloheximide,CC1CC(C)C(=O)C(C(O)CC2CC(=O)NC(=O)C2)C1,2,B-4448;E-1159,-1.1284999999999998,0.0029999999999998,0.0021213203435595,False,defined + undefined stereo record
+D-2004,".alpha.-d-glucofuranose,",OCC(O)C1OC2OC(C(Cl)(Cl)Cl)OC2C1O,2,D-2004;E-817,-1.8415,0.0029999999999998,0.0021213203435595,False,defined + undefined stereo record
+B-2486,"à-d-glucofuranose, 1,2:5,6-bis-o-(1-methylethyli",CC(=O)OC1C(C2COC(C)(C)O2)OC2OC(C)(C)OC21,2,B-2486;F-668,-1.52145,0.0028999999999999,0.0020506096654409,False,defined + undefined stereo record
+B-344,l-sparteine,C1CCN2CC3CC(CN4CCCCC34)C2C1,2,B-344;E-961,-1.88855,0.0028999999999999,0.0020506096654409,False,defined + undefined stereo record
+C-273,norethindrone;  norethisterone,C#CC1(O)CCC2C3CCC4=CC(=O)CCC4C3CCC21C,2,C-273;B-135,-4.628550000000001,0.0028999999999994,0.0020506096654406,False,defined + undefined stereo record
+B-4451,isosorbide dinitrate,O=[N+]([O-])OC1COC2C(O[N+](=O)[O-])COC12,2,B-4451;C-75,-2.6314,0.0028000000000001,0.0019798989873224,False,defined + undefined stereo record
+B-2415,"barbituric acid, 5,5-di-2-butenyl-",CC=CCC1(CC=CC)C(=O)NC(=O)NC1=O,2,B-2415;F-108,-2.19865,0.0027000000000003,0.0019091883092039,False,defined + undefined stereo record
+B-986,ecgonine,CN1C2CCC1C(C(=O)O)C(O)C2,2,B-986;E-844,-0.01865,0.0027,0.0019091883092036,False,defined + undefined stereo record
+E-405,spironolactone,CC(=O)SC1CC2=CC(=O)CCC2(C)C2CCC3(C)C(CCC34CCC(=O)O4)C12,2,E-405;B-30,-4.278650000000001,0.0026999999999999,0.0019091883092036,False,defined + undefined stereo record
+B-149,digitoxin,CC1OC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CCC6C5CCC5(C)C(C7=CC(=O)OC7)CCC65O)C4)OC3C)OC2C)CC(O)C1O,2,B-149;C-915,-5.2913,0.0026000000000001,0.0018384776310851,False,defined + undefined stereo record
+B-2620,anisomycin,COc1ccc(CC2NCC(O)C2OC(C)=O)cc1,2,B-2620;E-942,-1.60875,0.0025000000000001,0.0017677669529664,False,defined + undefined stereo record
+E-411,17-a-hydroxyprogesterone,CC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C,2,E-411;B-4577,-4.7088,0.0023999999999997,0.0016970562748475,False,defined + undefined stereo record
+B-939,ethisterone,C#CC1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C,2,B-939;E-1267,-5.6588,0.0023999999999997,0.0016970562748475,False,defined + undefined stereo record
+B-65,sucrose,OCC1OC(OC2(CO)OC(CO)C(O)C2O)C(O)C(O)C1O,2,B-65;G-1066,0.7888999999999999,0.0022,0.0015556349186104,False,defined + undefined stereo record
+B-2455,tranid,CNC(=O)ON=C1C(Cl)C2CC(C#N)C1C2,2,B-2455;E-859,-2.0811,0.0021999999999997,0.0015556349186102,False,defined + undefined stereo record
+B-2614,tetrachlorvinphos,COP(=O)(OC)OC(=CCl)c1cc(Cl)c(Cl)cc1Cl,3,B-2614;C-1417;F-291,-4.52,0.0021000000000004,0.0012124355652984,False,defined + undefined stereo record
+D-2066,dimethyl carbate,COC(=O)C1C2C=CC(C2)C1C(=O)OC,2,D-2066;E-1240,-1.201,0.002,0.001414213562373,False,defined + undefined stereo record
+D-1603,pregnenolone,CC(=O)C1CCC2C3CC=C4CC(O)CCC4(C)C3CCC12C,2,D-1603;E-1005,-4.651,0.0019999999999997,0.0014142135623729,False,defined + undefined stereo record
+D-1415,dienestrol,CC=C(C(=CC)c1ccc(O)cc1)c1ccc(O)cc1,2,D-1415;G-584,-4.949,0.0019999999999997,0.0014142135623729,False,defined + undefined stereo record
+E-601,codeine,COc1ccc2c3c1OC1C(O)C=CC4C(C2)N(C)CCC341,2,E-601;B-211,-1.521,0.0019999999999997,0.0014142135623729,False,defined + undefined stereo record
+A-705,"(2S,5R)-5-methyl-2-(propan-2-yl)cyclohexan-1-one",CC1CCC(C(C)C)C(=O)C1,2,A-705;E-1237,-2.49093861525,0.0018772304999998,0.0013274024164001,False,defined + undefined stereo record
+B-3325,"isoleucine, n-(2-cyanoethyl)-",CCC(C)C(NCCC#N)C(=O)O,2,B-3325;F-130,-0.9809,0.0018,0.0012727922061358,False,defined + undefined stereo record
+B-124,"3,5-diiodotyrosine",NC(Cc1cc(I)c(O)c(I)c1)C(=O)O,2,B-124;C-2193,-2.85915,0.0017,0.0012020815280171,False,defined + undefined stereo record
+B-3442,"l-proline, n-[(benzoyloxy)acetyl]-",O=C(OCC(=O)N1CCCC1C(=O)O)c1ccccc1,2,B-3442;C-1308,-1.59085,0.0016999999999998,0.0012020815280169,False,defined + undefined stereo record
+B-1035,"2,4-hexadienedioic acid,",O=C(O)C=CC=CC(=O)O,2,B-1035;C-1588,-2.8508,0.0015999999999998,0.0011313708498983,False,distinct defined stereoisomers
+G-978,Prednisolone,CC12C=CC(=O)C=C1CCC1C2C(O)CC2(C)C1CCC2(O)C(=O)CO,2,G-978;A-114,-3.17922356445,0.0015528711000003,0.0010980456851188,False,defined + undefined stereo record
+B-4457,pencillamine,CC(C)(S)C(N)C(=O)O,2,B-4457;C-49,-0.12925,0.0015,0.0010606601717798,False,defined + undefined stereo record
+B-4580,fluoromethalone,CC(=O)C1(O)CCC2C3CC(C)C4=CC(=O)C=CC4(C)C3(F)C(O)CC21C,2,B-4580;C-530,-4.0993,0.0013999999999994,0.0009899494936607,False,defined + undefined stereo record
+B-133,gliotoxin,CN1C(=O)C23CC4=CC=CC(O)C4N2C(=O)C1(CO)SS3,2,B-133;C-1714,-3.66935,0.0013,0.0009192388155425,False,defined + undefined stereo record
+B-2915,"benzeneacetic acid, .alpha.-(acetyloxy)-, (r)-",CC(=O)OC(C(=O)O)c1ccccc1,2,B-2915;C-1802,-1.23065,0.0013,0.0009192388155425,False,defined + undefined stereo record
+B-3247,hexythiazox,CC1C(c2ccc(Cl)cc2)SC(=O)N1C(=O)NC1CCCCC1,2,B-3247;C-1355,-5.849349999999999,0.0012999999999996,0.0009192388155422,False,defined + undefined stereo record
+C-2082,thebaine,COC1=CC=C2C3Cc4ccc(OC)c5c4C2(CCN3C)C1O5,2,C-2082;D-1547,-2.6605,0.0009999999999998,0.0007071067811864,False,defined + undefined stereo record
+B-4566,corticosterone,CC12CCC(=O)C=C1CCC1C2C(O)CC2(C)C(C(=O)CO)CCC12,2,B-4566;C-486,-3.2404,0.0007999999999999,0.0005656854249491,False,defined + undefined stereo record
+B-2473,carbetamide,CCNC(=O)C(C)OC(=O)Nc1ccccc1,2,B-2473;E-907,-1.82965,0.0007000000000001,0.0004949747468306,False,defined + undefined stereo record
+E-1007,Noscapine,COc1ccc2c(c1OC)C(=O)OC2C1c2c(cc3c(c2OC)OCO3)CCN1C,2,E-1007;B-768,-3.13965,0.0007000000000001,0.0004949747468306,False,defined + undefined stereo record
+B-2091,d-fenchone,CC12CCC(C1)C(C)(C)C2=O,2,B-2091;E-1236,-1.85035,0.0006999999999999,0.0004949747468305,False,defined + undefined stereo record
+B-3722,gibberellic acid,C=C1CC23CC1(O)CCC2C12C=CC(O)C(C)(C(=O)O1)C2C3C(=O)O,2,B-3722;E-333,-1.8403,0.0005999999999999,0.0004242640687118,False,defined + undefined stereo record
+C-1507,(r)-quizalofop-ethyl,CCOC(=O)C(C)Oc1ccc(Oc2cnc3cc(Cl)ccc3n2)cc1,2,C-1507;B-3377,-5.9697,0.0005999999999994,0.0004242640687115,False,defined + undefined stereo record
+B-972,glycocholic acid,CC(CCC(=O)NCC(=O)O)C1CCC2C3C(O)CC4CC(O)CCC4(C)C3CC(O)C12C,2,B-972;E-1015,-5.14975,0.0005000000000006,0.0003535533905937,False,defined + undefined stereo record
+B-984,santonin,CC1=C2C3OC(=O)C(C)C3CCC2(C)C=CC1=O,2,B-984;E-955,-3.09025,0.0005000000000001,0.0003535533905933,False,defined + undefined stereo record
+B-4294,Diethylstilbestrol,CCC(=C(CC)c1ccc(O)cc1)c1ccc(O)cc1,2,B-4294;E-494,-4.34975,0.0004999999999997,0.000353553390593,False,defined + undefined stereo record
+B-2277,azodrin,CNC(=O)C=C(C)OP(=O)(OC)OC,2,B-2277;G-407,0.6512,0.0004,0.0002828427124746,False,defined + undefined stereo record
+B-2825,amikacin,NCCC(O)C(=O)NC1CC(N)C(OC2OC(CN)C(O)C(O)C2O)C(O)C1OC1OC(CO)C(O)C(N)C1O,2,B-2825;E-1269,-0.5002,0.0003999999999999,0.0002828427124745,False,defined + undefined stereo record
+B-3527,trovafloxacin,NC1C2CN(c3nc4c(cc3F)c(=O)c(C(=O)O)cn4-c3ccc(F)cc3F)CC12,2,B-3527;C-2554,-4.5298,0.0003999999999999,0.0002828427124745,False,defined + undefined stereo record
+B-2963,deltamethrin,CC1(C)C(C=C(Br)Br)C1C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1,2,B-2963;G-560,-8.4022,0.000399999999999,0.0002828427124739,False,defined + undefined stereo record
+B-4576,triamcinolone diacetate,CC(=O)OCC(=O)C1(O)C(OC(C)=O)CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC21C,2,B-4576;C-866,-4.129849999999999,0.0003000000000001,0.000212132034356,False,defined + undefined stereo record
+B-4570,cortisone,CC12CCC(=O)C=C1CCC1C2C(=O)CC2(C)C1CCC2(O)C(=O)CO,2,B-4570;C-565,-3.10985,0.0002999999999997,0.0002121320343557,False,defined + undefined stereo record
+B-1803,flumethasone,CC1CC2C3CC(F)C4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)CO,2,B-1803;G-690,-5.61315,0.0002999999999993,0.0002121320343554,False,defined + undefined stereo record
+B-1200,"1,2-dichloropropene",CC(Cl)=CCl,2,B-1200;D-2037,-1.6139,0.0002000000000002,0.0001414213562374,False,defined + undefined stereo record
+B-40,nicotine,CN1CCCC1c1cccnc1,2,B-40;E-468,0.7899,0.0002,0.0001414213562373,False,defined + undefined stereo record
+B-2627,oxamyl,CNC(=O)ON=C(SC)C(=O)N(C)C,2,B-2627;G-906,0.1061,0.0002,0.0001414213562373,False,defined + undefined stereo record
+B-2745,propetamphos,CCNP(=S)(OC)OC(C)=CC(=O)OC(C)C,2,B-2745;G-991,-3.4079,0.0001999999999999,0.0001414213562372,False,defined + undefined stereo record
+E-496,strychnine,O=C1CC2OCC=C3CN4CCC56c7ccccc7N1C5C2C3CC46,2,E-496;B-4460,-3.3201,0.0001999999999999,0.0001414213562372,False,defined + undefined stereo record
+B-269,"preg-4-ene-3,20-dione, 11-hydroxy-, (11.alpha.)-",CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3C(O)CC12C,2,B-269;C-433,-3.8201,0.0001999999999999,0.0001414213562372,False,defined + undefined stereo record
+B-3251,tetrafluthrin,Cc1c(F)c(F)c(COC(=O)C2C(C=C(Cl)C(F)(F)F)C2(C)C)c(F)c1F,2,B-3251;G-1086,-7.32095,0.0001000000000006,7.071067811911799e-05,False,defined + undefined stereo record
+B-4512,betamethasone-17-valerate,CCCCC(=O)OC1(C(=O)CO)C(C)CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC21C,2,B-4512;C-812,-4.71005,9.999999999976694e-05,7.071067811848996e-05,False,defined + undefined stereo record
+A-70,"(1R-(1alpha,2beta,4beta,6alpha))-2,2,7-Trimethyl-3-oxatricyclo(4.1.1.02,4)octane",CC1(C)C2CC3OC3(C)C1C2,2,A-70;B-1701,-2.59369424575,1.1508500000090294e-05,8.13773839134923e-06,False,defined + undefined stereo record
+A-1959,"(3aR,5aS,9aS,9bR)-3a,6,6,9a-tetramethyl-dodecahydronaphtho[2,1-b]furan",CC1(C)CCCC2(C)C1CCC1(C)OCCC12,2,A-1959;A-1960,-5.0994877858,0.0,0.0,False,defined + undefined stereo record
+B-2319,"2,3-dichlorobutane",CC(Cl)C(C)Cl,2,B-2319;B-1820,-2.3541,0.0,0.0,False,defined + undefined stereo record
+B-1202,"1,2:3,4-diepoxybutane",C1OC1C1CO1,4,B-1202;B-2728;B-2732;B-887,1.065,0.0,0.0,False,defined + undefined stereo record
+B-1646,carminic acid,Cc1c(C(=O)O)c(O)cc2c1C(=O)c1c(O)c(C3OC(CO)C(O)C(O)C3O)c(O)c(O)c1C2=O,2,B-1646;B-1651,-2.5784,0.0,0.0,False,defined + undefined stereo record
+B-2381,phosphamidon,CCN(CC)C(=O)C(Cl)=C(C)OP(=O)(OC)OC,2,B-2381;B-884,0.5233,0.0,0.0,False,distinct defined stereoisomers
+B-4581,dexamethasone acetate,CC(=O)OCC(=O)C1(O)C(C)CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC21C,2,B-4581;C-710,-4.9,0.0,0.0,False,defined + undefined stereo record
+B-3112,fenoxaprop ethyl,CCOC(=O)C(C)Oc1ccc(Oc2nc3ccc(Cl)cc3o2)cc1,2,B-3112;B-3175,-5.6042,0.0,0.0,False,defined + undefined stereo record
+B-3282,uniconazole-p,CC(C)(C)C(O)C(=Cc1ccc(Cl)cc1)n1cncn1,2,B-3282;B-3283,-4.5403,0.0,0.0,False,distinct defined stereoisomers
+B-2753,"9-octadecenoic acid, 12-(sulfooxy)-, (z)-",CCCCCCC(CC=CCCCCCCCC(=O)O)OS(=O)(=O)O,2,B-2753;B-2814,-0.5781,0.0,0.0,False,defined + undefined stereo record
+B-3106,"1,3-propanediol, 2-nitro-1-phenyl-, diacetate (e",CC(=O)OCC(C(OC(C)=O)c1ccccc1)[N+](=O)[O-],2,B-3106;B-3107,-3.972,0.0,0.0,False,defined + undefined stereo record
+C-194,vinbarbital;  5-ethyl-5-(1-methyl-1-butenyl)barbituric  acid,CCC=C(C)C1(CC)C(=O)NC(=O)NC1=O,2,C-194;F-374,-2.31,0.0,0.0,False,defined + undefined stereo record
+C-989,cephalothin,CC(=O)OCC1=C(C(=O)O)N2C(=O)C(NC(=O)Cc3cccs3)C2SC1,2,C-989;I-18,-2.94,0.0,0.0,False,defined + undefined stereo record
+C-2011,ranitidine,CNC(=C[N+](=O)[O-])NCCSCc1ccc(CN(C)C)o1,2,C-2011;I-75,-2.5,0.0,0.0,False,distinct defined stereoisomers
+C-32,"2,4-hexadienoic acid;  sorbic  acid",CC=CC=CC(=O)O,2,C-32;E-325,-1.77,0.0,0.0,False,defined + undefined stereo record
+C-653,nitrofurantoin,O=C1CN(N=Cc2ccc([N+](=O)[O-])o2)C(=O)N1,2,C-653;G-877,-3.38,0.0,0.0,False,defined + undefined stereo record
+C-293,prostaglandin e2;  dinoprostone,CCCCCC(O)C=CC1C(O)CC(=O)C1CC=CCCCC(=O)O,2,C-293;E-1289,-2.47,0.0,0.0,False,defined + undefined stereo record
+A-3865,2-Ethylhexyl (2S)-2-hydroxypropanoate,CCCCC(CC)COC(=O)C(C)O,2,A-3865;A-4816,-2.6735257097,0.0,0.0,False,defined + undefined stereo record
+C-2536,sulfasalazine,O=C(O)c1cc(N=Nc2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O,2,C-2536;I-80,-6.14,0.0,0.0,False,defined + undefined stereo record
+C-2397,danofloxacin,CN1CC2CC1CN2c1cc2c(cc1F)c(=O)c(C(=O)O)cn2C1CC1,2,C-2397;I-27,-2.9,0.0,0.0,False,defined + undefined stereo record
+C-2456,sparfloxacin,CC1CN(c2c(F)c(N)c3c(=O)c(C(=O)O)cn(C4CC4)c3c2F)CC(C)N1,2,C-2456;I-77,-3.37,0.0,0.0,False,defined + undefined stereo record

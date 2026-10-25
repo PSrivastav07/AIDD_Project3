@@ -1,0 +1,4 @@
+{
+  "mlp__morgan_counts": "compute budget: 6-9 min per fit and clearly inferior validation MAE (0.96 / 0.83 vs 0.68 for mlp__rdkit2d) in the smoke test on random seed0 val",
+  "mlp__rdkit2d+morgan_counts": "compute budget: 6-9 min per fit and clearly inferior validation MAE (0.96 / 0.83 vs 0.68 for mlp__rdkit2d) in the smoke test on random seed0 val"
+}

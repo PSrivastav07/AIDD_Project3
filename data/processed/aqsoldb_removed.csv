@@ -1,0 +1,522 @@
+compound_id,name,smiles_raw,logS,reason,elements
+A-8,"zinc bis[2-hydroxy-3,5-bis(1-phenylethyl)benzoate]",[Zn++].CC(c1ccccc1)c2cc(C(C)c3ccccc3)c(O)c(c2)C([O-])=O.CC(c4ccccc4)c5cc(C(C)c6ccccc6)c(O)c(c5)C([O-])=O,-3.9244090954,disallowed_element,C;O;Zn
+A-25,zinc bis[O-(2-ethylhexyl) O-isobutyl dithiophosphate],[Zn++].CCCCC(CC)CO[P]([S-])(=S)OCC(C)C.CCCCC(CC)CO[P]([S-])(=S)OCC(C)C,-2.9581950472000003,disallowed_element,C;O;P;S;Zn
+A-30,aluminium(3+) ion sodium bis(oxosilanebis(olate)),[Na+].[Al+3].[O-][Si]([O-])=O.[O-][Si]([O-])=O,-3.4731390517,no_carbon,Al;Na;O;Si
+A-31,zinc(2+) ion bis(2-methylprop-2-enoate),[Zn++].CC(=C)C([O-])=O,-2.3632080977000003,disallowed_element,C;O;Zn
+A-33,"Phosphorodithioic acid, mixed O,O-bis(sec-Bu and 1,3-dimethylbutyl) esters, zinc salts",[Zn++].CCC(C)O[P]([S-])(=S)OC(C)CC(C)C.CCC(C)O[P]([S-])(=S)OC(C)CC(C)C,-2.9908768679000004,disallowed_element,C;O;P;S;Zn
+A-45,hydroxylamine,NO,-0.763033718,no_carbon,N;O
+A-55,molybdenum,[Mo],-4.2038484637,no_carbon,Mo
+A-76,pentacalcium hydroxide triphosphate,[OH-].[Ca++].[Ca++].[Ca++].[Ca++].[Ca++].[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O,-4.1419008964,no_carbon,Ca;O;P
+A-109,calcium oxosilanebis(olate),[Ca++].[O-][Si]([O-])=O,-2.6500869941,no_carbon,Ca;O;Si
+A-116,dialuminium(3+) ion dimolybdenum nonaoxidandiide,[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[Al+3].[Al+3].[Mo].[Mo],-4.2291529922,no_carbon,Al;Mo;O
+A-127,zinc di(benzothiazol-2-yl) disulphide,[Zn++].[S-]c1sc2ccccc2n1.[S-]c3sc4ccccc4n3,-4.285895804,disallowed_element,C;N;S;Zn
+A-144,tungsten(4+) ion disulfanediide,S=[W]=S,-4.1391336425,no_carbon,S;W
+A-147,dioxido-oxosilane; lead(+2) cation,[Pb++].[O-][Si]([O-])=O,-6.6197116003,no_carbon,O;Pb;Si
+A-195,"bis({[bis(3,5,5-trimethylhexyl)carbamothioyl]sulfanyl})zinc",CC(CCN(CCC(C)CC(C)(C)C)C(=S)S[Zn]SC(=S)N(CCC(C)CC(C)(C)C)CCC(C)CC(C)(C)C)CC(C)(C)C,-6.1025269393,disallowed_element,C;N;S;Zn
+A-222,dioxovanadium,O=[V]=O,-4.4002500912,no_carbon,O;V
+A-227,"({bis[(2-ethylhexanoyl)oxy]-2,4-dioxa-3-bora-1,5-dicobaltapentan-3-yl}oxy)cobaltio 2-ethylhexanoate",CCCCC(CC)C(=O)O[Co]OB(O[Co])O[Co](OC(=O)C(CC)CCCC)OC(=O)C(CC)CCCC,-1.8254561435,disallowed_element,B;C;Co;O
+A-230,calcium magnesium(2+) ion dioxidandiide,[O--].[O--].[Mg++].[Ca++],-1.9883562334,no_carbon,Ca;Mg;O
+A-238,magnesium,[Mg++],-2.4020693383,no_carbon,Mg
+A-241,oxocalcium,O=[Ca],-1.7683268794999998,no_carbon,Ca;O
+A-251,lead; sulfuric acid; hydrate,O.[Pb].O[S](O)(=O)=O,-4.226296415899999,no_carbon,O;Pb;S
+A-254,calcium dihydroxide,[OH-].[OH-].[Ca++],-1.9107299257,no_carbon,Ca;O
+A-255,silicon(+4) cation tetraphosphate,[Si+4].[Si+4].[Si+4].[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O,-3.0559869634,no_carbon,O;P;Si
+A-259,bismuth hydroxide nitrate oxide,[O-][N+](=O)O[Bi](O[N+]([O-])=O)O[N+]([O-])=O,-2.642008137,no_carbon,Bi;N;O
+A-271,barium(+2) cation; iron(+3) cation; oxygen(-2) anion,[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Ba++],-8.7448595438,no_carbon,Ba;Fe;O
+A-277,dipotassium; oxygen(-2) anion; titanium(+4) cation,[O--].[O--].[O--].[K+].[K+].[Ti+4],-5.5836431263,no_carbon,K;O;Ti
+A-280,"zinc bis[O,O-bis(2-ethylhexyl)] bis(dithiophosphate)",[Zn++].CCCCC(CC)CO[P]([S-])(=S)OCC(CC)CCCC.CCCCC(CC)CO[P]([S-])(=S)OCC(CC)CCCC,-4.9288559714,disallowed_element,C;O;P;S;Zn
+A-307,"cobalt(3+) ion 9-(2-carboxyphenyl)-6-(diethylamino)-N,N-diethyl-3H-xanthen-3-iminium bis(3-methyl-4-[(E)-2-(2-oxido-5-{[3-(propan-2-yloxy)propyl]sulfamoyl}phenyl)diazen-1-yl]-1-phenyl-1H-pyrazol-5-olate)",[Co+3].CCN(CC)c1ccc2c(c1)[o+]c3cc(ccc3c2c4ccccc4C(O)=O)N(CC)CC.CC(C)OCCCN[S](=O)(=O)c5ccc([O-])c(c5)N=Nc6c(C)nn(c6[O-])c7ccccc7.CC(C)OCCCN[S](=O)(=O)c8ccc([O-])c(c8)N=Nc9c(C)nn(c9[O-])c%10ccccc%10,-3.2357622441000005,disallowed_element,C;Co;N;O;S
+A-339,tetrabutylstannane,CCCC[Sn](CCCC)(CCCC)CCCC,-4.596065772,disallowed_element,C;Sn
+A-343,cadmium,[Cd++],-4.1112934221,no_carbon,Cd
+A-362,"cobalt(2+);2-ethyl-2,5-dimethylhexanoate",[Co++].CCC(C)(CCC(C)C)C([O-])=O.CCC(C)(CCC(C)C)C([O-])=O,-2.7160174073000003,disallowed_element,C;Co;O
+A-376,cobalt(2+) dipropanoate,[Co++].CCC([O-])=O.CCC([O-])=O,-0.4376623173,disallowed_element,C;Co;O
+A-398,tributyl[(tributylstannyl)oxy]stannane,CCCC[Sn](CCCC)(CCCC)O[Sn](CCCC)(CCCC)CCCC,-3.9228515135,disallowed_element,C;O;Sn
+A-415,plumbanone,O=[Pb],-3.5023551324,no_carbon,O;Pb
+A-426,tricalcium diphosphate,[Ca++].[Ca++].[Ca++].[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O,-4.6051146656,no_carbon,Ca;O;P
+A-444,cadmium dihydroxide,[OH-].[OH-].[Cd++],-3.3236333941,no_carbon,Cd;O
+A-472,zinc dihydroxide,[OH-].[OH-].[Zn++],-2.1858288548,no_carbon,O;Zn
+A-495,RHENIUM,[Re],-0.4755079565,no_carbon,Re
+A-501,strontium(2+) ion hydrogen phosphate,[Sr++].[O-][P]([O-])([O-])=O,-3.4683853884,no_carbon,O;P;Sr
+A-523,ammonium fluoride hydrofluoride,[H+].[NH4+].[F-].[F-],1.0233941334,no_carbon,F;H;N
+A-541,"2,4,6,7-tetraoxa-1$l^{3},3$l^{2},5$l^{3}-triplumbabicyclo[3.1.1]heptane",O1[Pb]O[Pb]2O[Pb]1O2,-4.0080532109,no_carbon,O;Pb
+A-576,lead(+2) cation dicarbonate dihydroxide,[OH-].[OH-].[Pb++].[Pb++].[Pb++].[O-]C([O-])=O.[O-]C([O-])=O,-5.5472319177,disallowed_element,C;O;Pb
+A-594,strontium 4-[(4-chloro-5-methyl-2-sulphonatophenyl)azo]-3-hydroxy-2-naphthoate (1:1),[Sr++].Cc1cc(N\N=C/2C(=O)C(=Cc3ccccc23)C([O-])=O)c(cc1Cl)[S]([O-])(=O)=O,-3.9441003714,disallowed_element,C;Cl;N;O;S;Sr
+A-604,iron(3+) ion tris(4-methylbenzene-1-sulfonate),[Fe+3].Cc1ccc(cc1)[S]([O-])(=O)=O.Cc2ccc(cc2)[S]([O-])(=O)=O.Cc3ccc(cc3)[S]([O-])(=O)=O,-0.0080331121,disallowed_element,C;Fe;O;S
+A-607,ammonium iodide,[NH4+].[I-],1.0867760203,no_carbon,I;N
+A-619,carbon monoxide; iron,[Fe].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+],-3.2920233513,disallowed_element,C;Fe;O
+A-646,cobalt(2+) bis(4-oxopent-2-en-2-olate),[Co++].CC([O-])=CC(C)=O.CC([O-])=CC(C)=O,-1.6975300994,disallowed_element,C;Co;O
+A-653,Cobalt molybdate,[Co++].[O-][Mo]([O-])(=O)=O,-2.6343205414,no_carbon,Co;Mo;O
+A-669,aluminium(3+) ion 6-sulfonato-1-[(E)-2-(4-sulfonatophenyl)diazen-1-yl]naphthalen-2-olate,[Al+3].[O-]c1ccc2cc(ccc2c1N=Nc3ccc(cc3)[S]([O-])(=O)=O)[S]([O-])(=O)=O,-2.9368865529000003,disallowed_element,Al;C;N;O;S
+A-686,barium(+2) cation; dioxidoboron,[Ba++].[O-][B][O-],-2.3407335191,no_carbon,B;Ba;O
+A-698,zinc(2+) ion didodecanoate,[Zn++].CCCCCCCCCCCC([O-])=O.CCCCCCCCCCCC([O-])=O,-4.9505314842,disallowed_element,C;O;Zn
+A-719,ammonia,N,1.4518068893,no_carbon,N
+A-740,chlorocopper,[Cl-].[Cu+],-3.3235329498,no_carbon,Cl;Cu
+A-741,molybdenum nickel tetraoxide,[Ni++].[O-][Mo++]([O-])([O-])[O-],-1.6720680623,no_carbon,Mo;Ni;O
+A-844,nickel(2+) ion oxalate,[Ni++].[O-]C(=O)C([O-])=O,-3.556228502,disallowed_element,C;Ni;O
+A-864,lutetium oxide,[O--].[O--].[O--].[Lu+3].[Lu+3],-4.9185665359,no_carbon,Lu;O
+A-875,dipraseodymium(3+) ion tricarbonate,[Pr+3].[Pr+3].[O-]C([O-])=O.[O-]C([O-])=O.[O-]C([O-])=O,-5.0220270242,disallowed_element,C;O;Pr
+A-890,dibutylstannanone,CCCC[Sn](=O)CCCC,-4.7940381830000005,disallowed_element,C;O;Sn
+A-891,dibutyltin bis(2-ethylhexanoate),CCCC[Sn++]CCCC.CCCCC(CC)C([O-])=O.CCCCC(CC)C([O-])=O,-5.1134043257,disallowed_element,C;O;Sn
+A-907,calcium molybdate,[Ca++].[O-][Mo]([O-])(=O)=O,-3.7036943449,no_carbon,Ca;Mo;O
+A-926,strontium(2+) ion 3-hydroxy-4-[(E)-2-(4-methyl-2-sulfonatophenyl)diazen-1-yl]naphthalene-2-carboxylate,[Sr++].Cc1ccc(N\N=C\2C(=O)C(=Cc3ccccc23)C([O-])=O)c(c1)[S]([O-])(=O)=O,-4.1057301532,disallowed_element,C;N;O;S;Sr
+A-962,barium(2+) ion diphosphinate,[Ba++].[O-]P=O.[O-]P=O,0.1236633717,no_carbon,Ba;O;P
+A-975,Cobaltous acetate,[Co++].CC([O-])=O.CC([O-])=O,0.2936043702,disallowed_element,C;Co;O
+A-1020,"zinc bis(O,O-diisooctyl) bis(dithiophosphate)",[Zn++].CC(C)CCCCCO[P]([S-])(=S)OCCCCCC(C)C.CC(C)CCCCCO[P]([S-])(=S)OCCCCCC(C)C,-4.3707014658,disallowed_element,C;O;P;S;Zn
+A-1023,pentalead tetraoxide sulphate,O.O.O.O.[Pb].[Pb].[Pb].[Pb].[Pb].[O-][S]([O-])(=O)=O,-4.5661230993,no_carbon,O;Pb;S
+A-1028,"zinc 4-methyl-2-thioxo-2,3-dihydrobenzimidazol-1-ide 7-methyl-2-thioxo-2,3-dihydrobenzimidazol-1-ide",[Zn++].Cc1cccc2[N-]C(=S)Nc12.Cc3cccc4NC(=S)[N-]c34,-4.0879587895,disallowed_element,C;N;S;Zn
+A-1042,bis(propan-2-yloxy)titaniumbis(ylium) bis((2Z)-4-oxopent-2-en-2-olate),[Ti+4].CC(C)[O-].CC(C)[O-].CC(=O)[CH-]C(C)=O.CC(=O)[CH-]C(C)=O,-2.0700509817,disallowed_element,C;O;Ti
+A-1074,dioxomolybdenum,O=[Mo]=O,-3.7396436363,no_carbon,Mo;O
+A-1082,Tellurium dioxide,O=[Te]=O,-3.7156062333,no_carbon,O;Te
+A-1093,dicerium(3+) ion tricarbonate,[Ce+3].[Ce+3].[O-]C([O-])=O.[O-]C([O-])=O.[O-]C([O-])=O,-5.0664023631,disallowed_element,C;Ce;O
+A-1104,dineodymium(3+) ion tricarbonate,[Nd+3].[Nd+3].[O-]C([O-])=O.[O-]C([O-])=O.[O-]C([O-])=O,-5.1084204387,disallowed_element,C;Nd;O
+A-1111,digadolinium trioxide,[O--].[O--].[O--].[Gd+3].[Gd+3],-5.0152363724,no_carbon,Gd;O
+A-1115,titanium(4+) ion zirconium(4+) ion lead(2+) ion pentaoxidandiide,[O--].[O--].[O--].[O--].[O--].[Ti+4].[Zr+4].[Pb++],-5.0982221528,no_carbon,O;Pb;Ti;Zr
+A-1122,2-[(3-carboxy-2-oxidonaphthalen-1-yl)diazenyl]-4-chloro-5-methylbenzenesulfonate;manganese(2+),[H+].[Mn++].Cc1cc(c(cc1Cl)N=Nc2c([O-])c(cc3ccccc23)C([O-])=O)[S]([O-])(=O)=O,-5.1704010781,disallowed_element,C;Cl;H;Mn;N;O;S
+A-1137,2-ethylhexyl 2-{[bis({2-[(2-ethylhexyl)oxy]-2-oxoethyl}sulfanyl)(methyl)stannyl]sulfanyl}acetate,CCCCC(CC)COC(=O)CS[Sn](C)(SCC(=O)OCC(CC)CCCC)SCC(=O)OCC(CC)CCCC,-5.3942922935,disallowed_element,C;O;S;Sn
+A-1140,tris[oxalato(2-)]dilutetium,[Lu+3].[Lu+3].[O-]C(=O)C([O-])=O.[O-]C(=O)C([O-])=O.[O-]C(=O)C([O-])=O,-5.3110386285,disallowed_element,C;Lu;O
+A-1152,cobalt(2+) bis[3-(3-ethylcyclopentyl)propanoate],[Co++].CCC1CCC(CCC([O-])=O)C1.CCC2CCC(CCC([O-])=O)C2,-3.1323831914,disallowed_element,C;Co;O
+A-1204,"Phosphorodithioic acid, mixed O,O-bis(1,3-dimethylbutyl and iso-Pr) esters, zinc salts",[Zn++].CC(C)CC(C)O[P]([S-])(=S)OC(C)C.CC(C)CC(C)O[P]([S-])(=S)OC(C)C,-2.3189749133,disallowed_element,C;O;P;S;Zn
+A-1261,Zirconium propionate,[Zr+4].CCC([O-])=O,-2.8232791914,disallowed_element,C;O;Zr
+A-1371,sodium perchlorate,[Na+].[O-][Cl](=O)(=O)=O,-1.7665284956,no_carbon,Cl;Na;O
+A-1388,dicopper(2+) ion disodium 2-[(E)-2-(2-oxido-5-sulfamoylphenyl)diazen-1-yl]-6-({5-oxido-6-[(E)-2-(2-oxido-5-sulfamoylphenyl)diazen-1-yl]-7-sulfonatonaphthalen-2-yl}amino)-3-sulfonatonaphthalen-1-olate,[Na+].[Na+].[Cu++].[Cu++].N[S](=O)(=O)c1ccc([O-])c(c1)N=Nc2c([O-])c3ccc(Nc4ccc5c([O-])c(N=Nc6cc(ccc6[O-])[S](N)(=O)=O)c(cc5c4)[S]([O-])(=O)=O)cc3cc2[S]([O-])(=O)=O,-2.7104892768,disallowed_element,C;Cu;N;Na;O;S
+A-1392,arsine,[As],-2.5735793664,no_carbon,As
+A-1402,"disodium [2,7-dibromo-9-(2-carboxylatophenyl)-6-oxido-3-oxo-3H-xanthen-5-yl]mercurol",[Na+].[Na+].[O-]C(=O)c1ccccc1C2=C3C=C(Br)C(=O)C=C3Oc4c2cc(Br)c([O-])c4C5=CC=C[Hg]5,-4.5936830655000005,disallowed_element,Br;C;Hg;Na;O
+A-1406,oxozinc,O=[Zn],-4.448167714599999,no_carbon,O;Zn
+A-1414,oxostibanyl stibinate,[O--].[O--].[O--].[Sb+3].[Sb+3],-5.0237548039,no_carbon,O;Sb
+A-1417,trizinc(2+) ion diphosphate,[Zn++].[Zn++].[Zn++].[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O,-5.1553472856,no_carbon,O;P;Zn
+A-1421,Molybdenum 2-ethylhexanoate,[Mo].CCCCC(CC)C([O-])=O,-3.4351686053,disallowed_element,C;Mo;O
+A-1425,2-ethylhexyl 2-{[dibutyl({2-[(2-ethylhexyl)oxy]-2-oxoethyl}sulfanyl)stannyl]sulfanyl}acetate,CCCCC(CC)COC(=O)CS[Sn](CCCC)(CCCC)SCC(=O)OCC(CC)CCCC,-5.3942867121,disallowed_element,C;O;S;Sn
+A-1428,strontium 4-[(5-chloro-4-methyl-2-sulphonatophenyl)azo]-3-hydroxy-2-naphthoate (1:1),[Sr++].Cc1c(Cl)cc(cc1[S](O)(=O)=O)N=Nc2c([O-])c(cc3ccccc23)C([O-])=O,-5.3065828462,disallowed_element,C;Cl;N;O;S;Sr
+A-1433,gadolinium,[Gd],-4.7986506454,no_carbon,Gd
+A-1445,aluminium(3+) ion magnesium(2+) ion sodium tris(oxosilanebis(olate)),[Na+].[Mg++].[Al+3].[O-][Si]([O-])=O.[O-][Si]([O-])=O.[O-][Si]([O-])=O,-5.1305146868,no_carbon,Al;Mg;Na;O;Si
+A-1457,oxocadmium,O=[Cd],-4.7863829333,no_carbon,Cd;O
+A-1472,calcium oxozirconium,[CaH2].O=[Zr],-4.8730792601,no_carbon,Ca;O;Zr
+A-1483,chromium(3+) ion hydrogen 3-[(2-ethylhexyl)oxy]propan-1-amine (Z)-2-[2-(5-nitro-2-oxido-3-sulfonatophenyl)hydrazin-1-ylidene]-3-oxo-N-phenylbutcarboximidate hydroxide,[OH-].[Cr+3].CCCCC(CC)COCCCN.CC(=O)\C(=N/Nc1cc(cc(c1[O-])[S]([O-])(=O)=O)[N+]([O-])=O)C(=O)[N-]c2ccccc2.[H+],-3.5425873869,disallowed_element,C;Cr;H;N;O;S
+A-1521,plumbane,[Pb],-3.0492180227,no_carbon,Pb
+A-1558,sodium iodide,[Na+].[I-],1.0777960404,no_carbon,I;Na
+A-1602,"Phosphorodithioic acid, mixed O,O-bis(iso-Bu and pentyl) esters, zinc salts",[Zn++].CC(C)CO[P]([S-])(=S)OCC(C)C.CC(C)CO[P]([S-])(=S)OCC(C)C,-2.5192483347,disallowed_element,C;O;P;S;Zn
+A-1630,zinc bis(dinonylnaphthalenesulphonate),[Zn++].CCCCCCCCCc1cc2ccccc2c(c1CCCCCCCCC)[S]([O-])(=O)=O.CCCCCCCCCc3cc4ccccc4c(c3CCCCCCCCC)[S]([O-])(=O)=O,-4.7884242194,disallowed_element,C;O;S;Zn
+A-1637,zinc(2+) ion selenite,[Zn++].[O-][Se]([O-])=O,-4.0799654344,no_carbon,O;Se;Zn
+A-1648,Dioxosilane,O=[Si]=O,-3.6026675784,no_carbon,O;Si
+A-1654,manganese(2+) ion diphosphinate,[Mn++].[O-]P=O.[O-]P=O,-0.0813040923,no_carbon,Mn;O;P
+A-1688,potassium iodide,[K+].[I-],0.935222717,no_carbon,I;K
+A-1699,(e)-But-2-enedioate,[Fe++].[O-]C(=O)\C=C/C([O-])=O,-2.0840678994,disallowed_element,C;Fe;O
+A-1729,(aminooxy)sulfonic acid,NO[S](O)(=O)=O,0.0752827195,no_carbon,N;O;S
+A-1784,ammonium iron(III) citrate,N.[Fe+3].OC(CC([O-])=O)(CC([O-])=O)C([O-])=O,0.6609213970000001,disallowed_element,C;Fe;N;O
+A-1801,cadmium(2+) ion sulfanediide,S=[Cd],-4.080623481,no_carbon,Cd;S
+A-1803,diiron trimolybdenum dodecaoxide,[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[Fe+3].[Fe+3].[Mo].[Mo],-4.5716709895,no_carbon,Fe;Mo;O
+A-1805,"zinc(2+) ion bis(2,2-dimethyloctanoate)",[Zn++].CC(C)(C)CC(C)(C)CC([O-])=O.CC(C)(C)CC(C)(C)CC([O-])=O,-3.5342880969,disallowed_element,C;O;Zn
+A-1821,potassium hydroxysilanoylolate,[K+].O[Si]([O-])=O,-3.0044671735,no_carbon,K;O;Si
+A-1822,sodium hydroxysilanoylolate,O.O.O.O.O.[Na+].[Na+].[O-][Si]([O-])=O,-3.2659206297,no_carbon,Na;O;Si
+A-1825,cadmium(2+) ion carbonate,[Cd++].[O-]C([O-])=O,-2.1796827894,disallowed_element,C;Cd;O
+A-1836,tin(2+) ion oxalate,[Sn++].[O-]C(=O)C([O-])=O,-2.2740087187,disallowed_element,C;O;Sn
+A-1869,zinc(2+) ion sulfanediide,S=[Zn],-2.9676237394,no_carbon,S;Zn
+A-1876,tetralead trioxide sulphate,[Pb++].[O-][S]([O-])(=O)=O.O=[Pb].O=[Pb].O=[Pb],-3.9794501756,no_carbon,O;Pb;S
+A-1902,peroxol,OO,0.4683422926,no_carbon,O
+A-1923,bismuth(3+) citrate,[Bi+3].OC(CC([O-])=O)(CC([O-])=O)C([O-])=O,-4.5597626401,disallowed_element,Bi;C;O
+A-1946,magnesium(2+) ion dihydroxide,[OH-].[OH-].[Mg++],-4.4691448782,no_carbon,Mg;O
+A-1954,copper thiocyanate,[Cu+].[S-]C#N,-4.8040109101,disallowed_element,C;Cu;N;S
+A-1963,dilanthanum(3+) ion tricarbonate,[La+3].[La+3].[O-]C([O-])=O.[O-]C([O-])=O.[O-]C([O-])=O,-5.3958921156,disallowed_element,C;La;O
+A-1970,neodymium(3+) ion trihydroxide,[OH-].[OH-].[OH-].[Nd+3],-5.0353430041000005,no_carbon,Nd;O
+A-1974,hydrogen telluride,[Te],-4.875401753,no_carbon,Te
+A-1984,dichlorodioctylstannane,CCCCCCCC[Sn](Cl)(Cl)CCCCCCCC,-5.4150412012,disallowed_element,C;Cl;Sn
+A-1985,didysprosium trioxide,[O--].[O--].[O--].[Dy+3].[Dy+3],-5.3675853562,no_carbon,Dy;O
+A-2013,digadolinium(3+) ion trioxalate,[Gd+3].[Gd+3].[O-]C(=O)C([O-])=O.[O-]C(=O)C([O-])=O.[O-]C(=O)C([O-])=O,-5.648400548200001,disallowed_element,C;Gd;O
+A-2015,yttrium,[Y],-4.8349877189,no_carbon,Y
+A-2017,"praseodymium(III,IV) oxide",[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[O--].[Pr+3].[Pr+3].[Pr+3].[Pr+3].[Pr+3].[Pr+3],-5.905407864500001,no_carbon,O;Pr
+A-2029,calcium bis(metaphosphate),[Ca++].O[PH]([O-])=O.O[PH]([O-])=O,-5.253149755,no_carbon,Ca;O;P
+A-2035,zinc bis(diethyldithiocarbamate),[Zn++].CCN(CC)C([S-])=S.CCN(CC)C([S-])=S,-5.5333331166,disallowed_element,C;N;S;Zn
+A-2062,barium 3-hydroxy-4-[(4-methyl-2-sulphonatophenyl)azo]-2-naphthoate,[Ba++].Cc1ccc(N\N=C\2C(=O)C(=Cc3ccccc23)C([O-])=O)c(c1)[S]([O-])(=O)=O,-5.7351471063,disallowed_element,Ba;C;N;O;S
+A-2084,"dialuminium tris[2-(2,4,5,7-tetrabromo-6-oxido-3-oxoxanthen-9-yl)-3,4,5,6-tetrachlorobenzoate]",[Al+3].[Al+3].[O-]C(=O)c1c(Cl)c(Cl)c(Cl)c(Cl)c1C2=C3C=C(Br)C(=O)C(=C3Oc4c(Br)c([O-])c(Br)cc24)Br.[O-]C(=O)c5c(Cl)c(Cl)c(Cl)c(Cl)c5C6=C7C=C(Br)C(=O)C(=C7Oc8c(Br)c([O-])c(Br)cc68)Br.[O-]C(=O)c9c(Cl)c(Cl)c(Cl)c(Cl)c9C%10=C%11C=C(Br)C(=O)C(=C%11Oc%12c(Br)c([O-])c(Br)cc%10%12)Br,-6.4900690111,disallowed_element,Al;Br;C;Cl;O
+A-2085,[(oxobismuthanyl)oxy]bismuthanone,[O--].[O--].[O--].[Bi+3].[Bi+3],-5.777924821699999,no_carbon,Bi;O
+A-2093,oxoyttrium,O=[Y],-5.1756981481,no_carbon,O;Y
+A-2094,yttrium oxide,[O--].[O--].[O--].[Y+3].[Y+3],-5.5086432075,no_carbon,O;Y
+A-2101,barium(2+) ion bis(5-chloro-2-[(E)-2-(2-hydroxynaphthalen-1-yl)diazen-1-yl]-4-methylbenzene-1-sulfonate),[Ba++].Cc1cc(N\N=C\2C(=O)C=Cc3ccccc23)c(cc1Cl)[S]([O-])(=O)=O.Cc4cc(N\N=C\5C(=O)C=Cc6ccccc56)c(cc4Cl)[S]([O-])(=O)=O,-6.156487599,disallowed_element,Ba;C;Cl;N;O;S
+A-2150,trichloro(octyl)stannane,CCCCCCCC[Sn](Cl)(Cl)Cl,-6.0107803553,disallowed_element,C;Cl;Sn
+A-2152,copper,[Cu],-5.2979382401,no_carbon,Cu
+A-2162,aluminium(3+) ion tris(N-nitroso-N-oxidoaniline),[Al+3].[O-]N(N=O)c1ccccc1.[O-]N(N=O)c2ccccc2.[O-]N(N=O)c3ccccc3,-6.1946491089,disallowed_element,Al;C;N;O
+A-2168,neodymium(3+) ion trifluoride,[F-].[F-].[F-].[Nd+3],-5.8937682366,no_carbon,F;Nd
+A-2174,disodium oxotitaniumbis(olate),[O--].[O--].[O--].[Na+].[Na+].[Ti+4],-5.805457995399999,no_carbon,Na;O;Ti
+A-2190,oxotitanium; sulfuric acid,O[S](O)(=O)=O.O=[Ti],-5.9613942775,no_carbon,O;S;Ti
+A-2205,"dialuminium tris[2-(2,4,5,7-tetrabromo-6-oxido-3-oxoxanthen-9-yl)benzoate]",[Al+3].[Al+3].[O-]C(=O)c1ccccc1C2=C3C=C(Br)C(=O)C(=C3Oc4c(Br)c([O-])c(Br)cc24)Br.[O-]C(=O)c5ccccc5C6=C7C=C(Br)C(=O)C(=C7Oc8c(Br)c([O-])c(Br)cc68)Br.[O-]C(=O)c9ccccc9C%10=C%11C=C(Br)C(=O)C(=C%11Oc%12c(Br)c([O-])c(Br)cc%10%12)Br,-7.1435627019000005,disallowed_element,Al;Br;C;O
+A-2214,dioctylstannanone,CCCCCCCC[Sn](=O)CCCCCCCC,-6.4785159933,disallowed_element,C;O;Sn
+A-2235,lanthanum(+3) cation; oxygen(-2) anion,[O--].[O--].[O--].[La+3].[La+3],-6.6703538373,no_carbon,La;O
+A-2243,mercury,[Hg],-6.5541212514,no_carbon,Hg
+A-2252,Copper; methanesulfonic acid,[Cu].C[S](O)(=O)=O,0.7323301822,disallowed_element,C;Cu;O;S
+A-2272,zirconium(4+) ion diphosphate,[Zr+4].[Zr+4].[Zr+4].[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O,-7.3381588933,no_carbon,O;P;Zr
+A-2292,palladium (II) di(4-oxopent-2-en-2-oate),[Pd++].CC(=O)[CH-]C(C)=O.CC(=O)[CH-]C(C)=O,-7.438461096699999,disallowed_element,C;O;Pd
+A-2295,oxygen(-2) anion; zirconium(+4) cation; sulfate,[O--].[Zr+4].[O-][S]([O-])(=O)=O,-7.706047479099999,no_carbon,O;S;Zr
+A-2320,divanadium pentaoxide,O=[V](=O)O[V](=O)=O,-2.3036141272,no_carbon,O;V
+A-2324,oxygen(-2) anion; vanadium; pentahydroxide; pentaphosphate,[OH-].[OH-].[OH-].[OH-].[OH-].[O--].[O--].[O--].[O--].[O--].[V].[V].[V].[V].[V].[V].[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O,-1.3503637805000002,no_carbon,O;P;V
+A-2326,disilver(1+) carbonate,[Ag].OC(O)=O,-3.4520216786,disallowed_element,Ag;C;O
+A-2331,aluminium(3+) ion trifluoride,[F-].[F-].[F-].[Al+3],-4.1998793146,no_carbon,Al;F
+A-2361,copper(2+) ion bis((9Z)-octadec-9-enoate),[Cu++].CCCCCCCC\C=C/CCCCCCCC([O-])=O.CCCCCCCC\C=C/CCCCCCCC([O-])=O,-11.9989378619,disallowed_element,C;Cu;O
+A-2409,azanium; molybdenum; oxygen(-2) anion; hydrate,[NH4+].O.[O--].[Mo],-1.170241174,no_carbon,Mo;N;O
+A-2414,indium(3+) ion trinitrate,O.[In+3].[O-][N+]([O-])=O.[O-][N+]([O-])=O.[O-][N](=O)=O,-2.5035796109,no_carbon,In;N;O
+A-2419,aluminium(3+) ion phosphate,[Al+3].[O-][P]([O-])([O-])=O,-4.2460828326,no_carbon,Al;O;P
+A-2425,dibutyltin dilaurate,CCCCCCCCCCCC([O-])=O.CCCCCCCCCCCC([O-])=O.CCCC[Sn++]CCCC,-5.645086142699999,disallowed_element,C;O;Sn
+A-2428,tetraethylplumbane,CC[Pb](CC)(CC)CC,-5.4128944571,disallowed_element,C;Pb
+A-2433,cerium(3+) ion trifluoride,[F-].[F-].[F-].[Ce+3],-5.8633448938,no_carbon,Ce;F
+A-2448,methanidylidyneoxidanium triphenylphosphane (2Z)-4-oxopent-2-en-2-olate rhodium,[Rh].CC(=O)[CH-]C(C)=O.[C-]#[O+].c1ccc(cc1)P(c2ccccc2)c3ccccc3,-7.3120335908,disallowed_element,C;O;P;Rh
+A-2457,2-ethylhexyl 2-{[({2-[(2-ethylhexyl)oxy]-2-oxoethyl}sulfanyl)dimethylstannyl]sulfanyl}acetate,CCCCC(CC)COC(=O)CS[Sn](C)(C)SCC(=O)OCC(CC)CCCC,-4.0456632384,disallowed_element,C;O;S;Sn
+A-2460,"3,5-di-tert-butyl-2-hydroxybenzoic acid hydrate zinc hydrochloride",O.Cl.[Zn].CC(C)(C)c1cc(C(O)=O)c(O)c(c1)C(C)(C)C,-4.8694711026,disallowed_element,C;Cl;O;Zn
+A-2461,zinc bis[bis(tetrapropylenephenyl)] bis(hydrogen dithiophosphate),[Zn++].CCCC(C)C(CCC)C(C)Cc1ccc(O[P]([S-])(=S)Oc2ccc(CC(C)C(CCC)C(C)CCC)cc2)cc1.CCCC(C)C(CCC)C(C)Cc3ccc(O[P]([S-])(=S)Oc4ccc(CC(C)C(CCC)C(C)CCC)cc4)cc3,-5.4154147676,disallowed_element,C;O;P;S;Zn
+A-2462,chromium tris((2-ethylhexanoate),[Cr+3].CCCCC(CC)C([O-])=O.CCCCC(CC)C([O-])=O.CCCCC(CC)C([O-])=O,-3.0199412712,disallowed_element,C;Cr;O
+A-2477,iodocopper,[Cu+].[I-],-5.9787509813,no_carbon,Cu;I
+A-2482,hydrogen sulfide,S,-5.5325378146,no_carbon,S
+A-2495,dihydroxy-dioxomolybdenum,O[Mo](O)(=O)=O,-2.3797609623,no_carbon,Mo;O
+A-2515,dibutyltin maleate,CCCC[Sn++]CCCC.[O-]C(=O)\C=C\C([O-])=O,-4.5403282232,disallowed_element,C;O;Sn
+A-2516,hydroxyzincio 2-methylprop-2-enoate,CC(=C)C(=O)O[Zn]O,-4.2239603591,disallowed_element,C;O;Zn
+A-2567,barium(2+) ion 4-[(E)-2-(5-chloro-4-methyl-2-sulfonatophenyl)diazen-1-yl]-3-hydroxynaphthalene-2-carboxylate,[Ba++].Cc1cc(c(N\N=C/2C(=O)C(=Cc3ccccc23)C([O-])=O)cc1Cl)[S]([O-])(=O)=O,-5.745185694400001,disallowed_element,Ba;C;Cl;N;O;S
+A-2568,barium(2+) ion bis(2-[(E)-2-(2-hydroxynaphthalen-1-yl)diazen-1-yl]naphthalene-1-sulfonate),[Ba++].[O-][S](=O)(=O)c1c(N\N=C\2C(=O)C=Cc3ccccc23)ccc4ccccc14.[O-][S](=O)(=O)c5c(N\N=C\6C(=O)C=Cc7ccccc67)ccc8ccccc58,-5.9504281438,disallowed_element,Ba;C;N;O;S
+A-2571,diindium trioxide,[O--].[O--].[O--].[In+3].[In+3],-5.443471085900001,no_carbon,In;O
+A-2580,hydrate iron potassium,[O--].[O--].[K+].[Fe+3],-5.1036019152,no_carbon,Fe;K;O
+A-2581,hydrate lithium potassium titanium,[Li].O.[K].[Ti],-5.0489115819,no_carbon,K;Li;O;Ti
+A-2583,manganese(3+) ion ammonium (phosphonatooxy)phosphonate,[NH4+].[Mn+3].[O-][P]([O-])(=O)O[P]([O-])([O-])=O,-5.392552750599999,no_carbon,Mn;N;O;P
+A-2591,zinc(2+) ion bis((dibutylcarbamothioyl)sulfanide),[Zn++].CCCCN(CCCC)C([S-])=S.CCCCN(CCCC)C([S-])=S,-5.6759230824,disallowed_element,C;N;S;Zn
+A-2599,Boehmite (Al(OH)O),[OH-].[O--].[Al+3],-5.0252479516,no_carbon,Al;O
+A-2604,ZIRCONIUM,[Zr],-5.35804912,no_carbon,Zr
+A-2607,Silicon nitride,N12[Si]34N5[Si]16N3[Si]25N46,-5.6698930776,no_carbon,N;Si
+A-2609,calcium titanium trioxide,[O--].[O--].[O--].[Ca++].[Ti+4],-5.6562324003,no_carbon,Ca;O;Ti
+A-2613,dicalcium (phosphonatooxy)phosphonate,[Ca++].[Ca++].[O-][P]([O-])(=O)O[P]([O-])([O-])=O,-5.998459357100001,no_carbon,Ca;O;P
+A-2615,"nickel(2+) ion butan-1-amine 2-{[2-oxido-5-(2,4,4-trimethylpentan-2-yl)phenyl]sulfanyl}-4-(2,4,4-trimethylpentan-2-yl)benzen-1-olate",[Ni++].CCCCN.CC(C)(C)CC(C)(C)c1ccc([O-])c(Sc2cc(ccc2[O-])C(C)(C)CC(C)(C)C)c1,-6.4460405944,disallowed_element,C;N;Ni;O;S
+A-2661,Talc (Mg3H2(SiO3)4),[Mg++].[Mg++].[Mg++].O[Si]([O-])=O.O[Si]([O-])=O.[O-][Si]([O-])=O.[O-][Si]([O-])=O,-6.5789404760000005,no_carbon,Mg;O;Si
+A-2663,dialuminium(3+) ion dicalcium pentaoxidandiide,[O--].[O--].[O--].[O--].[O--].[Al+3].[Al+3].[Ca++].[Ca++],-6.3306470932000005,no_carbon,Al;Ca;O
+A-2667,silver cyanide,[Ag+].[C-]#N,-6.1267351667,disallowed_element,Ag;C;N
+A-2668,titanium(2+) ion dihydride,[Ti++].[H-].[H-],-5.6979525644,no_carbon,H;Ti
+A-2669,titanium(4+) ion bis(oxosilanebis(olate)),[Ti+4].[O-][Si]([O-])=O.[O-][Si]([O-])=O,-6.3011016483,no_carbon,O;Si;Ti
+A-2675,diiron(3+) ion distrontium(2+) ion pentaoxidandiide,[O--].[O--].[O--].[O--].[O--].[Fe+3].[Fe+3].[Sr++].[Sr++],-6.6614873159000005,no_carbon,Fe;O;Sr
+A-2676,zirconium dihydride,[H-].[H-].[Zr++],-6.066512277899999,no_carbon,H;Zr
+A-2680,Ciaftalan zinc,[Zn++].[n-]1c2nc3[n-]c(nc4nc(nc5nc(nc1c6ccccc26)c7ccccc57)c8ccccc48)c9ccccc39,-6.9837209828,disallowed_element,C;N;Zn
+A-2729,magnesium diniobate,[O--].[O--].[O--].[O--].[O--].[O--].[O--].[Mg++].[Mg++].[Nb+5].[Nb+5],-6.8406266847,no_carbon,Mg;Nb;O
+A-2750,(benzoyloxy)(hydroxy)alumanyl octadecanoate,CCCCCCCCCCCCCCCCCC(=O)O[Al](O)OC(=O)c1ccccc1,-7.253899897899999,disallowed_element,Al;C;O
+A-2759,ammonium iron(3+) hexakis(cyano-C)ferrate(4-),[NH4+].[Fe++].[Fe+3].[C-]#N.[C-]#N.[C-]#N.[C-]#N.[C-]#N.[C-]#N,-7.155088449400001,disallowed_element,C;Fe;N
+A-2765,hafnium,[Hf],-7.1724326435000005,no_carbon,Hf
+A-2766,hafnium dioxide,[O--].[O--].[Hf+4],-7.2440460955,no_carbon,Hf;O
+A-2781,aluminium(3+) ion borate,[Al+3].[O-]B([O-])[O-],-6.9334417301,no_carbon,Al;B;O
+A-2783,nitriloborane,B#N,-6.394784279,no_carbon,B;N
+A-2795,"titanium(4+) ion bis(2,6-difluoro-3-(1H-pyrrol-1-yl)benzen-1-ide) bis(cyclopenta-2,4-dien-1-ide)",[Ti+4].Fc1ccc(N2C=C[C-]=C2)c(F)c1.Fc3ccc(N4C=C[C-]=C4)c(F)c3.[cH-]5cccc5.[cH-]6cccc6,-8.1257893916,disallowed_element,C;F;N;Ti
+A-2840,"sodium 2-amino-4-nitrophenol benzene-1,3-diol 2-amino-4-nitro-6-sulfobenzen-1-olate iron sodium hydride",[Na].[Na+].[Fe].Nc1cc(ccc1O)[N+]([O-])=O.Nc2cc(cc(c2O)[S]([O-])(=O)=O)[N+]([O-])=O.Oc3cccc(O)c3,-0.9940566873,disallowed_element,C;Fe;N;Na;O;S
+A-2849,lithium(1+) ion chloride,[Li+].[Cl-],1.1343979721,no_carbon,Cl;Li
+A-2856,dipotassium O-[(sulfonatoperoxy)sulfonyl]oxidanidolate,[K+].[K+].[O-][S](=O)(=O)OO[S]([O-])(=O)=O,-0.6537301416,no_carbon,K;O;S
+A-2863,chromium(3+) ion trifluoride,[F].[F].[F].[Cr],-0.3384166482,no_carbon,Cr;F
+A-2868,sodium bis[2-[[5-(aminosulphonyl)-2-hydroxyphenyl]azo]-3-oxo-N-phenylbutyramidato(2-)]cobaltate(1-),[Na+].[Co+3].CC(=O)/C(=N/Nc1cc(ccc1[O-])[S](N)(=O)=O)C(=O)[N-]c2ccccc2.CC(=O)/C(=N/Nc3cc(ccc3[O-])[S](N)(=O)=O)C(=O)[N-]c4ccccc4,-2.2084701124,disallowed_element,C;Co;N;Na;O;S
+A-2874,sodium oxidooxy-oxoborane hydrate,O.[Na+].[O-]OB=O,-0.8231002009999999,no_carbon,B;Na;O
+A-2876,Chromic phosphate,[Cr+3].[O-][P]([O-])([O-])=O,0.4859956397,no_carbon,Cr;O;P
+A-2879,"disodium 2-amino-4,6-dinitrophenol 4-nitroaniline 8-{2-[(1E)-2-oxido-4-oxocyclohexa-2,5-dien-1-ylidene]hydrazin-1-yl}-3,6-disulfonaphthalen-1-olate iron",[Na+].[Na+].[Fe].Nc1ccc(cc1)[N+]([O-])=O.Nc2cc(cc(c2O)[N+]([O-])=O)[N+]([O-])=O.OC/3=CC(=O)C=CC3=N/Nc4cc(cc5cc(cc(O)c45)[S]([O-])(=O)=O)[S]([O-])(=O)=O,-1.3075465248,disallowed_element,C;Fe;N;Na;O;S
+A-2882,nickel(2+) difluoride,[F-].[F-].[Ni++],-0.3833170773,no_carbon,F;Ni
+A-2896,trisodium bis[2-hydroxy-5-nitro-3-[[2-oxo-1-[(phenylamino)carbonyl]propyl]azo]benzenesulphonato(3-)]cobaltate(3-),[Na+].[Na+].[Na+].[Co+3].CC(=O)\C(=N/Nc1cc(cc(c1[O-])[S]([O-])(=O)=O)[N+]([O-])=O)C(=O)[N-]c2ccccc2.CC(=O)\C(=N/Nc3cc(cc(c3[O-])[S]([O-])(=O)=O)[N+]([O-])=O)C(=O)[N-]c4ccccc4,-0.4747040271,disallowed_element,C;Co;N;Na;O;S
+A-2911,hydrazine dihydrochloride,[H+].[Cl-].NN,1.5956288145,no_carbon,Cl;H;N
+A-2913,C.i. Direct blue 80,[Na+].[Na+].[Na+].[Na+].[Cu++].[Cu++].[O-]c1cc(ccc1N=Nc2c([O-])c(cc3cc(ccc23)[S]([O-])(=O)=O)[S]([O-])(=O)=O)c4ccc(N=Nc5c([O-])c(cc6cc(ccc56)[S]([O-])(=O)=O)[S]([O-])(=O)=O)c([O-])c4,-1.6074287478,disallowed_element,C;Cu;N;Na;O;S
+A-2949,disodium sulfate,[Na+].[Na+].[O-][S]([O-])(=O)=O,0.1263337648,no_carbon,Na;O;S
+A-2956,tin(2+) ion dichloride,[Cl-].[Cl-].[Sn++],-0.0274572689,no_carbon,Cl;Sn
+A-2958,potassium phosphorous acid,[K+].OP(O)O,1.1524094081999998,no_carbon,K;O;P
+A-2959,"disodium 4-nitrobenzene-1,3-diamine 3-amino-4-methoxybenzene-1-sulfonate 3-hydroxybenzen-1-olate copper",[Na+].[Na+].[Cu].COc1ccc(cc1N)[S]([O-])(=O)=O.Nc2ccc(c(N)c2)[N+]([O-])=O.Oc3cccc([O-])c3,-1.5043501961,disallowed_element,C;Cu;N;Na;O;S
+A-2972,calcium bis(phosphinate),[Ca++].[O-]P=O.[O-]P=O,-0.0326449205,no_carbon,Ca;O;P
+A-2973,azanium; 2-[3-[bis(2-oxido-2-oxoethyl)amino]propyl-(2-oxido-2-oxoethyl)amino]acetate; iron(+3) cation,[NH4+].[Fe+3].[O-]C(=O)CN(CCCN(CC([O-])=O)CC([O-])=O)CC([O-])=O,0.1050056219999999,disallowed_element,C;Fe;N;O
+A-3004,lithium(1+) ion nitrate,[Li+].[O-][N+]([O-])=O,1.1700973958,no_carbon,Li;N;O
+A-3009,chromium(3+) ion hydroxide sulfate,[OH-].[Cr+3].[O-][S]([O-])(=O)=O,0.7823423727,no_carbon,Cr;O;S
+A-3010,disodium sulfanediide,[Na+].S,1.2435692985,no_carbon,Na;S
+A-3053,chromium(3+) ion trichloride,[Cl-].[Cl-].[Cl-].[Cr+3],-3.1996317806,no_carbon,Cl;Cr
+A-3055,methane dimolybdenum,C.[Mo].[Mo],-3.4202754414,disallowed_element,C;Mo
+A-3064,dialuminum hexacalcium oxygen(-2) anion trisulfate,[O--].[O--].[O--].[O--].[O--].[O--].[Al+3].[Al+3].[Ca++].[Ca++].[Ca++].[Ca++].[Ca++].[Ca++].[O-][S]([O-])(=O)=O.[O-][S]([O-])(=O)=O.[O-][S]([O-])(=O)=O,-3.0742274262,no_carbon,Al;Ca;O;S
+A-3072,calcium dioxido-oxotin,[Ca++].[O-][Sn]([O-])=O,-5.616551128099999,no_carbon,Ca;O;Sn
+A-3076,triammonium hexachlororhodate,[NH4+].[NH4+].[NH4+].[Cl-].[Cl-].[Cl-].[Cl-].[Cl-].[Cl-].[Rh+3],-0.5687670702000001,no_carbon,Cl;N;Rh
+A-3080,potassium fluoride,[F-].[K+],1.2284072863,no_carbon,F;K
+A-3097,sodium bromide,[Na+].[Br-],0.9635010857,no_carbon,Br;Na
+A-3100,barium dinitrate,[Ba++].[O-][N+]([O-])=O.[O-][N+]([O-])=O,-0.4440713859,no_carbon,Ba;N;O
+A-3102,"bis(5-oxo-L-prolinato-N1,O2)zinc",[Zn++].[O-]C(=O)C1CCC(=O)N1.[O-]C(=O)C2CCC(=O)N2,-0.5341935881000001,disallowed_element,C;N;O;Zn
+A-3104,calcium bis(dihydrogenorthophosphate),[Ca++].O[P](O)([O-])=O.O[P](O)([O-])=O,-0.3966430532,no_carbon,Ca;O;P
+A-3134,disodium selenite,[Na+].[Na+].[O-][Se]([O-])=O,0.7153884158,no_carbon,Na;O;Se
+A-3139,sodium vanadiumoylolate,[Na+].[O-][V](=O)=O,0.2664613742,no_carbon,Na;O;V
+A-3148,lanthanum(3+) ion trichloride,O.O.O.O.O.O.O.[Cl-].[Cl-].[Cl-].[La+3],0.3652265972,no_carbon,Cl;La;O
+A-3150,aluminium(3+) ion triformate,[Al+3].[O-]C=O.[O-]C=O.[O-]C=O,-0.2746003214999999,disallowed_element,Al;C;O
+A-3153,diammonium [(sulfonoperoxoato sulfato)oxy]sulfonoperoxoate,[NH4+].[NH4+].[O-][S](=O)(=O)OO[S]([O-])(=O)=O,0.5710956732,no_carbon,N;O;S
+A-3164,"(1Z,5Z)-cycloocta-1,5-diene; rhodium; dichloride",[Cl].[Cl].[Rh].[Rh].C\1C\C=C/CC\C=C1.C\2C\C=C/CC\C=C2,-2.4997980736,disallowed_element,C;Cl;Rh
+A-3166,hexasodium; dioxido-dioxotungsten; trioxotungsten,[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[O-][W]([O-])(=O)=O.[O-][W]([O-])(=O)=O.[O-][W]([O-])(=O)=O.O=[W](=O)=O.O=[W](=O)=O.O=[W](=O)=O.O=[W](=O)=O.O=[W](=O)=O.O=[W](=O)=O.O=[W](=O)=O.O=[W](=O)=O.O=[W](=O)=O,-0.4724611164,no_carbon,Na;O;W
+A-3171,sodium nitrite,[Na+].[O-]N=O,1.0749962334,no_carbon,N;Na;O
+A-3211,ammonium bromide,[NH4+].[Br-],1.908299785,no_carbon,Br;N
+A-3222,tetraazanium dioxido-dioxomolybdenum,[NH4+].[NH4+].[NH4+].[NH4+].[O-][Mo]([O-])(=O)=O.[O-][Mo]([O-])(=O)=O,-2.5804798622,no_carbon,Mo;N;O
+A-3227,copper(2+) diacetate,[Cu++].CC([O-])=O.CC([O-])=O,-0.3755357121,disallowed_element,C;Cu;O
+A-3236,potassium phosphinate,[K+].[O-]P=O,0.8626748208,no_carbon,K;O;P
+A-3237,sodium phosphinate,O.[Na+].[O-]P=O,0.8546356528,no_carbon,Na;O;P
+A-3246,disodium [(sulfonoperoxoato sulfato)oxy]sulfonoperoxoate,[Na+].[Na+].[O-][S](=O)(=O)OO[S]([O-])(=O)=O,0.4865525209,no_carbon,Na;O;S
+A-3254,iron(3+) ion sodium 2-({2-[bis(carboxylatomethyl)amino]ethyl}(carboxylatomethyl)amino)acetate,[Na+].[Fe+3].[O-]C(=O)CN(CCN(CC([O-])=O)CC([O-])=O)CC([O-])=O,-0.7073891823999999,disallowed_element,C;Fe;N;Na;O
+A-3265,bromide,[H+].[Br-],1.3775443727,no_carbon,Br;H
+A-3275,ammonium trioxovanadate(1-),[V],-0.8144249576,no_carbon,V
+A-3300,phosphorofluoridic acid,[Na+].[Na+].[O-][P]([O-])(F)=O,0.6844005874,no_carbon,F;Na;O;P
+A-3312,potassium bromide,[K+].[Br-],0.7556754335,no_carbon,Br;K
+A-3314,chromium(3+) ion acetate dihydroxide,[Cr+3].CC([O-])=O.CC([O-])=O.CC([O-])=O,0.4692256086,disallowed_element,C;Cr;O
+A-3319,caesium(1+) ion iodide,[I-].[Cs+],0.4112261076,no_carbon,Cs;I
+A-3326,Ruthenium(3+) heptaacetate,[Ru+3].[Ru+3].[Ru+3].CC([O-])=O.CC([O-])=O.CC([O-])=O.CC([O-])=O.CC([O-])=O.CC([O-])=O.CC([O-])=O,-0.0356831695,disallowed_element,C;O;Ru
+A-3329,disodium dioxomolybdenumbis(olate),[Na+].[Na+].[O-][Mo]([O-])(=O)=O,0.5020204465,no_carbon,Mo;Na;O
+A-3330,iron(3+) chloride sulfate,[Cl].[Fe].[O-][S]([O-])(=O)=O,0.540234161,no_carbon,Cl;Fe;O;S
+A-3331,iron(3+) ion trichloride,[Cl-].[Cl-].[Cl-].[Fe+3],0.6028517968,no_carbon,Cl;Fe
+A-3333,iron(+2) cation sulfate,[Fe++].[O-][S]([O-])(=O)=O,0.6313327107,no_carbon,Fe;O;S
+A-3340,nickel(2+) ion dichloride,[Cl-].[Cl-].[Ni++],0.6949333776000001,no_carbon,Cl;Ni
+A-3345,calcium disulfamate,[Ca++].N[S]([O-])(=O)=O.N[S]([O-])(=O)=O,0.4388612161999999,no_carbon,Ca;N;O;S
+A-3352,manganese bis(dihydrogen phosphate),[Mn++].[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O,0.4103907799,no_carbon,Mn;O;P
+A-3371,disodium phosphonate,[Na+].[Na+].[O-][P](=O)=O,0.6893014740000001,no_carbon,Na;O;P
+A-3390,strontium,[Sr],-1.1139433523,no_carbon,Sr
+A-3402,sulfanylidenestrontium,S=[Sr],0.0036602887,no_carbon,S;Sr
+A-3418,iron(+3) cation; oxygen(-2) anion,[O--].[O--].[O--].[Fe+3].[Fe+3],-3.7261483073,no_carbon,Fe;O
+A-3420,bis(hydroxyazanium) sulfate,[NH3+]O.[NH3+]O.[O-][S]([O-])(=O)=O,0.553426318,no_carbon,N;O;S
+A-3421,dichlorocobalt,[Cl-].[Cl-].[Co++],0.654418336,no_carbon,Cl;Co
+A-3423,potassium pentahydrogen diphosphate,[K+].O[P](O)(O)=O,0.6286564425,no_carbon,K;O;P
+A-3453,palladium(2+) ion tetraamine dihydrogen carbonate,N.N.N.N.[Pd++].OC([O-])=O.OC([O-])=O,-0.7223996879000001,disallowed_element,C;N;O;Pd
+A-3460,palladium(2+) dichloride,[Cl-].[Cl-].[Pd++],-0.5036976261,no_carbon,Cl;Pd
+A-3461,sodium hydrogensulphide,[Na+].[SH-],0.990088732,no_carbon,Na;S
+A-3468,disodium disulphite,[Na+].[Na+].[O-][S](=O)O[S]([O-])=O,0.4533910824,no_carbon,Na;O;S
+A-3497,cadmium dinitrate,[Cd++].O[N+]([O-])=O.O[N+]([O-])=O,0.3276361318,no_carbon,Cd;N;O
+A-3528,potassium tetrafluoroboranuide,[K+].F[B-](F)(F)F,-1.3676388693,no_carbon,B;F;K
+A-3557,"disodium bicyclo[3.3.1]tetraboroxane-3,7-bis(olate)",O.O.O.O.O.O.O.O.O.O.[Na+].[Na+].[O-]B(OB=O)OB([O-])OB=O,-0.8846418846999999,no_carbon,B;Na;O
+A-3562,boric acid,OB(O)O,-0.0992552152,no_carbon,B;O
+A-3563,calcium hydrogen borate,[Ca++].[Ca++].[Ca++].[O-]B([O-])[O-].[O-]B([O-])[O-],-0.6843417048,no_carbon,B;Ca;O
+A-3564,hexapotassium dihydrogen borate hydrogen borate borate,[K].OB(O)O,-0.3120594734,no_carbon,B;K;O
+A-3567,lead(2+) ion dinitrate,[Pb++].[O-][N+]([O-])=O.[O-][N+]([O-])=O,0.1665354510999999,no_carbon,N;O;Pb
+A-3578,zinc bis(2-hydroxypropanoate),[Zn++].CC(O)C([O-])=O.CC(O)C([O-])=O,-0.7035054304999999,disallowed_element,C;O;Zn
+A-3602,magnesium(2+) ion dichloride,[Mg++].[Cl-].[Cl-],0.6922078268999999,no_carbon,Cl;Mg
+A-3605,vanadium oxide sulphate,[O-][S]([O-])(=O)=O.O=[V++],0.4571186188,no_carbon,O;S;V
+A-3606,lithium(1+) ion perchlorate,[Li+].O.O.O.[O-][Cl](=O)(=O)=O,0.4612188619,no_carbon,Cl;Li;O
+A-3613,cadmium dichloride,[Cl-].[Cl-].[Cd++],0.3967110896,no_carbon,Cd;Cl
+A-3625,diiron(3+) ion trisulfate,[Fe+3].[Fe+3].[O-][S]([O-])(=O)=O.[O-][S]([O-])(=O)=O.[O-][S]([O-])(=O)=O,1.0415240791,no_carbon,Fe;O;S
+A-3629,zinc dibromide,[Zn++].[Br-].[Br-],1.2977429939,no_carbon,Br;Zn
+A-3631,"chromium(3+) ion pentasodium bis(8-[(4-amino-6-chloro-1,3,5-triazin-2-yl)amino]-2-[(E)-2-(5-nitro-2-oxidophenyl)diazen-1-yl]-3,6-disulfonatonaphthalen-1-olate)",[Na+].[Na+].[Na+].[Na+].[Na+].[Cr+3].Nc1nc(Cl)nc(Nc2cc(cc3cc(c(N=Nc4cc(ccc4[O-])[N+]([O-])=O)c([O-])c23)[S]([O-])(=O)=O)[S]([O-])(=O)=O)n1.Nc5nc(Cl)nc(Nc6cc(cc7cc(c(N=Nc8cc(ccc8[O-])[N+]([O-])=O)c([O-])c67)[S]([O-])(=O)=O)[S]([O-])(=O)=O)n5,-0.4949751746,disallowed_element,C;Cl;Cr;N;Na;O;S
+A-3641,zinc(2+) ion dichloride,[Cl-].[Cl-].[Zn++],0.5010006364,no_carbon,Cl;Zn
+A-3652,manganese(2+) dinitrate,[Mn++].[O-][N+]([O-])=O.[O-][N+]([O-])=O,1.377095201,no_carbon,Mn;N;O
+A-3657,aluminium(3+) ion trinitrate,O.O.O.O.O.O.O.O.O.[Al+3].[O-][N+]([O-])=O.[O-][N+]([O-])=O.[O-][N](=O)=O,-0.9408131942,no_carbon,Al;N;O
+A-3658,sodium fluoride,[F-].[Na+],-0.0021872624,no_carbon,F;Na
+A-3667,sodium azide,[Na+].[N-]=[N+]=[N-],0.8040134946999999,no_carbon,N;Na
+A-3668,manganese(2+) ion disodium 2-({2-[bis(carboxylatomethyl)amino]ethyl}(carboxylatomethyl)amino)acetate,[Na+].[Na+].[Mn++].[O-]C(=O)CN(CCN(CC([O-])=O)CC([O-])=O)CC([O-])=O,0.024802502,disallowed_element,C;Mn;N;Na;O
+A-3692,dipotassium zinc 2-[2-[bis(2-oxido-2-oxoethyl)amino]ethyl-(2-oxido-2-oxoethyl)amino]acetate,[K+].[K+].[Zn++].[O-]C(=O)CN(CCN(CC([O-])=O)CC([O-])=O)CC([O-])=O,0.237458201,disallowed_element,C;K;N;O;Zn
+A-3701,Sodium; cobalt(3+); 1-[(2-oxido-5-sulfamoylphenyl)diazenyl]naphthalen-2-olate,[Na+].[Co+3].N[S](=O)(=O)c1ccc([O-])c(c1)N=Nc2c([O-])ccc3ccccc23.N[S](=O)(=O)c4ccc([O-])c(c4)N=Nc5c([O-])ccc6ccccc56,-2.2022038482,disallowed_element,C;Co;N;Na;O;S
+A-3721,aluminium(3+) ion potassium tetrafluoride,[F-].[Al+3].[K+],-1.269901072,no_carbon,Al;F;K
+A-3723,tributoxyalumane,[Al+3].CCCC[O-].CCCC[O-].CCCC[O-],-1.7373354758,disallowed_element,Al;C;O
+A-3775,Cobalt sulfate heptahydrate,O.O.O.O.O.O.O.[Co++].[O-][S]([O-])(=O)=O,0.1271332296,no_carbon,Co;O;S
+A-3779,ammonium chloride,[NH4+].[Cl-],0.8422541039,no_carbon,Cl;N
+A-3798,potassium chloride,[Cl-].[K+],0.6777748798000001,no_carbon,Cl;K
+A-3822,hydroxyazanium chloride,[H+].[Cl-].NO,0.6895503556999999,no_carbon,Cl;H;N;O
+A-3852,sodium chloride,[Na+].[Cl-],0.7343267611,no_carbon,Cl;Na
+A-3868,hydrogen sulfide; manganese,S.[Mn],-4.1599117564,no_carbon,Mn;S
+A-3937,aluminum tris(4-oxopent-2-en-2-olate),[Al+3].CC([O-])=CC(C)=O.CC([O-])=CC(C)=O.CC([O-])=CC(C)=O,-2.0338377464,disallowed_element,Al;C;O
+A-3969,dicaesium(1+) ion carbonate,[Cs+].[Cs+].[O-]C([O-])=O,0.9300687552,disallowed_element,C;Cs;O
+A-3978,cobalt(2+) hydrogen citrate,[Co++].OC(=O)CC(O)(CC([O-])=O)C([O-])=O,-0.954573972,disallowed_element,C;Co;O
+A-3979,Cobaltous citrate,[Co++].[Co++].[Co++].OC(CC([O-])=O)(CC([O-])=O)C([O-])=O.OC(CC([O-])=O)(CC([O-])=O)C([O-])=O,-1.3025954999,disallowed_element,C;Co;O
+A-3985,barium(2+) ion dichloride,O.O.[Cl-].[Cl-].[Ba++],0.0418928153,no_carbon,Ba;Cl;O
+A-3987,copper(+1) cation sulfide,[SH--].[Cu+].[Cu+],-4.2045730411,no_carbon,Cu;S
+A-3989,Sodium trimetaphosphate,[Na+].[Na+].[Na+].[O-][P]1(=O)O[P]([O-])(=O)O[P]([O-])(=O)O1,-0.062309467,no_carbon,Na;O;P
+A-3991,oxoselane oxide,O=[Se]=O,1.3647745033,no_carbon,O;Se
+A-4004,dilithium(1+) ion sulfate,[Li+].[Li+].[O-][S]([O-])(=O)=O,0.3921242805,no_carbon,Li;O;S
+A-4039,caesium(1+) ion nitrate,[Cs],0.255764198,no_carbon,Cs
+A-4041,"copper(2+) ion tetrasodium 8-[(4-amino-6-chloro-1,3,5-triazin-2-yl)amino]-2-[(E)-2-(1-oxido-4,8-disulfonatonaphthalen-2-yl)diazen-1-yl]-3,6-disulfonatonaphthalen-1-olate",[Na+].[Na+].[Na+].[Na+].[Cu++].Nc1nc(Cl)nc(Nc2cc(cc3cc(c(N=Nc4cc(c5cccc(c5c4[O-])[S]([O-])(=O)=O)[S]([O-])(=O)=O)c([O-])c23)[S]([O-])(=O)=O)[S]([O-])(=O)=O)n1,-0.5907814418999999,disallowed_element,C;Cl;Cu;N;Na;O;S
+A-4055,potassium difluorodihydroxyboranuide,[K+].O[B-](O)(F)F,-0.724347118,no_carbon,B;F;K;O
+A-4063,"disodium bis[(oxoboranyl)oxy]bicyclo[5.5.1]hexaboroxane-3,5-bis(olate)",O.O.O.O.[Na+].[Na+].[O-]B([O-])[O-].[O-]B([O-])[O-].[O-]B([O-])[O-].[O-]B([O-])[O-].[O-]B([O-])[O-].[O-]B([O-])[O-].[O-]B([O-])[O-].[O-]B([O-])[O-],-0.4201864202,no_carbon,B;Na;O
+A-4086,manganese(2+) ion hydrogen phosphate,[Mn++].O[P]([O-])([O-])=O,0.1455471695,no_carbon,Mn;O;P
+A-4087,zinc(2+) ion sulfate,O.[Zn++].[O-][S]([O-])(=O)=O,0.0702954323,no_carbon,O;S;Zn
+A-4088,disodium oxosilanebis(olate),[Na+].[Na+].[O-][Si]([O-])=O,0.2356352551,no_carbon,Na;O;Si
+A-4099,potassium dihydrogenorthophosphate,[K+].O[P](O)([O-])=O,0.1842562687,no_carbon,K;O;P
+A-4102,cerium(+3) cation; hydrogen sulfate; sulfate; tetrahydrate,O.O.O.O.[Ce+3].O[S]([O-])(=O)=O.[O-][S]([O-])(=O)=O,-0.2918169735,no_carbon,Ce;O;S
+A-4103,azane; molybdenum; tetracosahydrate,N.N.N.N.N.N.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.[Mo].[Mo].[Mo].[Mo].[Mo].[Mo].[Mo],-0.7664726234999999,no_carbon,Mo;N;O
+A-4104,ammonium perchlorate,[NH4+].[O-][Cl](=O)(=O)=O,0.2436628357999999,no_carbon,Cl;N;O
+A-4105,"Cuprate(6-), [2-[[[[3-[[4-chloro-6-[[4-[[4-chloro-6-[(3-sulfophenyl)amino]-1,3,5-triazin-2-yl]amino]-2,5-disulfophenyl]amino]-1,3,5-triazin-2-yl]amino]-2-hydroxy-5-sulfophenyl]azo]phenylmethyl]azo]-5-sulfobenzoato(8-)]-, pentasodium hydrogen, (SP-4-3)-",[Na+].[Na+].[Na+].[Na+].[Na+].[Cu++].[O-]C(=O)c1cc(ccc1NNC(=N/Nc2cc(cc([N-]c3nc(Cl)nc(n3)N=C4C=C(C(C=C4[S]([O-])(=O)=O)=Nc5nc(Cl)nc(Nc6cccc(c6)[S]([O-])(=O)=O)n5)[S]([O-])(=O)=O)c2[O-])[S]([O-])(=O)=O)\c7ccccc7)[S]([O-])(=O)=O.[H+],-0.8254112341,disallowed_element,C;Cl;Cu;H;N;Na;O;S
+A-4127,"disodium (4Z)-3-hydroxy-4-[2-(2-hydroxy-3,5-dinitrophenyl)hydrazin-1-ylidene]cyclohexa-2,5-dien-1-one 4-nitroaniline 3-aminobenzene-1-sulfonate 5-amino-2-(phenylamino)benzene-1-sulfonate iron",[Na+].[Na+].[Fe].Nc1ccc(cc1)[N+]([O-])=O.Nc2cccc(c2)[S]([O-])(=O)=O.Nc3ccc(Nc4ccccc4)c(c3)[S]([O-])(=O)=O.OC\5=CC(=O)C=CC5=N/Nc6cc(cc(c6O)[N+]([O-])=O)[N+]([O-])=O,-2.5268154232,disallowed_element,C;Fe;N;Na;O;S
+A-4149,calcium sulfate,[Ca++].[O-][S]([O-])(=O)=O,-1.715687645,no_carbon,Ca;O;S
+A-4237,tin(4+) disulfate,[Sn++].[O-][S]([O-])(=O)=O,-0.0578238563,no_carbon,O;S;Sn
+A-4241,lithium(1+) ion bromide,[Li+].[Br-],1.3237062702,no_carbon,Br;Li
+A-4244,sodium dithionite,[Na+].[Na+].[O-][S](=O)[S]([O-])=O,0.0182921287,no_carbon,Na;O;S
+A-4265,silanedione magnesium sodium hydrofluoride,F.[Na].[MgH2].O=[Si]=O,-0.8566651273999999,no_carbon,F;Mg;Na;O;Si
+A-4268,ammonium hydrogen carbonate,[NH4+].[NH4+].[Zn++].[Zn++].[O-]C([O-])=O.[O-]C([O-])=O.[O-]C([O-])=O,-0.2897617622,disallowed_element,C;N;O;Zn
+A-4269,disodium sulfanediide,[Na+].[Na+].[SH-],0.3524906593,no_carbon,Na;S
+A-4270,nickel(2+) ion diacetate,[Ni++].CC([O-])=O.CC([O-])=O,0.0005376801,disallowed_element,C;Ni;O
+A-4281,dioxodiarsoxane,[O--].[O--].[O--].[As+3].[As+3],-1.0458962962,no_carbon,As;O
+A-4344,pentasodium bis(phosphonatooxy)phosphinate,[Na+].[Na+].[Na+].[Na+].[Na+].[O-][P]([O-])(=O)O[P]([O-])(=O)O[P]([O-])([O-])=O,-0.3954232123,no_carbon,Na;O;P
+A-4352,potassium dicyanogolduide,[K+].[Au+].[C-]#N.[C-]#N,-0.3042087283,disallowed_element,Au;C;K;N
+A-4386,copper(2+) dinitrate,[Cu++].[O-][N+]([O-])=O.[O-][N+]([O-])=O,0.8661228867,no_carbon,Cu;N;O
+A-4395,copper(2+) ion bis(5-oxopyrrolidine-2-carboxylate),[Cu++].[O-]C(=O)C1CCC(=O)N1.[O-]C(=O)C2CCC(=O)N2,-0.384250204,disallowed_element,C;Cu;N;O
+A-4426,potassium vanadium trioxide,[K+].[O-][V](=O)=O,-0.0465738269,no_carbon,K;O;V
+A-4427,lanthanum trinitrate,[La],0.9471841061,no_carbon,La
+A-4451,rhodium(3+) ion trinitrate,[Rh+3].[O-][N+]([O-])=O.[O-][N+]([O-])=O.[O-][N+]([O-])=O,0.6074112618999999,no_carbon,N;O;Rh
+A-4464,lithium(1+) ion hydroxide,[Li+].[OH-],0.6621234357,no_carbon,Li;O
+A-4485,chromium(3+) ion trinitrate,[Cr+3].[O-][N+]([O-])=O.[O-][N+]([O-])=O.[O-][N+]([O-])=O,0.6456305496,no_carbon,Cr;N;O
+A-4490,samarium(3+) ion trinitrate,[Sm+3].[O-][N+]([O-])=O.[O-][N+]([O-])=O.[O-][N+]([O-])=O,0.4860173873,no_carbon,N;O;Sm
+A-4556,yttrium(3+) acetate,[Y+3].CC([O-])=O.CC([O-])=O.CC([O-])=O,-0.4249436743,disallowed_element,C;O;Y
+A-4577,strontium tartarate,[Sr].OC(C(O)C(O)=O)C(O)=O,-2.1065271998,disallowed_element,C;O;Sr
+A-4584,"2-ethylhexanoic acid, manganese salt",[Mn++].CCCCC(CC)C(O)=O,-2.0439121671,disallowed_element,C;Mn;O
+A-4647,lithium(1+) ion fluoride,[Li+].[F-],-1.2901015882,no_carbon,F;Li
+A-4668,nitrogen oxide,[N-]=[N+]=O,-1.5643997258000002,no_carbon,N;O
+A-4682,trilithium(1+) ion hexafluoroalumanetriuide,[Li+].[Li+].[Li+].[F-].[F-].[F-].[F-].[F-].[F-].[Al+3],-2.1675670427,no_carbon,Al;F;Li
+A-4700,molybdenum trioxide,O=[Mo](=O)=O,-2.1581724467,no_carbon,Mo;O
+A-4713,palladium(2+) ion diacetate,[Pd++].CC([O-])=O.CC([O-])=O,-2.3865009,disallowed_element,C;O;Pd
+A-4740,"6,8,9-trinitro-2,4-dioxa-3-plumbabicyclo[3.3.1]nona-1(9),5,7-triene",[Pb++].[O-]c1c(cc(c([O-])c1[N+]([O-])=O)[N+]([O-])=O)[N+]([O-])=O,-2.8083913688,disallowed_element,C;N;O;Pb
+A-4755,diamminedichloropalladium,N.N.[Cl-].[Cl-].[Pd++],-2.5257397803,no_carbon,Cl;N;Pd
+A-4770,magnesium hydrogenorthophosphate,[Mg++].O[P]([O-])([O-])=O,0.2641880223,no_carbon,Mg;O;P
+A-4819,trisodium hexafluoroalumanetriuide,[F-].[F-].[F-].[F-].[F-].[F-].[Na+].[Na+].[Na+].[Al+3],-2.6988459025,no_carbon,Al;F;Na
+A-4860,manganese(2+) ion oxalate,[Mn++].[O-]C(=O)C([O-])=O,-2.6780811331,disallowed_element,C;Mn;O
+A-4862,trilithium(1+) ion phosphate,[Li+].[Li+].[Li+].[O-][P]([O-])([O-])=O,-2.5909258566,no_carbon,Li;O;P
+A-4869,barium tartarate,[Ba++].OC(C(O)C([O-])=O)C([O-])=O,-3.0523304042,disallowed_element,Ba;C;O
+A-4909,calcium dihydrate hydrogen phosphate,[Ca++].O[P]([O-])([O-])=O,-2.9490262679000003,no_carbon,Ca;O;P
+A-4914,boron(3+) ion phosphate,O=[P]12OB(O1)O2,-2.8690757364,no_carbon,B;O;P
+A-4947,nickel(2+) ion sulfanediide,S.[Ni],-3.022952972,no_carbon,Ni;S
+A-4948,iron(3+) phosphate,[Fe+3].[O-][P]([O-])([O-])=O,-3.2614644911000004,no_carbon,Fe;O;P
+A-4962,disodium; chromium(+3) cation; 3-(3-methyl-5-oxido-1-phenylpyrazol-4-yl)diazenyl-4-oxidobenzenesulfonate; 1-(2-oxido-5-phenyldiazenylphenyl)diazenylnaphthalen-2-olate,[Na+].[Na+].[Cr+3].Cc1nn(c([O-])c1N=Nc2cc(ccc2[O-])[S]([O-])(=O)=O)c3ccccc3.[O-]c4ccc(cc4N=Nc5c([O-])ccc6ccccc56)N=Nc7ccccc7,-2.6916066775,disallowed_element,C;Cr;N;Na;O;S
+A-4971,tin(4+) ion disulfanediide,[S--].[S--].[Sn+4],-3.5808418514,no_carbon,S;Sn
+A-4979,dicopper hydroxide phosphate,[OH-].[Cu++].[Cu++].[O-][P]([O-])([O-])=O,-3.7450548094,no_carbon,Cu;O;P
+A-4985,"trizinc(2+) ion bis(2-hydroxypropane-1,2,3-tricarboxylate)",[Zn++].[Zn++].[Zn++].OC(CC([O-])=O)(CC([O-])=O)C([O-])=O.OC(CC([O-])=O)(CC([O-])=O)C([O-])=O,-2.2540402576,disallowed_element,C;O;Zn
+A-4999,Sulfur hexafluoride,F[S](F)(F)(F)(F)F,-3.6731547352,no_carbon,F;S
+A-5014,sulfanylideneiron,S=[Fe],-3.6218288656,no_carbon,Fe;S
+A-5051,trisodium; chromium(+3) cation; 4-(3-methyl-5-oxido-1-phenylpyrazol-4-yl)diazenyl-3-oxidonaphthalene-1-sulfonate,[Na+].[Na+].[Na+].[Cr+3].Cc1nn(c([O-])c1N=Nc2c([O-])cc(c3ccccc23)[S]([O-])(=O)=O)c4ccccc4.Cc5nn(c([O-])c5N=Nc6c([O-])cc(c7ccccc67)[S]([O-])(=O)=O)c8ccccc8,-1.2121028981,disallowed_element,C;Cr;N;Na;O;S
+A-5064,manganese(2+) ion carbonate,[Mn++].[O-]C([O-])=O,-4.5005872378,disallowed_element,C;Mn;O
+A-5071,oxonickel,O=[Ni],-4.5191656494,no_carbon,Ni;O
+A-5079,dicopper(2+) ion chloride trihydroxide,[OH-].[OH-].[OH-].[Cl-].[Cu++].[Cu++],-5.2539851522,no_carbon,Cl;Cu;O
+A-5081,zinc bis(dimethyldithiocarbamate),[Zn++].CN(C)C([S-])=S.CN(C)C([S-])=S,-5.4987140306,disallowed_element,C;N;S;Zn
+A-5083,oxomanganese,O=[Mn],-4.921453892,no_carbon,Mn;O
+A-5086,manganese,[Mn],-4.894774805,no_carbon,Mn
+A-5088,lanthanum(3+) ion trifluoride,[F-].[F-].[F-].[La+3],-5.535398327699999,no_carbon,F;La
+A-5092,oxocopper,O=[Cu],-5.3051166643,no_carbon,Cu;O
+A-5093,tetrairon tris(pyrophosphate),[Fe+3].[Fe+3].[Fe+3].[Fe+3].[O-][P]([O-])(=O)O[P]([O-])([O-])=O.[O-][P]([O-])(=O)O[P]([O-])([O-])=O.[O-][P]([O-])(=O)O[P]([O-])([O-])=O,-6.3076085303,no_carbon,Fe;O;P
+A-5094,dibutylbis(dodecylsulfanyl)stannane,CCCCCCCCCCCCS[Sn](CCCC)(CCCC)SCCCCCCCCCCCC,-6.295424349,disallowed_element,C;S;Sn
+A-5103,tantalum,[Ta],-6.9291741838,no_carbon,Ta
+A-5111,zinc(2+) ion dinitrate,[Zn++].[O-][N+]([O-])=O.[O-][N+]([O-])=O,0.7217551526,no_carbon,N;O;Zn
+A-5112,"[(7,7-dimethyloctanoyl)oxy]bario 7,7-dimethyloctanoate",[Ba++].CC(C)(C)CC(C)(C)CC([O-])=O.CC(C)(C)CC(C)(C)CC([O-])=O,-1.698832456,disallowed_element,Ba;C;O
+A-5116,disilver(1+) sulfate,[Ag+].[Ag+].O[S](O)(=O)=O,-1.5849835397999998,no_carbon,Ag;O;S
+A-5117,manganese(2+) ion dichloride,O.O.O.O.[Cl-].[Cl-].[Mn++],0.5826413073,no_carbon,Cl;Mn;O
+A-5130,barium(2+) ion bis(2-ethylhexanoate),[Ba++].CCCCC(CC)C([O-])=O.CCCCC(CC)C([O-])=O,-0.905288847,disallowed_element,Ba;C;O
+A-5137,zinc dibenzoate,[Zn++].[O-]C(=O)c1ccccc1.[O-]C(=O)c2ccccc2,-1.8168417251,disallowed_element,C;O;Zn
+A-5141,dibromane,[Br-],-0.3762292432999999,no_carbon,Br
+A-5146,barium bis(dihydrogenorthophosphate),[Ba++].[Ba++].[Ba++].[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O,-1.3456118943000002,no_carbon,Ba;O;P
+A-5173,"zinc O,O,O',O'-tetrabutyl bis(phosphorodithioate)",[Zn++].CCCCO[P]([S-])(=S)OCCCC.CCCCO[P]([S-])(=S)OCCCC,-2.5083839395,disallowed_element,C;O;P;S;Zn
+A-5176,zinc(2+) ion bis(2-ethylhexanoate),[Zn++].CCCCC(CC)C([O-])=O.CCCCC(CC)C([O-])=O,0.4554354087,disallowed_element,C;O;Zn
+A-5184,Nickel subsulfide,[Ni][Ni][Ni]=[S]=S,-4.5143091680000005,no_carbon,Ni;S
+A-5187,copper(II) carbonate--copper(II) hydroxide (1:1),[OH-].[OH-].[Cu++].[Cu++].[O-]C([O-])=O,-5.1432191168,disallowed_element,C;Cu;O
+A-5189,dioxomanganese,O=[Mn]=O,-6.1610484037,no_carbon,Mn;O
+A-5191,bis(pyridin-1-ium) [(oxidodioxochromio)oxy]chromiumoylolate,O[Cr](=O)(=O)O[Cr](O)(=O)=O.c1ccncc1.c2ccncc2,0.3990871293999999,disallowed_element,C;Cr;N;O
+A-5197,cesium formate,[Cs+].OC=O,0.6746872011,disallowed_element,C;Cs;O
+A-5205,disodium disilicate,[Na+].[Na+].[O-][Si](=O)O[Si]([O-])=O,0.5846760173,no_carbon,Na;O;Si
+A-5208,Cobaltous nitrate hexahydrate,O.O.O.O.O.O.[Co++].[O-][N+]([O-])=O.[O-][N](=O)=O,0.3618761934,no_carbon,Co;N;O
+A-5215,sodium; 4-(5-chloro-2-oxido-4-sulfamoylphenyl)diazenyl-5-methyl-2-phenylpyrazol-3-olate; chromium(+3) cation,[Na+].[Cr+3].Cc1nn(c([O-])c1N=Nc2cc(Cl)c(cc2[O-])[S](N)(=O)=O)c3ccccc3.Cc4nn(c([O-])c4N=Nc5cc(Cl)c(cc5[O-])[S](N)(=O)=O)c6ccccc6,-2.6924708965,disallowed_element,C;Cl;Cr;N;Na;O;S
+A-5228,Chromium acetate,[Cr].CC([O-])=O,0.6534905512,disallowed_element,C;Cr;O
+A-5236,nickel bis(dihydrogen phosphate),[Ni++].O[P](O)([O-])=O.O[P](O)([O-])=O,0.2964249182,no_carbon,Ni;O;P
+A-5257,"potassium [[N,N'-ethylenebis[N-(carboxymethyl)glycinato]](4-)-N,N',O,O',ON,ON']ferrate(1-)",[K+].[Fe+3].[O-]C(=O)CN(CCN(CC([O-])=O)CC([O-])=O)CC([O-])=O,-0.0920128034,disallowed_element,C;Fe;K;N;O
+A-5270,aluminium trititanium dodecachloride,[Al+3].[Cl-].[Cl-].[Cl-].[Cl-].[Cl-].[Cl-].[Cl-].[Ti+4],-0.1112894041,no_carbon,Al;Cl;Ti
+A-5291,hydrogen tetrachlorogolduide,[NH4+].[Cl-].[Cl-].[Cl-].[Cl-].[Au+3],0.4889459304999999,no_carbon,Au;Cl;N
+A-5293,calcium phosphonate,[Ca++].[O-][PH]([O-])=O,0.9487769325,no_carbon,Ca;O;P
+A-5295,tetraamminepalladium(2+) diacetate,N.N.N.N.[Pd++].CC([O-])=O.CC([O-])=O,0.5414259625,disallowed_element,C;N;O;Pd
+A-5346,caesium(1+) ion chloride,[Cl-].[Cs+],0.7737662420999999,no_carbon,Cl;Cs
+A-5347,caesium(1+) ion hydroxide,[OH-].[Cs+],0.8241636018,no_carbon,Cs;O
+A-5350,dicaesium(1+) ion sulfate,[Cs+].[Cs+].[O-][S]([O-])(=O)=O,0.4414438192,no_carbon,Cs;O;S
+A-5357,indium(3+) ion trichloride,[Cl-].[Cl-].[Cl-].[In+3],0.6552600369,no_carbon,Cl;In
+A-5383,zinc(2+) ion diphosphate,[Zn++].[O-][P]([O-])([O-])=O.[O-][P]([O-])([O-])=O,0.5928981548,no_carbon,O;P;Zn
+A-5397,dihydrogen tetrachloropalladiumdiuide,[Cl-].[Cl-].[Cl-].[Cl-].[Pd++].[H+].[H+],-1.3983706153,no_carbon,Cl;H;Pd
+A-5398,palladium(2+) ion dinitrate,[Pd++].[O-][N+]([O-])=O.[O-][N+]([O-])=O,-1.3625352504,no_carbon,N;O;Pd
+A-5412,sodium; chromium(+3) cation; 3-oxido-4-(1-oxido-8-sulfonatonaphthalen-2-yl)diazenylnaphthalene-1-sulfonate,[Na+].[Cr+3].[O-]c1cc(c2ccccc2c1N=Nc3ccc4cccc(c4c3[O-])[S]([O-])(=O)=O)[S]([O-])(=O)=O,-1.171951452,disallowed_element,C;Cr;N;Na;O;S
+A-5417,dicaesium oxalate,[Ce].[Ce].[O-]C(=O)C([O-])=O,-4.8732958362,disallowed_element,C;Ce;O
+A-5425,"2,2-dioctyl-1,3,2-oxathiastannolan-5-one",CCCCCCCC[Sn]1(CCCCCCCC)OC(=O)CS1,-6.4456261549,disallowed_element,C;O;S;Sn
+A-5428,strontium titanium trioxide,[Sr++].[O-][Ti]([O-])=O,-6.5279992996,no_carbon,O;Sr;Ti
+A-5431,yttrium trinitrate,[Y+3].[O-][N+]([O-])=O.[O-][N+]([O-])=O.[O-][N+]([O-])=O,0.5453241375,no_carbon,N;O;Y
+A-5439,tetrasodium phosphonato phosphate,[Na+].[Na+].[Na+].[Na+].[O-][P]([O-])(=O)O[P]([O-])([O-])=O,-0.1942710493,no_carbon,Na;O;P
+A-5446,sodium; 5-chloro-3-[3-methyl-5-oxido-1-(3-sulfonatophenyl)pyrazol-4-yl]diazenyl-2-oxidobenzenesulfonate; chromium(+3) cation,[Na+].[Cr+3].Cc1nn(c([O-])c1N=Nc2cc(Cl)cc(c2[O-])[S]([O-])(=O)=O)c3cccc(c3)[S]([O-])(=O)=O,-1.1331674849,disallowed_element,C;Cl;Cr;N;Na;O;S
+A-5485,Acid Black 52,[Na+].[Na+].[Cr].[Cr].Oc1ccc2ccccc2c1N\N=C/3C(=O)C=C(c4cc(ccc34)[N+]([O-])=O)[S](O)(=O)=O.Oc5ccc6ccccc6c5N\N=C/7C(=O)C=C(c8cc(ccc78)[N+]([O-])=O)[S]([O-])(=O)=O.Oc9ccc%10ccccc%10c9N\N=C/%11C(=O)C=C(c%12cc(ccc%11%12)[N+]([O-])=O)[S]([O-])(=O)=O,-5.1661846252,disallowed_element,C;Cr;N;Na;O;S
+A-5488,pentaaluminium triyttrium dodecaoxide,[O--].[O--].[O--].[Al+3].[Y+3],-4.2145392055,no_carbon,Al;O;Y
+A-5489,rhodium(3+) ion triiodide,[Rh+3].[I-].[I-].[I-],-4.6845024567,no_carbon,I;Rh
+A-5498,aluminium(3+) ion bis(hydrogen phosphonatooxy)phosphinate,[Al+3].[O-][P]([O-])(=O)O[P]([O-])(=O)O[P]([O-])([O-])=O,-5.6688423383,no_carbon,Al;O;P
+A-5509,tetraoctylstannane,CCCCCCCC[Sn](CCCCCCCC)(CCCCCCCC)CCCCCCCC,-6.7570975386,disallowed_element,C;Sn
+A-5510,tris(triphenylphosphine)rhodium (I) chloride,[Cl].[Rh].c1ccc(cc1)P(c2ccccc2)c3ccccc3.c4ccc(cc4)P(c5ccccc5)c6ccccc6.c7ccc(cc7)P(c8ccccc8)c9ccccc9,-7.0120095436000005,disallowed_element,C;Cl;P;Rh
+A-5512,dichlorobis(triphenylphosphine)palladium,[Cl-].[Cl-].[Pd++].c1ccc(cc1)P(c2ccccc2)c3ccccc3.c4ccc(cc4)P(c5ccccc5)c6ccccc6,-7.0267374942,disallowed_element,C;Cl;P;Pd
+A-5544,methane niobium,C.[Nb],-7.6358227076,disallowed_element,C;Nb
+A-5550,dialuminium(3+) ion trisulfate,O.O.O.O.O.O.O.O.O.[Al+3].[Al+3].[O-][S]([O-])(=O)=O.[O-][S]([O-])(=O)=O.[O-][S]([O-])(=O)=O,-7.4985586512,no_carbon,Al;O;S
+A-5556,"[1,3,8,16,18,24-hexabromo-2,4,9,10,11,15,17,22,23,25-decachloro-29H,31H-phthalocyaninato(2-)-N29,N30,N31,N32]copper",Clc1c(Cl)c(Br)c2C3=NC(=Nc4n5[Cu]N6C(=N3)c7c(Cl)c(Br)c(Cl)c(Br)c7C6=NC8=NC(=Nc5c9c(Br)c(Cl)c(Br)c(Cl)c49)c%10c(Cl)c(Cl)c(Br)c(Cl)c8%10)c2c1Cl,-9.1442341106,disallowed_element,Br;C;Cl;Cu;N
+A-5557,polychloro copper phthalocyanine,Clc1cc(Cl)c2C3N=C(N=C4N5[Cu]N6C(N=C7N=C(N=C5c8c(Cl)c(Cl)c(Cl)c(Cl)c48)c9c(Cl)c(Cl)c(Cl)c(Cl)c79)c%10c(Cl)c(Cl)c(Cl)c(Cl)c%10C6=N3)c2c1Cl,-9.039324078,disallowed_element,C;Cl;Cu;N
+A-5563,chromium,[Cr],-10.0169999307,no_carbon,Cr
+A-5569,samarium (III) oxide,[O--].[O--].[O--].[Sm+3].[Sm+3],-5.5588468327,no_carbon,O;Sm
+A-5577,dioxotungsten,O=[W]=O,-5.9557300071000006,no_carbon,O;W
+A-5587,cobalt sulphide,[S--].[Co++],-5.0152501934,no_carbon,Co;S
+A-5589,methane; vanadium,C.[V],-6.2058415067,disallowed_element,C;V
+A-5604,phosphane,[P],-6.566718008,no_carbon,P
+A-5608,titanium dioxide,O=[Ti]=O,-4.9999945622,no_carbon,O;Ti
+A-5617,silver(1+) docosanoate,[Ag+].CCCCCCCCCCCCCCCCCCCCCC([O-])=O,-6.782690091799999,disallowed_element,Ag;C;O
+A-5622,neodymium oxide,[O--].[O--].[O--].[Nd+3].[Nd+3],-7.634860780499999,no_carbon,Nd;O
+A-5643,Niobium oxide,O=[Nb](=O)O[Nb](=O)=O,-6.9474451591,no_carbon,Nb;O
+A-5648,dialuminium zinc tetraoxide,[O--].[O--].[O--].[O--].[O--].[Al+3].[Al+3].[Zn++].[Zn++],-7.6234773746,no_carbon,Al;O;Zn
+A-5672,dysprosium,[Dy],-7.511883361000001,no_carbon,Dy
+A-5674,Aluminum;phosphenic acid,[Al+3].O[PH]([O-])=O.O[PH]([O-])=O.O[PH]([O-])=O,-4.7708809717000005,no_carbon,Al;O;P
+A-5678,"29H,31H-phthalocyaninato(2-)-N29,N30,N31,N32 copper",[Cu]1N2C3=NC4=NC(=Nc5n1c(N=C6N=C(N=C2c7ccccc37)c8ccccc68)c9ccccc59)c%10ccccc4%10,-8.1584243143,disallowed_element,C;Cu;N
+A-5680,cobaltoylol,O[Co]=O,-6.275970814500001,no_carbon,Co;O
+A-5686,cobalt,[Co],-5.1171460358,no_carbon,Co
+A-5716,aluminium(3+) ion dichloride hydroxide,[Al+3].[Cl-].[Cl-].[Cl-],-6.568661207100001,no_carbon,Al;Cl
+A-5731,cobalt(2+) oxalate,[Co++].[O-]C(=O)C([O-])=O,-4.6677879254,disallowed_element,C;Co;O
+A-5756,chromium (III) oxide,O=[Cr]O[Cr]=O,-7.6862678201,no_carbon,Cr;O
+A-5764,oxotin,O=[Sn],-8.828369840499999,no_carbon,O;Sn
+A-5788,zinc bis(12-hydroxyoctadecanoate),[Zn++].CCCCCCC(O)CCCCCCCCCCC([O-])=O.CCCCCCC(O)CCCCCCCCCCC([O-])=O,-5.4548481286,disallowed_element,C;O;Zn
+A-5808,strontium bis{5-chloro-2-[(2-hydroxy-1-naphthyl)diazenyl]-4-methylbenzenesulfonate},[Sr++].Cc1cc(N\N=C\2C(=O)C=Cc3ccccc23)c(cc1Cl)[S]([O-])(=O)=O.Cc4cc(N\N=C\5C(=O)C=Cc6ccccc56)c(cc4Cl)[S]([O-])(=O)=O,-7.6228592843,disallowed_element,C;Cl;N;O;S;Sr
+A-5820,hydrogen selenide,[Se],-6.5751878449,no_carbon,Se
+A-5831,telluroxocadmium,[Cd]=[Te],-7.1014793549,no_carbon,Cd;Te
+A-5832,barium(2+) ion bis(5-chloro-4-ethyl-2-[(E)-2-(2-hydroxynaphthalen-1-yl)diazen-1-yl]benzene-1-sulfonate),[Ba++].CCc1cc(N\N=C/2C(=O)C=Cc3ccccc23)c(cc1Cl)[S]([O-])(=O)=O.CCc4cc(N\N=C/5C(=O)C=Cc6ccccc56)c(cc4Cl)[S]([O-])(=O)=O,-5.692860180299999,disallowed_element,Ba;C;Cl;N;O;S
+A-5838,Cobaltous carbonate,[Co++].[O-]C([O-])=O,-4.8375365922,disallowed_element,C;Co;O
+A-5844,iron,[Fe],-5.5190975907,no_carbon,Fe
+A-5851,borane,[B],-4.8435743389,no_carbon,B
+A-5852,Cobaltous 2-ethylhexanoate,[Co++].CCCCC(CC)C([O-])=O.CCCCC(CC)C([O-])=O,-5.347977516,disallowed_element,C;Co;O
+A-5885,"[1,3-dihydro-5,6-bis[[(2-hydroxy-1-naphthyl)methylene]amino]-2H-benzimidazol-2-onato(2-)-N5,N6,O5,O6]nickel",[Ni++].[O-]c1ccc2ccccc2c1C=Nc3cc4NC(=O)Nc4cc3N=Cc5c([O-])ccc6ccccc56,-7.6266942296,disallowed_element,C;N;Ni;O
+A-5886,oxygen(-2) anion; platinum(+4) cation,[O--].[O--].[Pt+4],-7.2627495503,no_carbon,O;Pt
+A-5887,neodymium,[Nd],-7.0799044677,no_carbon,Nd
+A-5888,oxocobalt,O=[Co],-5.798391069,no_carbon,Co;O
+A-5939,oxopalladium,[O--].[Pd++],-8.0625429623,no_carbon,O;Pd
+A-5950,stannanethione,S=[SnH2],-8.4059550501,no_carbon,S;Sn
+A-5953,dibismuth(3+) ion trisulfanediide,[S--].[S--].[S--].[Bi+3].[Bi+3],-9.0983152748,no_carbon,Bi;S
+A-5970,iridium(3+),[Ir],-9.9827617991,no_carbon,Ir
+A-5974,Cobaltous stearate,[Co++].CCCCCCCCCCCCCCCCCC([O-])=O.CCCCCCCCCCCCCCCCCC([O-])=O,-5.2733987051,disallowed_element,C;Co;O
+A-5980,"2,5,7,10,11,14-hexaoxa-1,6-distibabicyclo[4.4.4]tetradecane",C1CO[Sb]2OCCO[Sb](O1)OCCO2,-9.0249738719,disallowed_element,C;O;Sb
+A-5987,oxo[(oxochromio)oxy]chromium; oxo[(oxoferrio)oxy]iron; oxo[(oxomanganio)oxy]manganese,O=[Cr]O[Cr]=O.O=[Mn]O[Mn]=O.O=[Fe]O[Fe]=O,-8.972710915599999,no_carbon,Cr;Fe;Mn;O
+A-5988,silicon,[Si],-5.6631600565,no_carbon,Si
+A-5994,disulfanylidenemolybdenum,S.[Mo],-5.8129901866,no_carbon,Mo;S
+A-6003,zirconium dioxide,O=[Zr]=O,-6.350325563999999,no_carbon,O;Zr
+A-6019,Tin,[Sn],-7.472430972100001,no_carbon,Sn
+A-6052,copper(2+) ion 1-[N-(2-oxidophenyl)carboximidoyl]naphthalen-2-olate,[Cu++].[O-]c1ccccc1N=Cc2c([O-])ccc3ccccc23,-7.432469538099999,disallowed_element,C;Cu;N;O
+A-6053,dioxoplumbane,O=[Pb]=O,-7.325679100599999,no_carbon,O;Pb
+A-6065,"manganese, 3-hydroxy-4-[(1-sulfo-2-naphthalenyl)azo]-2-naphthalenecarboxylic acid complex",[H+].[Mn++].[O-]C(=O)c1cc2ccccc2c(N=Nc3ccc4ccccc4c3[S]([O-])(=O)=O)c1[O-],-7.6770043618,disallowed_element,C;H;Mn;N;O;S
+A-6069,oxoberyllium,[Be]=O,-7.255116256,no_carbon,Be;O
+A-6075,Aluminum cobalt oxide,[O--].[O--].[O--].[O--].[O--].[Al+3].[Al+3].[Co++].[Co++],-8.4010988426,no_carbon,Al;Co;O
+A-6076,bismuth vanadium tetraoxide,[O--].[O--].[O--].[O--].[V].[Bi+3],-8.5104350823,no_carbon,Bi;O;V
+A-6078,diiron(3+) ion trioxidandiide,O.[O--].[O--].[O--].[Fe+3].[Fe+3],-8.2496923157,no_carbon,Fe;O
+A-6080,niobium,[Nb],-7.968043762200001,no_carbon,Nb
+A-6089,"2-ethylhexanoic acid, zirconium salt",[Zr++].CCCCC(CC)C([O-])=O.CCCCC(CC)C([O-])=O,-8.7020121255,disallowed_element,C;O;Zr
+A-6092,beryllium,[Be],-7.2558511787,no_carbon,Be
+A-6095,gold,[Au],-8.8172722155,no_carbon,Au
+A-6100,cerium dioxide,O=[Ce]=O,-9.1459110865,no_carbon,Ce;O
+B-106,chlormerodrin,[Cl-].COC(C[Hg+])CNC(N)=O,-1.5235,disallowed_element,C;Cl;Hg;N;O
+B-184,cacodylic acid,C[As](C)(O)=O,1.1612,disallowed_element,As;C;O
+B-742,methane arsonate,C[As](O)(O)=O,0.2622,disallowed_element,As;C;O
+B-762,silver lactate,[Ag+].CC([O-])C(O)=O,-0.4702,disallowed_element,Ag;C;O
+B-837,dsma,[Na+].[Na+].C[As]([O-])([O-])=O,0.3711,disallowed_element,As;C;Na;O
+B-894,hydrazine,NN,1.4942,no_carbon,N
+B-1078,cupric gluconate,[Cu++].OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C([O-])=O.OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C([O-])=O,-0.1798,disallowed_element,C;Cu;O
+B-1127,dichloro(2-chlorovinyl)arsine (trans),Cl/C=C/[As](Cl)Cl,-2.6177,disallowed_element,As;C;Cl
+B-1129,barium formate,[Ba++].[O-]C=O.[O-]C=O,-0.0557,disallowed_element,Ba;C;O
+B-1144,barium acetate,[Ba++].CC([O-])=O.CC([O-])=O,0.1948,disallowed_element,Ba;C;O
+B-1147,strontium acetate,[Sr++].CC([O-])=O.CC([O-])=O,0.1446,disallowed_element,C;O;Sr
+B-1178,zinc valerate,[Zn++].CCCCC([O-])=O.CCCCC([O-])=O,-1.2722,disallowed_element,C;O;Zn
+B-1186,zinc acetate,[Zn++].CC([O-])=O.CC([O-])=O,0.2179,disallowed_element,C;O;Zn
+B-1188,zinc formate,[Zn++].[O-]C=O.[O-]C=O,-0.4755,disallowed_element,C;O;Zn
+B-1462,dibutyl dichloro tin,CCCC[Sn](Cl)(Cl)CCCC,-3.5188,disallowed_element,C;Cl;Sn
+B-1490,dimethyltin dichloride,C[Sn](C)(Cl)Cl,-1.0407,disallowed_element,C;Cl;Sn
+B-1579,3-methyl-n-oxidepyridine,CC1=CC=C[NH++]([O-])[CH-]1,0.9621,parse_error,
+B-1590,di-n-butyl tin diacetate,CCCC[Sn++]CCCC.CC([O-])=O.CC([O-])=O,-4.7672,disallowed_element,C;O;Sn
+B-1623,diphenyltin dichloride,Cl[Sn](Cl)(c1ccccc1)c2ccccc2,-3.8373,disallowed_element,C;Cl;Sn
+B-1809,msma,[Na+].C[As](O)([O-])=O,0.5539999999999999,disallowed_element,As;C;Na;O
+B-1866,n-oxidenicotinic acid,OC(=O)C1=C[NH++]([O-])[CH-]C=C1,-1.2983,parse_error,
+B-1913,chipcote,C[Hg]C#N,-0.0821,disallowed_element,C;Hg;N
+B-2305,sulfur dioxide,O=[S]=O,0.2235,no_carbon,O;S
+B-2315,iodine,II,-2.886,no_carbon,I
+B-2321,hydrogen fluoride,[H+].[F-],1.6988,no_carbon,F;H
+B-2322,sulfuric acid,O[S](O)(=O)=O,1.0084,no_carbon,O;S
+B-2331,nitrogen,N#N,-0.1901,no_carbon,N
+B-2332,copper sulfate pentahydrate,O.O.O.O.O.[Cu++].[O-][S]([O-])(=O)=O,-0.8922,no_carbon,Cu;O;S
+B-2333,arsenic acid,O[As](O)(O)=O,0.6187,no_carbon,As;O
+B-2334,oxygen,O=O,0.0691,no_carbon,O
+B-2335,chlorine,ClCl,-1.0513,no_carbon,Cl
+B-2370,methylcyclopentadienyl manganese,[Mn].C[c-]1cccc1.[C-]#[O+].[C-]#[O+].[C-]#[O+],-3.8762,disallowed_element,C;Mn;O
+B-2373,propagermanium,OC(=O)CC[Ge](=O)O[Ge](=O)CCC(O)=O,-1.4932,disallowed_element,C;Ge;O
+B-2463,cis-platin,N.N.[Cl-].[Cl-].[Pt++],-2.0741,no_carbon,Cl;N;Pt
+B-4351,phenylmercuric acetate,CC(=O)O[Hg]c1ccccc1,-1.8868,disallowed_element,C;Hg;O
+B-4352,2-methoxyethyl mercuric chloride,[Cl-].COCC[Hg+],-0.7709999999999999,disallowed_element,C;Cl;Hg;O
+B-4353,mercuric acetate,[Hg++].CC([O-])=O.CC([O-])=O,-0.1054,disallowed_element,C;Hg;O
+E-980,Cyhexatin,C1CCC(CC1)[Sn](C2CCCCC2)C3CCCCC3.O,-5.59,disallowed_element,C;O;Sn

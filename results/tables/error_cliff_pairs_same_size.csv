@@ -1,0 +1,14 @@
+sim,sim_count,compound_id_1,name_1,logS_1,source_1,reliability_group_1,compound_id_2,name_2,logS_2,source_2,reliability_group_2,abs_dlogS,d_heavy_atoms
+0.9090909090909092,0.96,A-731,"calcium 2,3-dihydroxybutanedioate",-2.6024346943,A,G4,A-3446,"(2R,3R)-2,3-dihydroxybutanedioic acid",0.6977239219,A,G4,3.3001586162,1
+0.9629629629629628,0.918918918918919,A-56,"ethenyl 2,2-dimethyloctanoate",-4.581332510899999,A,G1,A-5547,"ethenyl 6,6-dimethylheptanoate",-7.1224610466,A,G1,2.5411285357000004,1
+1.0,0.9411764705882353,A-2262,hexadecanoic acid,-6.806908841,A,G1,C-1571,pentadecanoic acid,-4.31,C,G1,2.4969088410000007,1
+1.0,0.9302325581395349,A-1922,tridecan-1-ol,-3.3018240282,A,G1,A-2147,tetradecan-1-ol,-5.787142557,A,G5,2.4853185288,1
+1.0,0.963855421686747,A-2443,"O1-nonyl O2-octyl benzene-1,2-dicarboxylate",-4.7809414151,A,G1,B-683,dioctyl phthalate,-7.2493,B,G2,2.4683585849,1
+0.9130434782608696,0.8955223880597015,A-1423,dihexyl adipate,-5.082600348500001,A,G1,A-2268,3-octanoyloxypropyl octanoate,-7.516526119400001,A,G1,2.4339257709,1
+0.9473684210526316,0.9117647058823529,B-1351,pentylmalonic acid,0.5921,B,G1,B-2048,"propanedioic acid, hexyl-",-1.6566,B,G1,2.2487,1
+1.0,0.9482758620689655,A-4957,octadecan-1-amine,-3.6312456144,A,G4,A-5702,docosan-1-amine; hexadecan-1-amine; icosan-1-amine; octadecan-1-amine,-5.8571242399,A,G1,2.2258786255,1
+0.9230769230769232,0.8421052631578947,B-601,n-pentylamine,1.0597,B,G1,E-1129,hexylamine,-1.1,E,G5,2.1597,1
+1.0,0.9318181818181818,A-855,dodecanedioic acid,-3.7602414897,A,G4,B-1731,undecanedioic acid,-1.6274,B,G1,2.1328414896999996,1
+1.0,1.0,A-2060,"Bisbenzimidazo[2,1-b:1',2'-j]benzo[lmn][3,8]phenanthroline-6,9-dione",-5.633055848200001,A,G2,A-5625,C.i. Pigment Orange 43,-7.7579945848,A,G1,2.124938736599999,0
+1.0,0.9444444444444444,A-2262,hexadecanoic acid,-6.806908841,A,G1,C-1586,heptadecanoic acid;  margaric acid,-4.69,C,G3,2.116908841,1
+1.0,0.9454545454545454,A-2584,octadecan-1-ol,-5.432168875,A,G2,B-1658,heptadecyl alcohol,-7.506,B,G1,2.073831125,1

@@ -1,0 +1,13 @@
+model,split_type,contrast,mae_diff,ci_low,ci_high,p_boot
+lgbm__rdkit2d+morgan_counts,random,inconsistent (G2+G4) - consistent (G3+G5),0.23046879614195853,0.11928936789528793,0.34043845659514443,0.0
+lgbm__rdkit2d+morgan_counts,random,single (G1) - consistent (G3+G5),0.1920137519869693,0.15574097123245179,0.2284894813527417,0.0
+lgbm__rdkit2d+morgan_counts,scaffold,inconsistent (G2+G4) - consistent (G3+G5),0.04425292552052562,-0.06573446447430262,0.15997568000095952,0.476
+lgbm__rdkit2d+morgan_counts,scaffold,single (G1) - consistent (G3+G5),0.15609777968788452,0.0942352531953834,0.2151433255486445,0.0
+lgbm__rdkit2d+morgan_counts,cluster,inconsistent (G2+G4) - consistent (G3+G5),0.25473379745364066,0.15112002304004823,0.358494843277348,0.0
+lgbm__rdkit2d+morgan_counts,cluster,single (G1) - consistent (G3+G5),0.23012116139204752,0.1860825035167513,0.27494297713636523,0.0
+rf__rdkit2d,random,inconsistent (G2+G4) - consistent (G3+G5),0.20140147254697438,0.09398825368866731,0.3165213074354997,0.0
+rf__rdkit2d,random,single (G1) - consistent (G3+G5),0.2150687907663098,0.17025625558722243,0.2554362934849681,0.0
+rf__rdkit2d,scaffold,inconsistent (G2+G4) - consistent (G3+G5),-0.010642445884152418,-0.1266027839343254,0.10602279262938458,0.83
+rf__rdkit2d,scaffold,single (G1) - consistent (G3+G5),0.17348068823481055,0.10385655495246147,0.237304096399613,0.0
+rf__rdkit2d,cluster,inconsistent (G2+G4) - consistent (G3+G5),0.24956416600110842,0.1344255178128749,0.36951424075656325,0.0
+rf__rdkit2d,cluster,single (G1) - consistent (G3+G5),0.2742508860898314,0.22695421993362816,0.3236243656687738,0.0

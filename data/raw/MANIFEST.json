@@ -1,0 +1,18 @@
+{
+  "aqsoldb": {
+    "url": "https://dataverse.harvard.edu/api/access/datafile/3407241?format=original",
+    "file": "data/raw/aqsoldb_curated-solubility-dataset.csv",
+    "sha256": "7c47e021d03a5720f53cfddb7aef90c8911ea276a36306c839798733d8630332",
+    "bytes": 3750208,
+    "downloaded_utc": "2026-10-13T15:52:42+00:00",
+    "doi": "10.7910/DVN/OVHAW8",
+    "license": "CC0-1.0"
+  },
+  "esol": {
+    "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/delaney-processed.csv",
+    "file": "data/raw/delaney-processed.csv",
+    "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+    "bytes": 96699,
+    "downloaded_utc": "2026-10-13T15:52:45+00:00"
+  }
+}

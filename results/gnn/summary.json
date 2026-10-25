@@ -1,0 +1,905 @@
+{
+  "experiment": "gnn",
+  "n_runs": 24,
+  "runs_per_model_split": {
+    "dmpnn|cluster": 5,
+    "dmpnn|random": 5,
+    "dmpnn|scaffold": 5,
+    "dmpnn_desc|cluster": 3,
+    "dmpnn_desc|random": 3,
+    "dmpnn_desc|scaffold": 3
+  },
+  "test_metrics_mean_sd_over_seeds": {
+    "dmpnn": {
+      "cluster": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MAE": {
+          "mean": 0.7177597513408427,
+          "sd": 0.034241061575017794,
+          "n": 5
+        },
+        "RMSE": {
+          "mean": 1.0107928626829432,
+          "sd": 0.049789249479855614,
+          "n": 5
+        },
+        "R2": {
+          "mean": 0.8229934750795886,
+          "sd": 0.031356808184755273,
+          "n": 5
+        },
+        "Pearson": {
+          "mean": 0.9075547737570483,
+          "sd": 0.017161891406052447,
+          "n": 5
+        },
+        "Spearman": {
+          "mean": 0.9053098652146352,
+          "sd": 0.015814995351240722,
+          "n": 5
+        },
+        "val_MAE": {
+          "mean": 0.7065433525017097,
+          "sd": 0.040467497217114304,
+          "n": 5
+        }
+      },
+      "random": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MAE": {
+          "mean": 0.6529530851843683,
+          "sd": 0.012973288624056827,
+          "n": 5
+        },
+        "RMSE": {
+          "mean": 0.9288174693610578,
+          "sd": 0.033666981137047435,
+          "n": 5
+        },
+        "R2": {
+          "mean": 0.8452399625334419,
+          "sd": 0.015314034608674693,
+          "n": 5
+        },
+        "Pearson": {
+          "mean": 0.9201978490214897,
+          "sd": 0.008270787900227335,
+          "n": 5
+        },
+        "Spearman": {
+          "mean": 0.9124094583236614,
+          "sd": 0.010337567395836595,
+          "n": 5
+        },
+        "val_MAE": {
+          "mean": 0.6629279268449255,
+          "sd": 0.030657927917963654,
+          "n": 5
+        }
+      },
+      "scaffold": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MAE": {
+          "mean": 0.8107981096021005,
+          "sd": 0.029604852191092546,
+          "n": 5
+        },
+        "RMSE": {
+          "mean": 1.1055882139438789,
+          "sd": 0.005975375014933306,
+          "n": 5
+        },
+        "R2": {
+          "mean": 0.7917678605477302,
+          "sd": 0.04576633852124529,
+          "n": 5
+        },
+        "Pearson": {
+          "mean": 0.8910750843892885,
+          "sd": 0.026273672207114927,
+          "n": 5
+        },
+        "Spearman": {
+          "mean": 0.8793888656958513,
+          "sd": 0.024761620145213617,
+          "n": 5
+        },
+        "val_MAE": {
+          "mean": 0.8003112581071787,
+          "sd": 0.09010458754017193,
+          "n": 5
+        }
+      }
+    },
+    "dmpnn_desc": {
+      "cluster": {
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "MAE": {
+          "mean": 0.7071264355651482,
+          "sd": 0.06402307934308099,
+          "n": 3
+        },
+        "RMSE": {
+          "mean": 0.99978650029282,
+          "sd": 0.06187947252616722,
+          "n": 3
+        },
+        "R2": {
+          "mean": 0.8344944317838916,
+          "sd": 0.039531248690759475,
+          "n": 3
+        },
+        "Pearson": {
+          "mean": 0.914632431774787,
+          "sd": 0.020818110005786778,
+          "n": 3
+        },
+        "Spearman": {
+          "mean": 0.9136421349418274,
+          "sd": 0.017179399396752327,
+          "n": 3
+        },
+        "val_MAE": {
+          "mean": 0.6582439651073735,
+          "sd": 0.040079253570762675,
+          "n": 3
+        }
+      },
+      "random": {
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "MAE": {
+          "mean": 0.577355528906048,
+          "sd": 0.01273484636139493,
+          "n": 3
+        },
+        "RMSE": {
+          "mean": 0.8406308344115424,
+          "sd": 0.013691491386552944,
+          "n": 3
+        },
+        "R2": {
+          "mean": 0.8724658888477596,
+          "sd": 0.012763884190338774,
+          "n": 3
+        },
+        "Pearson": {
+          "mean": 0.9345868312055248,
+          "sd": 0.00685397754812299,
+          "n": 3
+        },
+        "Spearman": {
+          "mean": 0.926608144508422,
+          "sd": 0.009508523021045639,
+          "n": 3
+        },
+        "val_MAE": {
+          "mean": 0.5984981278463407,
+          "sd": 0.0375476471679351,
+          "n": 3
+        }
+      },
+      "scaffold": {
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "MAE": {
+          "mean": 0.8047546244160352,
+          "sd": 0.023679488734821164,
+          "n": 3
+        },
+        "RMSE": {
+          "mean": 1.1041175902835654,
+          "sd": 0.03696710074413962,
+          "n": 3
+        },
+        "R2": {
+          "mean": 0.8216664268338979,
+          "sd": 0.020526681995262905,
+          "n": 3
+        },
+        "Pearson": {
+          "mean": 0.9129241906390493,
+          "sd": 0.006551833654973458,
+          "n": 3
+        },
+        "Spearman": {
+          "mean": 0.908248421506401,
+          "sd": 0.009796225381194032,
+          "n": 3
+        },
+        "val_MAE": {
+          "mean": 0.7114155813373383,
+          "sd": 0.051044520997925294,
+          "n": 3
+        }
+      }
+    }
+  },
+  "lgbm_reference_test_metrics": {
+    "random": {
+      "all_seeds": {
+        "MAE": {
+          "mean": 0.57384058736797,
+          "sd": 0.018806216911595047,
+          "n": 5
+        },
+        "RMSE": {
+          "mean": 0.840119759114466,
+          "sd": 0.030211935311684836,
+          "n": 5
+        },
+        "R2": {
+          "mean": 0.8734240705282609,
+          "sd": 0.01173432527141019,
+          "n": 5
+        }
+      },
+      "seeds_of_dmpnn": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MAE": {
+          "mean": 0.57384058736797,
+          "sd": 0.018806216911595047,
+          "n": 5
+        }
+      },
+      "seeds_of_dmpnn_desc": {
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "MAE": {
+          "mean": 0.5641181820905453,
+          "sd": 0.01716903352915029,
+          "n": 3
+        }
+      }
+    },
+    "scaffold": {
+      "all_seeds": {
+        "MAE": {
+          "mean": 0.7165184304377474,
+          "sd": 0.026862245107244494,
+          "n": 5
+        },
+        "RMSE": {
+          "mean": 0.9872349209525909,
+          "sd": 0.0444384510543194,
+          "n": 5
+        },
+        "R2": {
+          "mean": 0.8355906723865749,
+          "sd": 0.02582487837914204,
+          "n": 5
+        }
+      },
+      "seeds_of_dmpnn": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MAE": {
+          "mean": 0.7165184304377474,
+          "sd": 0.026862245107244494,
+          "n": 5
+        }
+      },
+      "seeds_of_dmpnn_desc": {
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "MAE": {
+          "mean": 0.7147796220540013,
+          "sd": 0.00770127690310292,
+          "n": 3
+        }
+      }
+    },
+    "cluster": {
+      "all_seeds": {
+        "MAE": {
+          "mean": 0.6700144155492647,
+          "sd": 0.03659559417729763,
+          "n": 5
+        },
+        "RMSE": {
+          "mean": 0.9585895576664523,
+          "sd": 0.06544684737887728,
+          "n": 5
+        },
+        "R2": {
+          "mean": 0.841431677261945,
+          "sd": 0.025915727019363805,
+          "n": 5
+        }
+      },
+      "seeds_of_dmpnn": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "MAE": {
+          "mean": 0.6700144155492647,
+          "sd": 0.03659559417729763,
+          "n": 5
+        }
+      },
+      "seeds_of_dmpnn_desc": {
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "MAE": {
+          "mean": 0.6700518022921557,
+          "sd": 0.04238574632199383,
+          "n": 3
+        }
+      }
+    }
+  },
+  "paired_vs_lgbm_rdkit2d+morgan_counts": {
+    "dmpnn": {
+      "cluster": {
+        "MAE_gnn": {
+          "mean": 0.7177597513408427,
+          "sd": 0.034241061575017794,
+          "n": 5
+        },
+        "MAE_lgbm_same_seeds": {
+          "mean": 0.6700144155492647,
+          "sd": 0.03659559417729763,
+          "n": 5
+        },
+        "MAE_diff_gnn_minus_lgbm": {
+          "mean": 0.047745335791577956,
+          "sd": 0.00967105251569114,
+          "n": 5
+        },
+        "n_seeds_gnn_better": 0,
+        "n_seeds_gnn_significantly_better": 0,
+        "n_seeds_gnn_significantly_worse": 5,
+        "seeds_compared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "random": {
+        "MAE_gnn": {
+          "mean": 0.6529530851843682,
+          "sd": 0.01297328862405683,
+          "n": 5
+        },
+        "MAE_lgbm_same_seeds": {
+          "mean": 0.57384058736797,
+          "sd": 0.018806216911595015,
+          "n": 5
+        },
+        "MAE_diff_gnn_minus_lgbm": {
+          "mean": 0.07911249781639836,
+          "sd": 0.01086615194718155,
+          "n": 5
+        },
+        "n_seeds_gnn_better": 0,
+        "n_seeds_gnn_significantly_better": 0,
+        "n_seeds_gnn_significantly_worse": 5,
+        "seeds_compared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "scaffold": {
+        "MAE_gnn": {
+          "mean": 0.8107981096021005,
+          "sd": 0.029604852191092546,
+          "n": 5
+        },
+        "MAE_lgbm_same_seeds": {
+          "mean": 0.7165184304377474,
+          "sd": 0.026862245107244533,
+          "n": 5
+        },
+        "MAE_diff_gnn_minus_lgbm": {
+          "mean": 0.09427967916435323,
+          "sd": 0.02755823868979259,
+          "n": 5
+        },
+        "n_seeds_gnn_better": 0,
+        "n_seeds_gnn_significantly_better": 0,
+        "n_seeds_gnn_significantly_worse": 5,
+        "seeds_compared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "dmpnn_desc": {
+      "cluster": {
+        "MAE_gnn": {
+          "mean": 0.7071264355651484,
+          "sd": 0.06402307934308105,
+          "n": 3
+        },
+        "MAE_lgbm_same_seeds": {
+          "mean": 0.6700518022921557,
+          "sd": 0.04238574632199383,
+          "n": 3
+        },
+        "MAE_diff_gnn_minus_lgbm": {
+          "mean": 0.03707463327299273,
+          "sd": 0.022911971852866843,
+          "n": 3
+        },
+        "n_seeds_gnn_better": 0,
+        "n_seeds_gnn_significantly_better": 0,
+        "n_seeds_gnn_significantly_worse": 2,
+        "seeds_compared": [
+          0,
+          1,
+          2
+        ]
+      },
+      "random": {
+        "MAE_gnn": {
+          "mean": 0.577355528906048,
+          "sd": 0.012734846361394913,
+          "n": 3
+        },
+        "MAE_lgbm_same_seeds": {
+          "mean": 0.5641181820905453,
+          "sd": 0.01716903352915029,
+          "n": 3
+        },
+        "MAE_diff_gnn_minus_lgbm": {
+          "mean": 0.01323734681550274,
+          "sd": 0.004639119176485463,
+          "n": 3
+        },
+        "n_seeds_gnn_better": 0,
+        "n_seeds_gnn_significantly_better": 0,
+        "n_seeds_gnn_significantly_worse": 0,
+        "seeds_compared": [
+          0,
+          1,
+          2
+        ]
+      },
+      "scaffold": {
+        "MAE_gnn": {
+          "mean": 0.8047546244160352,
+          "sd": 0.023679488734821164,
+          "n": 3
+        },
+        "MAE_lgbm_same_seeds": {
+          "mean": 0.7147796220540013,
+          "sd": 0.00770127690310292,
+          "n": 3
+        },
+        "MAE_diff_gnn_minus_lgbm": {
+          "mean": 0.08997500236203386,
+          "sd": 0.01598256009989087,
+          "n": 3
+        },
+        "n_seeds_gnn_better": 0,
+        "n_seeds_gnn_significantly_better": 0,
+        "n_seeds_gnn_significantly_worse": 3,
+        "seeds_compared": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "mc_dropout_spearman_std_vs_abs_error": {
+    "dmpnn|random": {
+      "spearman_test_per_run": {
+        "mean": 0.05220790895332987,
+        "sd": 0.030926192406017648,
+        "n": 5
+      },
+      "spearman_test_pooled": 0.05296722020090876,
+      "p_value_pooled": 0.00033310868226084383,
+      "n_pooled": 4585,
+      "mean_mc_std_test": 0.17527758538306315,
+      "test_MAE_lowest_std_quintile": 0.5690592187874524,
+      "test_MAE_highest_std_quintile": 0.7503202225070841
+    },
+    "dmpnn|scaffold": {
+      "spearman_test_per_run": {
+        "mean": -0.01148661886348982,
+        "sd": 0.07961079506548724,
+        "n": 5
+      },
+      "spearman_test_pooled": -0.020247680870402178,
+      "p_value_pooled": 0.17020730363072964,
+      "n_pooled": 4590,
+      "mean_mc_std_test": 0.18180924301169524,
+      "test_MAE_lowest_std_quintile": 0.7922054296689726,
+      "test_MAE_highest_std_quintile": 0.7979243466842549
+    },
+    "dmpnn|cluster": {
+      "spearman_test_per_run": {
+        "mean": 0.08444437185063772,
+        "sd": 0.09309272375871414,
+        "n": 5
+      },
+      "spearman_test_pooled": 0.08384137621429844,
+      "p_value_pooled": 1.2802121572424307e-08,
+      "n_pooled": 4590,
+      "mean_mc_std_test": 0.18366262741495634,
+      "test_MAE_lowest_std_quintile": 0.6131565066758213,
+      "test_MAE_highest_std_quintile": 0.8165147198301154
+    },
+    "dmpnn_desc|random": {
+      "spearman_test_per_run": {
+        "mean": 0.11462558659622091,
+        "sd": 0.07150686081281261,
+        "n": 3
+      },
+      "spearman_test_pooled": 0.11402937870756973,
+      "p_value_pooled": 2.001420941885681e-09,
+      "n_pooled": 2751,
+      "mean_mc_std_test": 0.2742954829125625,
+      "test_MAE_lowest_std_quintile": 0.4927842590139918,
+      "test_MAE_highest_std_quintile": 0.7593828475680692
+    },
+    "dmpnn_desc|scaffold": {
+      "spearman_test_per_run": {
+        "mean": 0.11636513957812611,
+        "sd": 0.04804400932388433,
+        "n": 3
+      },
+      "spearman_test_pooled": 0.11547372657697637,
+      "p_value_pooled": 1.2208272351778122e-09,
+      "n_pooled": 2754,
+      "mean_mc_std_test": 0.30093082076971855,
+      "test_MAE_lowest_std_quintile": 0.7231149905089442,
+      "test_MAE_highest_std_quintile": 1.0011622710563983
+    },
+    "dmpnn_desc|cluster": {
+      "spearman_test_per_run": {
+        "mean": 0.05906533814105983,
+        "sd": 0.0171060489530565,
+        "n": 3
+      },
+      "spearman_test_pooled": 0.0549854335202586,
+      "p_value_pooled": 0.0038963882289512895,
+      "n_pooled": 2754,
+      "mean_mc_std_test": 0.2826867010259683,
+      "test_MAE_lowest_std_quintile": 0.6469564200047324,
+      "test_MAE_highest_std_quintile": 0.8969718344420478
+    }
+  },
+  "hyperparameters": {
+    "hidden": 200,
+    "depth": 3,
+    "ffn_hidden": 200,
+    "ffn_layers": 2,
+    "dropout": 0.1,
+    "encoder_dropout": 0.0,
+    "aggregation": "mean",
+    "batch_size": 64,
+    "eval_batch_size": 1024,
+    "max_epochs": 50,
+    "patience": 10,
+    "warmup_epochs": 2.0,
+    "init_lr": 0.0001,
+    "max_lr": 0.001,
+    "final_lr": 0.0001,
+    "weight_decay": 0.0,
+    "grad_clip": 10.0,
+    "mc_passes": 10,
+    "extra": {},
+    "atom_fdim": 52,
+    "bond_fdim": 13,
+    "descriptor_block": "rdkit2d (217), median-imputed and standardised on train, clipped to +-10 (dmpnn_desc only)",
+    "rationale": {
+      "architecture": "Chemprop defaults (Yang et al. 2019) except hidden size: depth 3 (2 directed-edge updates + atom aggregation), mean readout, 2-layer FFN; hidden = FFN width = 200 instead of 300 because an epoch costs 22.8 s vs 42.2 s per CPU thread (profile.json), which halves the plan's wall time (1.2 h vs 2.1 h expected at 6 threads) and leaves room for contention; 2 epochs gave similar val MAE (1.09 vs 1.04). No hyper-parameter search (compute budget), so no selection effects on val or test beyond early stopping",
+      "dropout": "p=0.1 in the FFN head only: mild regularisation and the Monte-Carlo-dropout rate; encoder dropout 0 (Chemprop default) keeps the encoder deterministic, so 10 MC passes cost one encoder pass",
+      "optimisation": "Adam, MSE on train-standardised logS, batch 64, Noam schedule (2 warm-up epochs 1e-4 -> 1e-3, exponential decay to 1e-4 at epoch 50), gradient-norm clip 10",
+      "early_stopping": "patience 10 epochs on validation MAE (log units, dropout off); best-epoch weights restored",
+      "budget": "max 50 epochs: dmpnn 3 splits x 5 seeds + dmpnn_desc 3 splits x 3 seeds = 24 runs, estimated 1.2 h (worst case 1.3 h) with 6 single-thread workers (results/gnn/profile.json, plan_estimate)"
+    }
+  },
+  "training": {
+    "best_epoch": {
+      "dmpnn|cluster": {
+        "mean": 36.4,
+        "sd": 9.289779329994873,
+        "n": 5
+      },
+      "dmpnn|random": {
+        "mean": 48.0,
+        "sd": 1.224744871391589,
+        "n": 5
+      },
+      "dmpnn|scaffold": {
+        "mean": 28.8,
+        "sd": 13.311649033834989,
+        "n": 5
+      },
+      "dmpnn_desc|cluster": {
+        "mean": 15.333333333333334,
+        "sd": 4.041451884327381,
+        "n": 3
+      },
+      "dmpnn_desc|random": {
+        "mean": 45.666666666666664,
+        "sd": 4.932882862316248,
+        "n": 3
+      },
+      "dmpnn_desc|scaffold": {
+        "mean": 15.333333333333334,
+        "sd": 6.027713773341708,
+        "n": 3
+      }
+    },
+    "epochs_run": {
+      "dmpnn|cluster": {
+        "mean": 44.4,
+        "sd": 6.54217089351845,
+        "n": 5
+      },
+      "dmpnn|random": {
+        "mean": 50.0,
+        "sd": 0.0,
+        "n": 5
+      },
+      "dmpnn|scaffold": {
+        "mean": 36.8,
+        "sd": 9.549869109050658,
+        "n": 5
+      },
+      "dmpnn_desc|cluster": {
+        "mean": 25.333333333333332,
+        "sd": 4.041451884327381,
+        "n": 3
+      },
+      "dmpnn_desc|random": {
+        "mean": 50.0,
+        "sd": 0.0,
+        "n": 3
+      },
+      "dmpnn_desc|scaffold": {
+        "mean": 25.333333333333332,
+        "sd": 6.027713773341707,
+        "n": 3
+      }
+    },
+    "n_early_stopped": 13,
+    "n_parameters": {
+      "dmpnn": 144001,
+      "dmpnn_desc": 187401
+    }
+  },
+  "compute": {
+    "total_train_seconds": 23470.421030044556,
+    "total_inference_seconds_incl_mc_dropout": 61.33466815948486,
+    "total_cpu_process_hours": 6.536598805056678,
+    "mean_train_seconds_per_run": {
+      "dmpnn": 950.4574347813924,
+      "dmpnn_desc": 1023.7288342581855
+    },
+    "mean_epoch_seconds": 24.926356378126258,
+    "threads_per_process": [
+      1
+    ],
+    "profile": {
+      "runs": [
+        {
+          "model": "dmpnn",
+          "hidden": 300,
+          "depth": 3,
+          "batch_size": 64,
+          "threads": 3,
+          "epochs_profiled": 2,
+          "epoch_seconds": 43.72075390815735,
+          "train_seconds_per_epoch": 42.95878624916077,
+          "val_eval_seconds_per_epoch": 0.761967658996582,
+          "final_inference_seconds_val_test_mc": 2.4159719944000244,
+          "n_parameters": 306001,
+          "val_MAE_last_epoch": 1.0431649828079919,
+          "timestamp": "2026-10-14 00:26",
+          "note": "3 threads; CPU at ~100% load from ~5 concurrent agents"
+        },
+        {
+          "model": "dmpnn",
+          "hidden": 200,
+          "depth": 3,
+          "batch_size": 64,
+          "threads": 3,
+          "epochs_profiled": 2,
+          "epoch_seconds": 18.38659107685089,
+          "train_seconds_per_epoch": 17.882722854614258,
+          "val_eval_seconds_per_epoch": 0.5038682222366333,
+          "final_inference_seconds_val_test_mc": 1.4775986671447754,
+          "n_parameters": 144001,
+          "val_MAE_last_epoch": 1.089972818903624,
+          "timestamp": "2026-10-14 00:26",
+          "note": "3 threads; CPU at ~100% load from ~5 concurrent agents"
+        },
+        {
+          "model": "dmpnn",
+          "hidden": 200,
+          "depth": 3,
+          "batch_size": 64,
+          "threads": 1,
+          "epochs_profiled": 2,
+          "epoch_seconds": 22.773815631866455,
+          "train_seconds_per_epoch": 21.92911207675934,
+          "val_eval_seconds_per_epoch": 0.8447035551071167,
+          "final_inference_seconds_val_test_mc": 2.876957893371582,
+          "n_parameters": 144001,
+          "val_MAE_last_epoch": 1.1074646079588448,
+          "timestamp": "2026-10-14 00:29",
+          "note": "1 thread; CPU at ~100% load from ~5 concurrent agents"
+        },
+        {
+          "model": "dmpnn",
+          "hidden": 300,
+          "depth": 3,
+          "batch_size": 64,
+          "threads": 1,
+          "epochs_profiled": 2,
+          "epoch_seconds": 42.23624002933502,
+          "train_seconds_per_epoch": 40.62468934059143,
+          "val_eval_seconds_per_epoch": 1.6115506887435913,
+          "final_inference_seconds_val_test_mc": 4.053427696228027,
+          "n_parameters": 306001,
+          "val_MAE_last_epoch": 1.0437387415089059,
+          "timestamp": "2026-10-14 00:29",
+          "note": "1 thread; CPU at ~100% load from ~5 concurrent agents"
+        }
+      ],
+      "graph_store_load_seconds": 0.9081933498382568,
+      "previous_implementation": {
+        "source": "results/gnn/profile_t3.log (transcribed, then deleted), measured 2026-10-13 21:49-21:52",
+        "model": "dmpnn",
+        "hidden": 200,
+        "depth": 3,
+        "threads": 3,
+        "epoch_seconds": 46.13381338119507,
+        "mc_dropout_seconds_val_test": 70.54730939865112,
+        "featurisation_seconds": 23.8,
+        "implementation": "per-batch Python collation of per-molecule graphs, index_add_/index_select scatter-gathers, deterministic-mode scatter, encoder dropout 0.1 so 20 full MC passes",
+        "note": "under heavy CPU contention (several concurrent agents)"
+      },
+      "plan_estimate": {
+        "n_jobs": 24,
+        "total_threads": 6,
+        "expected_epochs": 45,
+        "worst_case_epochs": 50,
+        "per_run_overhead_seconds": 10.0,
+        "layouts": [
+          {
+            "hidden": 200,
+            "depth": 3,
+            "threads_per_worker": 1,
+            "workers": 6,
+            "jobs_per_worker": 4,
+            "epoch_seconds_measured": 22.773815631866455,
+            "run_minutes_expected": 17.294977688789366,
+            "wall_hours_expected": 1.1529985125859579,
+            "wall_hours_worst": 1.2795197105407714,
+            "measured_at": "2026-10-14 00:29",
+            "load_note": "1 thread; CPU at ~100% load from ~5 concurrent agents"
+          },
+          {
+            "hidden": 200,
+            "depth": 3,
+            "threads_per_worker": 3,
+            "workers": 2,
+            "jobs_per_worker": 12,
+            "epoch_seconds_measured": 18.38659107685089,
+            "run_minutes_expected": 13.981236618757247,
+            "wall_hours_expected": 2.79624732375145,
+            "wall_hours_worst": 3.1026905083656313,
+            "measured_at": "2026-10-14 00:26",
+            "load_note": "3 threads; CPU at ~100% load from ~5 concurrent agents"
+          },
+          {
+            "hidden": 300,
+            "depth": 3,
+            "threads_per_worker": 1,
+            "workers": 6,
+            "jobs_per_worker": 4,
+            "epoch_seconds_measured": 42.23624002933502,
+            "run_minutes_expected": 31.9114038169384,
+            "wall_hours_expected": 2.1274269211292265,
+            "wall_hours_worst": 2.362072699069977,
+            "measured_at": "2026-10-14 00:29",
+            "load_note": "1 thread; CPU at ~100% load from ~5 concurrent agents"
+          },
+          {
+            "hidden": 300,
+            "depth": 3,
+            "threads_per_worker": 3,
+            "workers": 2,
+            "jobs_per_worker": 12,
+            "epoch_seconds_measured": 43.72075390815735,
+            "run_minutes_expected": 32.997498297691344,
+            "wall_hours_expected": 6.599499659538269,
+            "wall_hours_worst": 7.328178891340891,
+            "measured_at": "2026-10-14 00:26",
+            "load_note": "3 threads; CPU at ~100% load from ~5 concurrent agents"
+          }
+        ]
+      }
+    }
+  },
+  "notes": {
+    "y_pred": "deterministic forward pass with dropout disabled (best-validation-epoch weights)",
+    "y_std": "std over 10 Monte-Carlo dropout passes (p=0.1 in the FFN head; encoder deterministic)",
+    "early_stopping": "validation MAE (log units), best weights restored; test never used for any choice",
+    "dmpnn_desc_seeds": "dmpnn_desc was run on fewer seeds than dmpnn (compute budget); compare it with LightGBM on the same seeds (paired_vs_lgbm / lgbm_reference seeds_of_dmpnn_desc)"
+  },
+  "files": {
+    "metrics_runs": "results/gnn/metrics_runs.csv",
+    "summary_table": "results/gnn/summary.csv",
+    "comparison": "results/gnn/comparison_vs_lgbm.csv",
+    "training_curves": "results/gnn/training_curves.csv",
+    "figures": [
+      "results/figures/gnn/training_curves.png",
+      "results/figures/gnn/mae_vs_lgbm.png",
+      "results/figures/gnn/mc_dropout_std_vs_error.png",
+      "results/figures/gnn/parity_dmpnn.png"
+    ],
+    "checkpoint": [
+      "models/gnn/dmpnn_scaffold_seed0.pt",
+      "models/gnn/dmpnn_scaffold_seed0_hparams.json",
+      "models/gnn/dmpnn_scaffold_seed0_target_scaler.json"
+    ]
+  }
+}
